@@ -6,7 +6,7 @@
   "train_samples": 2000,
   "test_samples": 500,
   "model_type": "XGBRegressor",
-  "timestamp": "2026-10-12T16:55:29.412760+00:00",
+  "timestamp": "2026-10-12T17:16:26.661362+00:00",
   "hyperparameters": {
     "n_estimators": 150,
     "max_depth": 5,
