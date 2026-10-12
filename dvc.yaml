@@ -1,0 +1,37 @@
+stages:
+  preprocess:
+    cmd: python src/preprocess.py --config params.yaml
+    deps:
+      - data/raw/housing_data.csv
+      - src/preprocess.py
+    params:
+      - preprocess.test_size
+      - preprocess.random_state
+      - preprocess.raw_data_path
+      - preprocess.processed_dir
+    outs:
+      - data/processed/X_train.parquet
+      - data/processed/X_test.parquet
+      - data/processed/y_train.parquet
+      - data/processed/y_test.parquet
+
+  train:
+    cmd: python src/train.py --config params.yaml --processed-dir data/processed
+    deps:
+      - data/processed/X_train.parquet
+      - data/processed/X_test.parquet
+      - data/processed/y_train.parquet
+      - data/processed/y_test.parquet
+      - src/train.py
+    params:
+      - train.n_estimators
+      - train.max_depth
+      - train.learning_rate
+      - train.subsample
+      - train.colsample_bytree
+      - train.random_state
+    outs:
+      - model.joblib
+    metrics:
+      - metrics.json:
+          cache: false

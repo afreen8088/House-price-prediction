@@ -1,0 +1,2501 @@
+sqft,bedrooms,bathrooms,neighborhood,price
+1893.0,3,3.0,Riverside,900400.0
+1932.0,2,2.5,Suburban Heights,636200.0
+1465.0,2,1.5,West End,469600.0
+1279.0,2,2.0,Suburban Heights,488700.0
+1280.0,1,,Downtown,682600.0
+1452.0,2,1.5,West End,480700.0
+1846.0,2,2.5,Riverside,836600.0
+1601.0,3,2.0,Riverside,773500.0
+1693.0,1,2.0,Downtown,822800.0
+2309.0,3,1.5,Suburban Heights,724500.0
+2964.0,4,3.0,Oakridge,1379900.0
+2017.0,1,1.5,West End,544700.0
+2745.0,3,2.0,Suburban Heights,745700.0
+1799.0,3,1.5,Riverside,806600.0
+2704.0,2,2.0,Suburban Heights,830300.0
+3813.0,4,3.5,Oakridge,1615000.0
+1899.0,2,2.0,Suburban Heights,663600.0
+1406.0,2,2.0,Downtown,840900.0
+2405.0,3,2.0,Riverside,1036200.0
+2093.0,4,1.5,Suburban Heights,729900.0
+2061.0,3,2.0,Riverside,855400.0
+3589.0,4,3.5,Oakridge,1585200.0
+1571.0,1,1.0,West End,454400.0
+,2,2.0,West End,404200.0
+2324.0,3,2.0,Riverside,937900.0
+1131.0,1,1.5,Downtown,607900.0
+2450.0,3,2.5,Suburban Heights,768400.0
+550.0,2,1.0,Downtown,435600.0
+1728.0,3,2.0,Downtown,932700.0
+2223.0,5,2.0,Suburban Heights,808700.0
+1582.0,3,2.0,Riverside,699700.0
+1861.0,2,1.0,West End,579000.0
+3010.0,4,3.0,Oakridge,1341600.0
+2322.0,4,3.5,Oakridge,1165700.0
+2684.0,4,2.0,Suburban Heights,854700.0
+1797.0,3,1.5,Downtown,935500.0
+1631.0,3,2.0,Downtown,905600.0
+,4,2.0,Suburban Heights,857800.0
+3072.0,4,2.5,Oakridge,1356200.0
+2906.0,3,2.0,Suburban Heights,904200.0
+1751.0,4,2.5,Suburban Heights,694400.0
+1368.0,3,2.0,Riverside,691100.0
+1884.0,3,2.0,Riverside,833900.0
+3458.0,5,3.5,Oakridge,1520000.0
+1724.0,4,1.5,Riverside,785800.0
+2015.0,3,1.5,Riverside,818300.0
+2875.0,4,4.0,Oakridge,1391400.0
+2903.0,6,4.0,Oakridge,1508200.0
+2804.0,2,2.0,Suburban Heights,841100.0
+1087.0,2,1.0,Downtown,624300.0
+919.0,2,2.0,Downtown,681000.0
+1119.0,2,2.0,Downtown,664800.0
+1056.0,4,1.5,Riverside,644900.0
+1907.0,2,2.0,Suburban Heights,636700.0
+2347.0,3,2.0,Riverside,930600.0
+1314.0,4,1.5,Riverside,694700.0
+2064.0,2,2.0,Suburban Heights,693500.0
+2918.0,3,2.0,Suburban Heights,851700.0
+1514.0,2,1.5,Downtown,742700.0
+1554.0,1,2.0,Downtown,848800.0
+1855.0,3,1.5,Suburban Heights,589100.0
+2080.0,3,2.5,Suburban Heights,670600.0
+1684.0,4,2.5,Suburban Heights,697700.0
+2625.0,3,2.0,Riverside,1029900.0
+1769.0,3,2.0,Suburban Heights,660900.0
+2793.0,3,2.0,Suburban Heights,851700.0
+1100.0,3,2.5,Suburban Heights,519300.0
+3324.0,5,3.0,Oakridge,1501100.0
+1380.0,1,1.0,Downtown,755500.0
+1657.0,3,2.0,Suburban Heights,567100.0
+1431.0,2,1.5,Downtown,748600.0
+2115.0,4,1.5,Suburban Heights,675000.0
+1064.0,3,1.5,West End,428000.0
+2658.0,4,3.5,Oakridge,1459700.0
+1976.0,1,1.5,Downtown,895200.0
+1834.0,4,3.5,Oakridge,1134600.0
+2618.0,3,4.0,Oakridge,1231800.0
+2396.0,2,2.0,Suburban Heights,740900.0
+2740.0,3,2.5,Suburban Heights,852700.0
+2513.0,2,3.0,Riverside,918900.0
+1933.0,3,2.0,Suburban Heights,648100.0
+1289.0,3,2.0,Suburban Heights,562200.0
+2632.0,3,2.0,Riverside,1006300.0
+1158.0,2,1.0,Downtown,661300.0
+1559.0,2,1.0,Downtown,780100.0
+1575.0,1,1.0,Downtown,787500.0
+2106.0,3,2.0,Riverside,869500.0
+2940.0,4,2.5,Suburban Heights,880300.0
+1845.0,2,1.5,Downtown,936000.0
+2071.0,3,1.5,Suburban Heights,673900.0
+1786.0,2,1.5,Downtown,859700.0
+2254.0,3,2.0,Suburban Heights,740800.0
+1512.0,3,2.0,Suburban Heights,575700.0
+2580.0,3,2.5,Oakridge,1141900.0
+3368.0,4,3.0,Oakridge,1389500.0
+2349.0,4,1.5,Suburban Heights,758500.0
+2830.0,6,3.5,Oakridge,1315900.0
+2472.0,1,2.0,Downtown,1154400.0
+902.0,2,1.0,Downtown,608400.0
+1754.0,4,1.5,West End,566400.0
+2143.0,1,2.0,West End,579900.0
+1677.0,3,2.0,Suburban Heights,641000.0
+3486.0,3,2.5,Oakridge,1566900.0
+1760.0,3,2.5,West End,574100.0
+2169.0,3,1.5,Riverside,828100.0
+2448.0,3,2.0,Riverside,922200.0
+1571.0,3,2.0,Suburban Heights,600100.0
+3243.0,4,3.0,Oakridge,1387700.0
+550.0,1,2.0,Downtown,461800.0
+1408.0,1,1.0,West End,449600.0
+2647.0,4,3.0,Suburban Heights,858100.0
+1487.0,2,1.0,Downtown,766700.0
+2701.0,4,2.5,Oakridge,1280700.0
+1868.0,5,1.5,Suburban Heights,716600.0
+1385.0,2,1.0,Downtown,729400.0
+1017.0,1,1.5,West End,377000.0
+2123.0,4,2.0,Riverside,867900.0
+2399.0,3,2.5,Riverside,973700.0
+1100.0,3,1.5,Suburban Heights,527400.0
+3115.0,3,1.5,Suburban Heights,856700.0
+2312.0,3,2.5,Suburban Heights,733800.0
+2649.0,3,2.0,Suburban Heights,759500.0
+1210.0,1,2.0,Downtown,739300.0
+2728.0,3,2.0,Suburban Heights,758500.0
+1990.0,2,1.5,Downtown,1030100.0
+2833.0,4,2.0,Suburban Heights,861200.0
+3036.0,4,3.0,Oakridge,1445900.0
+1876.0,1,1.0,Downtown,868700.0
+550.0,2,1.5,Downtown,510400.0
+2257.0,3,2.5,Suburban Heights,703500.0
+1338.0,2,1.0,Downtown,734000.0
+930.0,4,1.5,West End,461000.0
+2184.0,3,2.0,Suburban Heights,716800.0
+2550.0,5,3.0,Oakridge,1248200.0
+2137.0,4,2.0,Suburban Heights,727900.0
+2045.0,2,2.0,Downtown,935400.0
+1449.0,1,1.0,West End,455300.0
+2892.0,3,2.0,Suburban Heights,853600.0
+3415.0,3,2.0,Riverside,1136100.0
+2399.0,2,1.0,Downtown,1133000.0
+2544.0,4,2.5,Suburban Heights,814200.0
+1969.0,3,2.0,Suburban Heights,667700.0
+1983.0,1,1.5,West End,547300.0
+2259.0,3,2.0,Suburban Heights,711800.0
+2729.0,4,2.5,Suburban Heights,839500.0
+1673.0,6,3.0,Oakridge,1098000.0
+2443.0,4,3.0,,1203700.0
+2568.0,3,3.0,Suburban Heights,830800.0
+2150.0,4,2.0,Suburban Heights,745100.0
+1841.0,3,1.0,Downtown,915200.0
+1641.0,3,2.0,Riverside,771600.0
+1250.0,3,1.0,West End,443300.0
+1568.0,1,1.0,Downtown,832000.0
+2698.0,3,2.0,Suburban Heights,815300.0
+1147.0,3,1.5,Downtown,699300.0
+1864.0,2,2.5,Suburban Heights,653300.0
+4383.0,3,3.5,Oakridge,1767600.0
+2328.0,3,3.0,Suburban Heights,744600.0
+2572.0,3,2.5,Riverside,1050600.0
+2797.0,2,1.5,Riverside,932800.0
+784.0,1,1.0,Downtown,504300.0
+1753.0,1,2.0,West End,545100.0
+2203.0,6,2.5,Oakridge,1259500.0
+1907.0,2,1.0,Downtown,883000.0
+3113.0,3,3.0,Suburban Heights,899700.0
+4108.0,6,3.5,Oakridge,1738400.0
+2530.0,3,1.5,Riverside,975100.0
+2517.0,3,2.0,Riverside,950000.0
+3041.0,3,3.5,Oakridge,1440300.0
+1779.0,2,1.0,West End,524600.0
+2406.0,4,3.5,Oakridge,1253900.0
+2544.0,2,1.5,Suburban Heights,770900.0
+2874.0,5,4.0,Oakridge,1448500.0
+1951.0,2,1.0,West End,543500.0
+1113.0,1,1.0,Downtown,666700.0
+1592.0,2,1.0,Downtown,925500.0
+2086.0,3,2.0,Suburban Heights,710500.0
+2026.0,3,1.5,West End,608200.0
+1772.0,3,1.0,West End,541600.0
+1765.0,3,1.5,Riverside,780300.0
+994.0,1,1.0,West End,378100.0
+1900.0,2,1.5,West End,569500.0
+1762.0,4,2.0,Suburban Heights,622400.0
+3539.0,4,3.5,Oakridge,1563500.0
+2527.0,4,2.0,Riverside,1022600.0
+2514.0,2,2.5,Suburban Heights,722000.0
+2473.0,4,2.5,Oakridge,1147100.0
+909.0,1,1.5,Downtown,552200.0
+1318.0,2,2.5,Riverside,651700.0
+2831.0,6,3.0,Oakridge,1389500.0
+2111.0,3,2.0,West End,660900.0
+2716.0,4,2.5,Oakridge,1270600.0
+1566.0,1,1.0,Downtown,761800.0
+2123.0,3,2.0,Riverside,850300.0
+1808.0,2,1.5,Downtown,949900.0
+2355.0,2,2.0,Downtown,1097900.0
+1369.0,3,1.5,Suburban Heights,530500.0
+1238.0,2,2.5,West End,436800.0
+1627.0,1,1.0,Downtown,855000.0
+2255.0,5,4.0,Oakridge,1282100.0
+2704.0,3,1.5,Riverside,962300.0
+2151.0,1,1.5,West End,595000.0
+2443.0,4,2.5,Suburban Heights,755400.0
+1743.0,2,2.0,Downtown,895800.0
+718.0,3,1.0,Downtown,568300.0
+2512.0,4,3.0,Oakridge,1234200.0
+1398.0,1,1.5,Downtown,799000.0
+1955.0,3,1.5,Suburban Heights,658000.0
+1209.0,2,1.5,Downtown,699000.0
+2111.0,2,1.5,Suburban Heights,633700.0
+2681.0,3,2.0,Suburban Heights,800100.0
+3072.0,4,2.0,Suburban Heights,966600.0
+1017.0,2,1.5,Downtown,679200.0
+1877.0,3,2.0,Riverside,842800.0
+1828.0,4,1.5,Riverside,853900.0
+2343.0,3,2.0,Riverside,950800.0
+1598.0,2,2.0,Downtown,888600.0
+2740.0,3,1.5,Downtown,1263000.0
+1196.0,2,2.0,West End,458300.0
+2795.0,3,3.5,Oakridge,1374100.0
+2803.0,5,4.0,Oakridge,1453800.0
+1397.0,4,2.0,Suburban Heights,606900.0
+2655.0,3,2.5,Suburban Heights,826100.0
+1347.0,2,1.0,West End,449700.0
+1769.0,4,2.5,Oakridge,1012200.0
+1539.0,2,1.0,West End,449500.0
+1193.0,1,2.0,Downtown,721400.0
+1466.0,4,2.0,Suburban Heights,604600.0
+2470.0,2,2.5,Suburban Heights,780100.0
+1722.0,2,1.5,Downtown,767100.0
+1070.0,2,1.0,Downtown,652300.0
+2172.0,3,2.0,Suburban Heights,685700.0
+1869.0,2,2.0,West End,559100.0
+2352.0,4,2.0,Suburban Heights,719100.0
+985.0,2,1.0,,374800.0
+2444.0,4,2.5,Riverside,997900.0
+2313.0,4,2.0,Suburban Heights,742000.0
+2060.0,3,2.5,Riverside,872200.0
+653.0,1,1.0,Downtown,450900.0
+992.0,2,1.5,Downtown,657200.0
+1603.0,3,2.5,Riverside,765300.0
+2319.0,3,2.0,Riverside,983100.0
+,4,3.5,Oakridge,1212100.0
+2447.0,3,2.0,Suburban Heights,767700.0
+1102.0,3,1.5,Suburban Heights,485000.0
+1152.0,3,1.5,West End,463300.0
+2268.0,3,1.5,Suburban Heights,716600.0
+2732.0,3,2.0,Suburban Heights,838700.0
+3128.0,4,4.5,Oakridge,1539000.0
+1397.0,5,2.5,Suburban Heights,625500.0
+1560.0,3,2.0,Suburban Heights,599000.0
+1522.0,3,1.0,West End,501000.0
+2232.0,3,1.5,Suburban Heights,702700.0
+2647.0,4,2.5,Oakridge,1269100.0
+1951.0,3,3.5,Oakridge,1121600.0
+2904.0,3,1.5,Riverside,1017800.0
+1975.0,3,,Riverside,816500.0
+758.0,2,1.5,Downtown,617600.0
+1963.0,3,2.0,Downtown,1035000.0
+1427.0,3,2.0,Suburban Heights,584500.0
+761.0,3,1.5,Downtown,585100.0
+2726.0,3,2.5,Riverside,1094300.0
+3485.0,5,4.0,Oakridge,1673400.0
+1680.0,1,2.0,Downtown,843400.0
+1104.0,2,1.5,West End,422300.0
+1998.0,1,1.5,Downtown,982500.0
+2761.0,5,3.0,Oakridge,1433600.0
+1636.0,3,1.0,Downtown,916900.0
+1268.0,1,2.0,Downtown,687300.0
+1580.0,1,1.0,Downtown,823600.0
+1511.0,2,1.0,Downtown,786200.0
+1356.0,1,2.0,Downtown,750200.0
+1209.0,1,1.0,Downtown,714100.0
+2392.0,3,2.0,Suburban Heights,754700.0
+2981.0,4,2.0,Suburban Heights,909400.0
+3183.0,6,3.5,Oakridge,1498200.0
+3418.0,5,3.5,Oakridge,1581700.0
+2123.0,4,2.0,Suburban Heights,706700.0
+2372.0,4,1.5,West End,699500.0
+1316.0,1,2.0,West End,414400.0
+1767.0,2,1.0,Downtown,886500.0
+1612.0,1,,Downtown,799800.0
+2146.0,4,2.5,Oakridge,1216300.0
+3330.0,4,,Oakridge,1539300.0
+2563.0,2,1.5,Suburban Heights,753300.0
+1896.0,3,2.5,Suburban Heights,681300.0
+1601.0,1,1.5,Downtown,884700.0
+2947.0,4,3.0,Oakridge,1500900.0
+1688.0,3,2.0,Suburban Heights,605900.0
+1328.0,1,1.5,Downtown,736900.0
+1893.0,3,1.5,Riverside,799200.0
+551.0,1,1.0,Downtown,506100.0
+1025.0,2,1.5,West End,418100.0
+609.0,1,1.5,Downtown,491400.0
+2455.0,3,1.5,Riverside,935200.0
+816.0,2,1.5,West End,354400.0
+1807.0,2,1.5,West End,528800.0
+1614.0,4,2.5,Riverside,885200.0
+2125.0,4,2.5,Riverside,960600.0
+2563.0,4,2.0,Suburban Heights,809200.0
+2006.0,4,2.0,Riverside,942900.0
+1457.0,3,1.0,Downtown,855800.0
+2155.0,4,2.5,Suburban Heights,698500.0
+2912.0,3,3.0,Suburban Heights,889800.0
+2293.0,3,1.5,West End,670800.0
+2512.0,4,2.0,Suburban Heights,873100.0
+2356.0,4,4.0,Oakridge,1272300.0
+1985.0,2,2.0,Suburban Heights,610300.0
+2906.0,4,3.0,Oakridge,1372000.0
+1570.0,3,1.0,Downtown,759900.0
+1519.0,2,2.0,Suburban Heights,581900.0
+1857.0,3,2.0,Suburban Heights,670600.0
+2982.0,5,4.5,Oakridge,1492800.0
+2172.0,5,3.0,Oakridge,1260500.0
+3331.0,5,4.5,Oakridge,1479100.0
+3670.0,5,2.5,Oakridge,1575700.0
+2263.0,6,2.5,Oakridge,1174500.0
+1829.0,3,2.0,Suburban Heights,642000.0
+2793.0,4,3.5,Oakridge,1335100.0
+1862.0,2,1.0,West End,545100.0
+1298.0,2,1.0,West End,450500.0
+2428.0,4,2.0,Suburban Heights,812100.0
+3461.0,4,2.5,Oakridge,1592700.0
+2314.0,3,2.0,Suburban Heights,751500.0
+1695.0,3,2.5,Riverside,791300.0
+2235.0,3,1.5,Suburban Heights,763500.0
+1730.0,3,2.0,Riverside,770000.0
+1346.0,3,2.0,Suburban Heights,545300.0
+1367.0,3,2.0,Suburban Heights,591100.0
+2731.0,5,3.0,Oakridge,1390500.0
+1975.0,3,2.0,Riverside,850400.0
+778.0,2,1.0,Downtown,542800.0
+2580.0,3,2.0,Suburban Heights,792700.0
+2176.0,2,2.0,West End,647700.0
+1688.0,1,1.5,Downtown,853400.0
+2473.0,3,2.5,Suburban Heights,756100.0
+1557.0,1,1.5,Downtown,809200.0
+1081.0,2,1.5,Riverside,648700.0
+803.0,2,1.0,Downtown,607000.0
+1428.0,2,1.5,West End,468000.0
+1675.0,2,2.0,Downtown,900400.0
+903.0,3,2.0,West End,409700.0
+1924.0,3,2.0,Riverside,855300.0
+2691.0,3,2.0,Suburban Heights,822700.0
+2046.0,2,1.5,Riverside,819600.0
+1810.0,3,2.0,Riverside,800900.0
+1321.0,3,1.5,West End,508000.0
+2720.0,4,4.0,Oakridge,1347700.0
+2095.0,3,2.0,Suburban Heights,727400.0
+1454.0,2,1.0,Downtown,736700.0
+3272.0,4,2.0,Suburban Heights,1013300.0
+,3,1.0,,791100.0
+2115.0,3,2.0,Suburban Heights,713800.0
+3125.0,3,2.0,Suburban Heights,897600.0
+3570.0,2,1.5,Suburban Heights,977400.0
+1829.0,3,1.5,Suburban Heights,637300.0
+1070.0,2,2.5,Riverside,617300.0
+2317.0,4,2.5,Riverside,927900.0
+3021.0,3,3.0,Suburban Heights,926200.0
+3032.0,3,2.0,Suburban Heights,884000.0
+1188.0,2,1.5,West End,408000.0
+1531.0,2,1.0,Downtown,748300.0
+1483.0,2,1.0,Downtown,791000.0
+1906.0,1,1.0,Downtown,850700.0
+1993.0,2,2.0,Suburban Heights,622600.0
+1493.0,3,1.5,Suburban Heights,585300.0
+1221.0,4,3.0,Riverside,712000.0
+2361.0,2,2.0,Suburban Heights,680300.0
+2761.0,3,3.0,Oakridge,1200400.0
+1178.0,3,1.5,West End,476500.0
+3432.0,3,1.5,Riverside,1070000.0
+2754.0,3,3.5,Oakridge,1324000.0
+3137.0,5,2.5,Oakridge,1367100.0
+3299.0,4,3.0,Oakridge,1526300.0
+710.0,1,1.0,Downtown,483200.0
+1690.0,2,2.0,Downtown,896500.0
+1744.0,2,2.0,West End,545600.0
+2940.0,3,2.0,Suburban Heights,832700.0
+3322.0,5,3.0,Oakridge,1599000.0
+1016.0,4,1.5,Riverside,615200.0
+3392.0,3,2.0,Suburban Heights,954500.0
+750.0,3,1.5,West End,361500.0
+1644.0,4,2.5,Riverside,837600.0
+1972.0,3,2.5,Suburban Heights,659700.0
+2273.0,3,3.0,Oakridge,1075200.0
+1749.0,2,1.5,West End,517700.0
+2263.0,3,2.0,Riverside,956100.0
+1999.0,1,1.5,West End,551800.0
+735.0,1,1.5,Downtown,505600.0
+1848.0,3,1.5,West End,576900.0
+1683.0,3,2.0,Suburban Heights,637000.0
+1045.0,1,2.0,Downtown,630300.0
+1573.0,3,2.0,Suburban Heights,606200.0
+3319.0,4,2.5,Suburban Heights,961300.0
+1561.0,2,1.0,Downtown,817700.0
+2328.0,4,2.5,Suburban Heights,788000.0
+2038.0,3,2.5,Riverside,874300.0
+2903.0,5,3.0,Oakridge,1307800.0
+1429.0,3,2.0,Suburban Heights,554100.0
+2517.0,4,2.0,Suburban Heights,760500.0
+2623.0,4,3.0,Oakridge,1242600.0
+1723.0,3,1.5,West End,530000.0
+2004.0,3,1.5,Riverside,845900.0
+700.0,2,2.0,Downtown,559900.0
+1395.0,1,1.5,West End,470200.0
+1605.0,1,1.5,West End,502600.0
+3125.0,4,3.0,Oakridge,1480600.0
+2492.0,3,1.5,Riverside,974800.0
+1829.0,2,1.0,Downtown,897400.0
+1837.0,3,1.5,West End,565200.0
+1100.0,2,2.0,Suburban Heights,481000.0
+2908.0,5,2.5,Suburban Heights,809300.0
+1134.0,2,1.5,Downtown,719400.0
+2037.0,3,2.0,West End,643100.0
+1341.0,2,1.5,Downtown,736700.0
+3353.0,3,2.5,Oakridge,1389200.0
+817.0,1,1.5,Downtown,572700.0
+2550.0,3,2.0,Riverside,1019200.0
+1427.0,1,1.0,Downtown,725000.0
+1999.0,1,1.5,West End,597900.0
+2215.0,3,1.5,Suburban Heights,689400.0
+1596.0,2,1.0,Downtown,857200.0
+1789.0,2,1.0,Downtown,851900.0
+1680.0,3,1.5,Downtown,914700.0
+2156.0,3,,Suburban Heights,691700.0
+1563.0,3,1.5,Riverside,752700.0
+2857.0,6,2.5,Oakridge,1476500.0
+2211.0,2,1.5,Riverside,864900.0
+2904.0,2,2.0,Downtown,1350500.0
+1087.0,3,2.5,Riverside,655500.0
+870.0,1,1.0,West End,352500.0
+1639.0,2,1.5,Riverside,745200.0
+2869.0,2,1.5,Suburban Heights,766600.0
+1370.0,3,3.0,Riverside,735200.0
+1487.0,3,1.5,Downtown,819800.0
+1577.0,3,2.0,Downtown,872400.0
+1014.0,3,1.0,Downtown,666600.0
+2368.0,4,2.0,Suburban Heights,817900.0
+2144.0,3,2.0,Riverside,895300.0
+2392.0,3,2.5,Suburban Heights,747200.0
+2605.0,2,1.0,West End,694400.0
+899.0,2,2.0,Downtown,635500.0
+1198.0,3,2.0,Riverside,645200.0
+550.0,2,2.0,Downtown,548300.0
+2746.0,3,3.0,Oakridge,1353800.0
+1911.0,3,2.0,Riverside,861600.0
+1590.0,3,1.0,West End,544000.0
+2805.0,4,2.5,Suburban Heights,859700.0
+2080.0,2,1.5,Downtown,935200.0
+1855.0,3,1.5,Suburban Heights,695900.0
+1049.0,3,1.0,Downtown,686900.0
+1218.0,2,2.0,West End,461300.0
+2212.0,2,2.0,Riverside,912600.0
+1364.0,1,1.5,Downtown,706000.0
+878.0,3,2.0,,645200.0
+1447.0,3,1.0,Downtown,845300.0
+1530.0,1,2.0,West End,447000.0
+1805.0,3,2.0,Suburban Heights,676300.0
+2931.0,3,2.0,Riverside,1140100.0
+1967.0,3,2.0,Suburban Heights,661000.0
+1800.0,3,1.5,Suburban Heights,623900.0
+778.0,2,1.0,Downtown,599900.0
+1827.0,3,1.0,West End,548900.0
+2673.0,4,3.0,Oakridge,1150100.0
+2599.0,3,1.5,Suburban Heights,844600.0
+1843.0,3,2.5,Suburban Heights,677800.0
+1979.0,3,2.0,Suburban Heights,717000.0
+1684.0,1,2.0,West End,499800.0
+2105.0,1,1.0,Downtown,1000600.0
+1839.0,4,2.0,Suburban Heights,672600.0
+2330.0,3,1.5,Suburban Heights,653900.0
+2363.0,3,2.5,Suburban Heights,779600.0
+1461.0,1,1.5,Downtown,786000.0
+1106.0,2,1.0,Downtown,637700.0
+2960.0,3,2.5,Oakridge,1273000.0
+2635.0,4,4.0,Oakridge,1361600.0
+1314.0,3,2.0,Suburban Heights,586000.0
+2711.0,3,2.0,Suburban Heights,826200.0
+1965.0,4,2.5,Suburban Heights,645900.0
+2761.0,3,2.0,Suburban Heights,809400.0
+2379.0,4,3.0,Suburban Heights,820700.0
+1584.0,2,1.0,Downtown,815000.0
+1468.0,2,2.5,Suburban Heights,591900.0
+2682.0,4,4.5,Oakridge,1382700.0
+1503.0,1,1.5,Downtown,701700.0
+2684.0,4,2.0,Suburban Heights,832300.0
+2568.0,3,2.0,Suburban Heights,752200.0
+3963.0,5,4.5,Oakridge,1630400.0
+2134.0,4,2.0,Suburban Heights,794000.0
+2356.0,4,1.5,Suburban Heights,784200.0
+1891.0,3,2.5,Riverside,789300.0
+2999.0,3,2.0,Suburban Heights,834300.0
+1738.0,4,2.5,Suburban Heights,669000.0
+2621.0,4,3.0,Oakridge,1281200.0
+1844.0,3,1.5,Riverside,805500.0
+2835.0,3,2.0,Suburban Heights,842700.0
+1351.0,3,2.0,Suburban Heights,574100.0
+1824.0,4,2.0,Suburban Heights,706900.0
+3087.0,5,,Oakridge,1561600.0
+2583.0,4,2.0,Suburban Heights,780700.0
+2500.0,4,2.0,Riverside,999500.0
+978.0,2,1.0,West End,393100.0
+1820.0,2,1.0,West End,525400.0
+2609.0,3,2.0,Suburban Heights,812800.0
+1121.0,3,2.5,Suburban Heights,527000.0
+1507.0,3,1.5,Riverside,773600.0
+2904.0,5,3.5,Oakridge,1327700.0
+2323.0,3,3.0,Riverside,944400.0
+2066.0,4,1.5,Suburban Heights,715000.0
+1326.0,1,,Downtown,753800.0
+1592.0,3,1.0,Downtown,931200.0
+1651.0,2,2.5,Riverside,829900.0
+1749.0,1,1.5,Downtown,867100.0
+2590.0,6,3.5,Oakridge,1368400.0
+2875.0,5,3.5,Oakridge,1408700.0
+1062.0,2,1.5,Downtown,674900.0
+2708.0,6,3.0,Oakridge,1322900.0
+1567.0,3,2.0,Riverside,741700.0
+550.0,2,1.5,Downtown,465100.0
+2697.0,2,1.5,Riverside,956200.0
+2371.0,2,1.5,West End,619100.0
+3263.0,4,2.5,Oakridge,1526400.0
+1013.0,2,1.0,Downtown,652100.0
+2120.0,4,1.5,Suburban Heights,679500.0
+1493.0,1,1.0,Downtown,793300.0
+2188.0,4,3.5,Oakridge,1145100.0
+2294.0,3,1.0,West End,690500.0
+975.0,1,1.5,West End,361100.0
+2265.0,4,2.5,Riverside,1013800.0
+3063.0,4,3.5,Oakridge,1464000.0
+2211.0,3,2.0,Suburban Heights,763500.0
+2175.0,2,2.0,Riverside,851300.0
+2487.0,5,3.0,Oakridge,1369600.0
+2380.0,3,2.5,Suburban Heights,726500.0
+1640.0,1,1.0,Downtown,796500.0
+1576.0,1,1.0,Downtown,790500.0
+2521.0,4,2.5,Suburban Heights,836100.0
+1304.0,2,2.0,Downtown,711400.0
+1490.0,2,2.0,Downtown,830200.0
+1606.0,2,2.5,Riverside,783400.0
+1491.0,3,1.5,West End,534700.0
+2052.0,4,3.0,Suburban Heights,792400.0
+1161.0,3,1.5,Riverside,669300.0
+2346.0,2,1.0,West End,651700.0
+1741.0,3,1.5,Downtown,952600.0
+3145.0,3,2.0,Suburban Heights,903100.0
+3234.0,4,3.0,Oakridge,1386300.0
+1934.0,1,2.0,Downtown,937900.0
+3195.0,3,2.0,Riverside,1120300.0
+3029.0,3,2.5,Suburban Heights,1007000.0
+2495.0,2,1.5,Suburban Heights,744900.0
+1731.0,1,2.0,Downtown,847700.0
+1704.0,1,1.5,Downtown,776100.0
+946.0,1,,West End,365300.0
+810.0,2,2.0,Downtown,586600.0
+2537.0,6,2.5,Oakridge,1351800.0
+2889.0,4,4.0,Oakridge,1395100.0
+1817.0,3,2.0,Suburban Heights,618900.0
+2696.0,4,2.0,Suburban Heights,845200.0
+2158.0,3,1.5,Suburban Heights,679300.0
+925.0,1,1.0,Downtown,590600.0
+2483.0,6,4.0,Oakridge,1424300.0
+2537.0,4,2.0,Riverside,899800.0
+1977.0,3,1.5,Suburban Heights,671700.0
+2860.0,3,1.5,Suburban Heights,800500.0
+1652.0,4,2.5,Suburban Heights,632000.0
+1758.0,2,2.0,Riverside,733100.0
+675.0,2,1.5,Downtown,565300.0
+3076.0,4,3.5,Oakridge,1423400.0
+2381.0,3,1.5,Suburban Heights,778200.0
+2905.0,4,3.0,Oakridge,1252100.0
+2248.0,3,2.5,Riverside,955200.0
+2026.0,3,2.0,Suburban Heights,700200.0
+,3,2.0,Riverside,790600.0
+2386.0,2,2.0,West End,668100.0
+2277.0,3,1.5,Suburban Heights,720400.0
+1490.0,2,1.5,West End,480100.0
+1671.0,3,2.0,Suburban Heights,613500.0
+1519.0,2,1.5,West End,483800.0
+2898.0,3,4.0,Oakridge,1421600.0
+2176.0,2,2.0,Suburban Heights,691100.0
+2161.0,3,2.5,Suburban Heights,752000.0
+796.0,1,1.0,Downtown,555700.0
+3050.0,4,2.5,Oakridge,1495200.0
+1376.0,2,1.5,West End,446000.0
+1927.0,3,2.0,Suburban Heights,676800.0
+2073.0,2,1.0,Downtown,925200.0
+3536.0,3,3.5,Oakridge,1543800.0
+550.0,1,1.5,Downtown,468400.0
+1672.0,2,1.0,Downtown,837300.0
+1664.0,3,1.5,West End,516000.0
+2357.0,4,2.5,Suburban Heights,740800.0
+2907.0,3,3.5,Oakridge,1248900.0
+1100.0,3,2.0,Suburban Heights,532500.0
+954.0,3,1.5,Downtown,665900.0
+2632.0,4,3.0,Oakridge,1310500.0
+2398.0,4,2.0,Riverside,963200.0
+1536.0,3,2.5,Suburban Heights,590000.0
+1620.0,2,2.0,West End,521300.0
+2180.0,3,2.0,Suburban Heights,777800.0
+2126.0,3,2.5,Suburban Heights,705400.0
+1730.0,4,2.0,Riverside,851300.0
+1357.0,3,1.5,West End,509100.0
+1061.0,3,1.5,Riverside,590200.0
+1285.0,2,2.0,West End,419400.0
+1540.0,3,1.5,Riverside,741800.0
+1199.0,2,1.0,West End,423000.0
+1741.0,1,1.0,Downtown,809200.0
+2114.0,2,2.0,Riverside,942400.0
+1319.0,3,2.0,Suburban Heights,513000.0
+1878.0,4,2.5,Suburban Heights,644400.0
+2498.0,3,2.0,Suburban Heights,748500.0
+1689.0,1,2.0,West End,566000.0
+1693.0,3,1.5,West End,508800.0
+2181.0,4,2.5,Oakridge,1188700.0
+2418.0,3,1.5,Riverside,923300.0
+2250.0,2,1.5,Riverside,897400.0
+2691.0,4,3.5,Oakridge,1313200.0
+1881.0,2,1.0,Downtown,861800.0
+975.0,1,1.5,Downtown,626300.0
+2790.0,3,2.5,Riverside,967600.0
+2235.0,3,2.0,Suburban Heights,796900.0
+2208.0,2,1.5,West End,602300.0
+2153.0,4,1.5,Suburban Heights,731300.0
+1160.0,1,2.0,West End,388100.0
+2174.0,4,2.0,Suburban Heights,726800.0
+2555.0,3,1.5,Riverside,916900.0
+1855.0,3,1.0,Downtown,985800.0
+2728.0,3,2.0,Suburban Heights,888200.0
+2395.0,3,2.0,Riverside,967800.0
+898.0,1,1.0,West End,357500.0
+1813.0,2,2.5,Riverside,801300.0
+2200.0,2,1.0,Downtown,1007900.0
+3407.0,4,3.0,Oakridge,1498600.0
+550.0,1,1.5,Downtown,475200.0
+550.0,2,1.0,Downtown,466600.0
+2513.0,2,2.5,Suburban Heights,751500.0
+2169.0,3,2.5,Riverside,904900.0
+2287.0,4,2.0,Riverside,999400.0
+750.0,2,1.5,West End,356400.0
+2409.0,4,2.0,Riverside,1012200.0
+2208.0,3,2.5,Riverside,867800.0
+1539.0,1,1.5,Downtown,772300.0
+3396.0,4,3.5,Oakridge,1482400.0
+1861.0,4,2.0,Suburban Heights,666500.0
+2001.0,2,1.5,West End,572500.0
+1215.0,2,1.5,Downtown,718900.0
+1405.0,3,2.5,Suburban Heights,558600.0
+2351.0,3,2.0,Suburban Heights,702800.0
+2103.0,1,1.0,Downtown,913100.0
+1945.0,3,2.0,Suburban Heights,647800.0
+2142.0,2,2.0,West End,603800.0
+1100.0,4,2.0,Suburban Heights,548100.0
+1768.0,4,2.5,Oakridge,1082900.0
+1626.0,2,1.5,West End,528100.0
+2437.0,6,4.0,Oakridge,1332800.0
+1279.0,2,1.5,West End,406200.0
+3723.0,3,3.0,Oakridge,1488800.0
+2199.0,4,1.5,Suburban Heights,733600.0
+3557.0,3,2.5,Oakridge,1494800.0
+2736.0,4,3.0,Oakridge,1318200.0
+1178.0,1,2.0,West End,419900.0
+1217.0,3,1.5,Downtown,766500.0
+1045.0,1,1.5,Downtown,630600.0
+4048.0,4,3.0,Oakridge,1686500.0
+2328.0,3,,Riverside,896300.0
+1559.0,2,1.5,Riverside,707000.0
+1970.0,1,1.0,West End,526500.0
+2038.0,6,4.0,Oakridge,1247100.0
+1530.0,3,1.5,Suburban Heights,569800.0
+1834.0,1,1.5,Downtown,843700.0
+1761.0,3,2.0,Suburban Heights,631500.0
+1666.0,1,1.0,West End,481600.0
+1957.0,3,2.0,Riverside,842700.0
+2205.0,3,1.5,Suburban Heights,726700.0
+3382.0,3,3.0,Oakridge,1510100.0
+1727.0,2,1.5,West End,527900.0
+,3,2.5,Suburban Heights,727600.0
+1469.0,1,2.0,Downtown,785400.0
+2908.0,4,3.0,Oakridge,1344300.0
+1536.0,2,1.5,Downtown,831200.0
+1268.0,2,1.0,Downtown,745300.0
+593.0,3,1.5,Downtown,518900.0
+2201.0,4,2.5,Suburban Heights,754400.0
+2223.0,3,2.5,Suburban Heights,710400.0
+2512.0,6,3.0,Oakridge,1188100.0
+2173.0,3,1.5,Suburban Heights,707400.0
+1243.0,2,1.5,West End,420800.0
+2659.0,4,2.0,Riverside,1041800.0
+1984.0,5,2.0,Suburban Heights,716700.0
+4169.0,4,3.5,Oakridge,1685400.0
+1349.0,1,1.5,West End,503600.0
+2254.0,4,3.0,Oakridge,1180900.0
+2966.0,4,3.0,Oakridge,1412300.0
+1797.0,2,1.5,West End,565400.0
+2236.0,4,1.5,Suburban Heights,728700.0
+2239.0,3,2.5,Riverside,885300.0
+1374.0,4,2.5,Suburban Heights,569200.0
+,3,2.5,Suburban Heights,719800.0
+2570.0,5,3.0,Oakridge,1257900.0
+2430.0,5,3.0,Oakridge,1294600.0
+3455.0,5,3.5,Oakridge,1595200.0
+1805.0,3,2.0,Downtown,930900.0
+1815.0,3,2.0,West End,533700.0
+2575.0,4,3.5,Oakridge,1277100.0
+1759.0,3,2.5,Suburban Heights,643500.0
+2567.0,3,2.5,Riverside,1051600.0
+2680.0,2,3.0,Riverside,1020600.0
+2727.0,4,2.0,Suburban Heights,842100.0
+2913.0,3,2.5,Suburban Heights,905000.0
+1085.0,3,1.0,West End,393100.0
+2320.0,2,1.5,Suburban Heights,724200.0
+2392.0,3,2.0,Riverside,891300.0
+750.0,2,1.5,West End,367900.0
+2710.0,3,1.5,Riverside,986100.0
+550.0,2,1.0,Downtown,471500.0
+3188.0,3,1.5,Suburban Heights,859300.0
+1759.0,1,2.0,Downtown,840500.0
+1817.0,4,2.0,Suburban Heights,682800.0
+1246.0,1,1.5,West End,427300.0
+2931.0,4,1.5,Suburban Heights,895800.0
+2399.0,5,2.5,Suburban Heights,854100.0
+1886.0,2,1.5,Downtown,931700.0
+1510.0,3,1.0,West End,475800.0
+885.0,3,1.0,Downtown,612400.0
+1833.0,3,1.5,Downtown,852800.0
+3052.0,5,3.0,Oakridge,1392300.0
+972.0,1,1.5,Downtown,663900.0
+1793.0,4,2.0,Suburban Heights,675200.0
+2399.0,3,1.5,Suburban Heights,782900.0
+2264.0,3,3.5,Oakridge,1190500.0
+1859.0,2,1.0,Downtown,904800.0
+550.0,2,1.0,Downtown,455300.0
+3760.0,4,2.5,Oakridge,1542700.0
+1483.0,2,2.0,Downtown,807300.0
+2198.0,3,2.0,Suburban Heights,718700.0
+1157.0,3,1.0,Downtown,704500.0
+4054.0,4,3.5,Oakridge,1858200.0
+2570.0,5,3.0,Oakridge,1403800.0
+2575.0,2,2.0,Suburban Heights,750500.0
+1384.0,1,1.5,Downtown,729900.0
+1237.0,2,1.5,Downtown,696800.0
+1349.0,2,1.5,West End,485700.0
+787.0,1,1.0,,525300.0
+3002.0,3,2.0,Suburban Heights,852200.0
+1786.0,3,2.5,Suburban Heights,667100.0
+3605.0,4,3.5,Oakridge,1557300.0
+2566.0,4,2.5,Suburban Heights,837100.0
+2736.0,3,1.5,Riverside,972600.0
+2378.0,3,2.0,Riverside,929800.0
+3456.0,6,3.5,Oakridge,1641800.0
+3475.0,4,2.5,Oakridge,1566800.0
+2180.0,4,4.0,Oakridge,1239100.0
+1887.0,4,1.5,Suburban Heights,698200.0
+3344.0,3,1.5,Suburban Heights,884600.0
+3511.0,4,2.5,Oakridge,1473000.0
+2854.0,3,2.5,Oakridge,1298900.0
+1052.0,2,1.0,West End,418000.0
+1032.0,3,2.0,Downtown,735600.0
+2280.0,3,2.5,Suburban Heights,810100.0
+1534.0,3,2.0,Riverside,687400.0
+1924.0,2,2.0,Downtown,979500.0
+1277.0,2,1.5,Downtown,699200.0
+1569.0,2,1.5,Downtown,838300.0
+2066.0,3,2.0,West End,633100.0
+1176.0,1,1.5,Downtown,647100.0
+1636.0,1,1.5,Downtown,845800.0
+1110.0,2,1.0,Downtown,684300.0
+1708.0,2,1.0,,813800.0
+1839.0,3,2.0,Suburban Heights,644500.0
+2573.0,5,3.5,Oakridge,1284800.0
+2495.0,3,1.5,Suburban Heights,747600.0
+1100.0,3,2.0,Suburban Heights,508200.0
+1580.0,2,2.0,Riverside,740900.0
+1542.0,2,1.0,Downtown,742900.0
+1371.0,2,1.0,West End,456300.0
+2913.0,3,2.0,Suburban Heights,886200.0
+1638.0,3,2.0,Downtown,882800.0
+1325.0,3,1.5,Riverside,676900.0
+1633.0,2,1.5,West End,512000.0
+3000.0,4,3.5,Oakridge,1353200.0
+750.0,2,1.5,West End,356100.0
+2385.0,3,2.0,Suburban Heights,755000.0
+3035.0,4,2.0,Suburban Heights,919600.0
+1198.0,2,1.0,West End,434300.0
+2520.0,5,4.0,Oakridge,1340400.0
+2372.0,3,2.5,Riverside,1037900.0
+4394.0,5,4.0,Oakridge,1785800.0
+2380.0,2,1.5,Riverside,906100.0
+2298.0,3,2.5,Suburban Heights,701000.0
+1630.0,2,2.0,Downtown,877200.0
+1963.0,4,1.5,Suburban Heights,694600.0
+3194.0,6,2.5,Oakridge,1447500.0
+1421.0,1,1.0,Downtown,728500.0
+903.0,3,1.5,Downtown,663400.0
+3136.0,4,3.0,Oakridge,1416000.0
+1028.0,3,1.0,Downtown,709000.0
+1954.0,2,2.0,Downtown,961500.0
+1406.0,3,2.5,Riverside,743100.0
+2358.0,2,1.5,Riverside,878100.0
+2898.0,4,1.5,Riverside,1082300.0
+2838.0,5,2.5,Oakridge,1509300.0
+1735.0,2,1.0,West End,509000.0
+2814.0,4,2.5,Suburban Heights,915300.0
+550.0,2,1.0,Downtown,437900.0
+2034.0,2,2.0,Downtown,990400.0
+1100.0,3,2.0,Suburban Heights,514800.0
+1613.0,2,1.5,Downtown,864800.0
+3075.0,5,2.0,Suburban Heights,871800.0
+1269.0,3,2.0,West End,484900.0
+706.0,2,2.0,Downtown,552100.0
+1272.0,1,2.0,Downtown,722400.0
+1726.0,3,1.5,West End,541200.0
+2343.0,3,2.5,Suburban Heights,773800.0
+1266.0,2,1.5,Downtown,709500.0
+1824.0,3,1.5,West End,556900.0
+1421.0,3,1.5,West End,498000.0
+2625.0,3,2.0,Suburban Heights,790100.0
+1762.0,4,2.5,Suburban Heights,718000.0
+3723.0,3,3.5,Oakridge,1711300.0
+1192.0,2,1.5,Downtown,724700.0
+3301.0,4,2.0,Suburban Heights,931200.0
+1792.0,4,3.0,Oakridge,1080000.0
+2210.0,3,2.0,Suburban Heights,755900.0
+2337.0,4,2.5,Riverside,1023300.0
+550.0,2,2.0,Downtown,481000.0
+2079.0,3,1.5,Suburban Heights,715300.0
+3183.0,4,3.0,Oakridge,1442500.0
+3081.0,1,1.5,West End,697400.0
+2574.0,4,3.5,Oakridge,1165400.0
+2216.0,3,2.0,Suburban Heights,713200.0
+,3,1.5,Suburban Heights,483600.0
+3581.0,3,3.5,Oakridge,1583100.0
+2527.0,3,2.5,Suburban Heights,733400.0
+1274.0,2,2.0,Riverside,673400.0
+2362.0,2,3.0,Suburban Heights,728900.0
+2231.0,4,1.5,Riverside,940900.0
+750.0,3,1.5,West End,362000.0
+3164.0,2,1.5,Suburban Heights,853800.0
+3026.0,4,2.0,Suburban Heights,953000.0
+1613.0,1,2.0,Downtown,926200.0
+2275.0,3,2.0,Riverside,982600.0
+1900.0,4,2.5,Suburban Heights,661400.0
+1941.0,2,2.5,Suburban Heights,678500.0
+940.0,1,2.0,Downtown,646900.0
+1663.0,1,2.5,West End,498900.0
+3135.0,4,3.0,Oakridge,1441100.0
+1812.0,3,2.0,Suburban Heights,604900.0
+1665.0,2,1.0,Downtown,823700.0
+1217.0,2,1.0,West End,407700.0
+2201.0,2,1.0,Downtown,1049600.0
+1697.0,1,1.5,Downtown,830400.0
+1847.0,1,1.5,West End,501600.0
+1716.0,1,1.5,West End,521500.0
+1784.0,1,2.0,Downtown,864500.0
+1645.0,4,2.0,Suburban Heights,611700.0
+2004.0,4,3.0,Riverside,889000.0
+1634.0,2,1.0,West End,495900.0
+2893.0,4,3.5,Oakridge,1425600.0
+2681.0,3,1.5,Suburban Heights,799500.0
+2655.0,3,1.5,Riverside,937500.0
+1637.0,4,2.0,,800200.0
+2725.0,4,2.5,Riverside,1136600.0
+1682.0,3,2.0,Suburban Heights,633400.0
+1077.0,2,1.5,Downtown,706800.0
+1857.0,3,2.0,West End,646500.0
+1730.0,2,1.0,West End,545300.0
+1824.0,4,2.5,Riverside,906600.0
+1859.0,3,1.0,Downtown,922500.0
+1702.0,3,1.0,Downtown,952400.0
+2593.0,2,2.0,Riverside,1053500.0
+2249.0,3,2.0,Downtown,1074200.0
+1909.0,2,1.5,West End,574200.0
+2931.0,5,4.5,Oakridge,1424300.0
+2011.0,3,1.5,Riverside,839400.0
+1674.0,2,1.5,West End,552300.0
+3875.0,3,,Oakridge,1574000.0
+3217.0,5,4.0,Oakridge,1530100.0
+2426.0,3,2.0,Suburban Heights,823800.0
+3555.0,3,2.0,Suburban Heights,942800.0
+2148.0,4,,Suburban Heights,724500.0
+2464.0,4,2.0,Suburban Heights,793900.0
+937.0,1,2.0,West End,393800.0
+2323.0,3,1.5,Suburban Heights,682100.0
+1648.0,2,1.0,Downtown,764200.0
+3406.0,3,2.5,Oakridge,1663500.0
+1600.0,6,3.0,Oakridge,1028700.0
+1542.0,2,1.0,Downtown,765700.0
+1701.0,3,2.0,Downtown,892700.0
+1499.0,5,1.5,Suburban Heights,667000.0
+3633.0,3,3.0,Oakridge,1545600.0
+2337.0,2,2.0,West End,644800.0
+2870.0,5,2.5,Oakridge,1339300.0
+1096.0,2,1.0,Downtown,633600.0
+2924.0,2,1.5,Riverside,1074800.0
+750.0,2,1.5,West End,346300.0
+3009.0,4,2.5,Oakridge,1429400.0
+1459.0,1,1.5,Downtown,713900.0
+1451.0,1,1.5,Downtown,714300.0
+2313.0,4,2.0,Suburban Heights,785800.0
+1100.0,4,2.5,Suburban Heights,507800.0
+2787.0,4,2.5,Oakridge,1351900.0
+1694.0,1,2.0,Downtown,819200.0
+2713.0,3,2.0,Suburban Heights,814900.0
+1607.0,2,1.5,West End,478400.0
+2507.0,5,2.0,Suburban Heights,828100.0
+1878.0,3,3.0,Suburban Heights,696900.0
+2079.0,2,1.5,Downtown,974300.0
+2519.0,5,3.5,Oakridge,1257800.0
+3354.0,5,3.0,Oakridge,1427300.0
+1360.0,4,1.5,Riverside,746800.0
+1410.0,1,1.5,West End,439800.0
+1470.0,2,2.5,West End,503300.0
+1940.0,1,1.5,West End,544400.0
+2146.0,1,2.0,West End,602400.0
+1875.0,2,1.0,West End,561200.0
+1674.0,1,1.5,Downtown,792400.0
+751.0,2,1.0,Downtown,547100.0
+1600.0,4,3.0,Oakridge,1090100.0
+1475.0,4,2.0,Suburban Heights,611500.0
+854.0,2,1.0,Downtown,598700.0
+2491.0,4,2.0,Riverside,1015800.0
+1555.0,2,2.5,Suburban Heights,599600.0
+2709.0,4,3.0,Suburban Heights,909300.0
+1330.0,3,1.0,Downtown,736600.0
+3945.0,5,4.0,Oakridge,1704400.0
+2451.0,2,1.0,Downtown,1075800.0
+1554.0,1,1.5,West End,490100.0
+2926.0,2,2.5,Suburban Heights,836000.0
+1860.0,3,1.5,Riverside,846900.0
+2741.0,3,3.5,Oakridge,1353600.0
+3195.0,5,2.5,Oakridge,1440700.0
+2129.0,3,1.5,Suburban Heights,647300.0
+2505.0,3,3.0,Riverside,919900.0
+2025.0,3,2.5,Riverside,898100.0
+2233.0,1,2.0,Downtown,1008600.0
+1418.0,2,2.5,West End,525100.0
+1061.0,2,1.0,Downtown,638700.0
+2444.0,2,1.5,West End,648300.0
+885.0,3,1.0,Downtown,595500.0
+2944.0,4,3.5,Oakridge,1428500.0
+2468.0,2,2.0,Riverside,1037300.0
+1947.0,2,1.0,Downtown,877800.0
+3056.0,3,2.0,Suburban Heights,901400.0
+1816.0,3,2.0,Suburban Heights,614600.0
+2922.0,4,3.0,Oakridge,1344700.0
+2655.0,4,2.5,Riverside,1064400.0
+2421.0,2,1.5,West End,680100.0
+1053.0,2,1.5,West End,404500.0
+2627.0,5,3.0,Oakridge,1348200.0
+1826.0,3,2.0,Suburban Heights,623800.0
+2987.0,4,2.5,Oakridge,1266100.0
+3746.0,4,2.5,Oakridge,1534900.0
+1069.0,3,1.5,Downtown,695900.0
+1993.0,2,2.0,West End,571100.0
+2057.0,3,2.0,West End,609400.0
+2111.0,2,2.5,Riverside,866900.0
+2185.0,5,2.0,Suburban Heights,757700.0
+2205.0,3,1.5,Suburban Heights,765600.0
+2122.0,4,1.5,Suburban Heights,671400.0
+1682.0,3,2.0,Suburban Heights,619000.0
+1958.0,3,2.5,Suburban Heights,726600.0
+966.0,2,1.0,Downtown,620800.0
+1230.0,2,2.0,Downtown,714600.0
+1749.0,2,1.0,West End,523100.0
+1643.0,3,2.0,Suburban Heights,625500.0
+1505.0,1,1.0,West End,437100.0
+1543.0,2,1.0,Downtown,791500.0
+2387.0,3,2.5,Suburban Heights,879100.0
+1295.0,2,1.0,Downtown,772600.0
+3485.0,4,4.0,Oakridge,1747000.0
+1630.0,1,1.0,Downtown,755400.0
+1905.0,2,2.0,Downtown,912900.0
+1404.0,2,1.0,West End,449100.0
+2213.0,4,3.5,Oakridge,1195600.0
+2690.0,3,2.5,Suburban Heights,803800.0
+2081.0,3,2.5,Suburban Heights,779000.0
+1319.0,3,2.0,Suburban Heights,513500.0
+2483.0,3,1.5,Suburban Heights,772400.0
+1598.0,1,1.0,Downtown,789000.0
+1410.0,3,1.5,West End,460600.0
+1961.0,3,2.0,Riverside,863400.0
+3510.0,3,2.0,Riverside,1280500.0
+2320.0,4,1.5,Suburban Heights,743900.0
+550.0,2,1.5,Downtown,507000.0
+1037.0,2,2.0,West End,412100.0
+2394.0,5,,Oakridge,1175700.0
+1885.0,2,1.0,Downtown,934300.0
+2905.0,3,3.0,Oakridge,1457700.0
+1781.0,2,2.0,Riverside,811900.0
+2567.0,2,2.0,Suburban Heights,807900.0
+3116.0,2,2.0,Riverside,1077700.0
+1909.0,4,2.5,Riverside,844900.0
+2075.0,1,1.0,Downtown,924800.0
+1707.0,3,2.0,West End,510900.0
+2542.0,3,2.0,Suburban Heights,773900.0
+1753.0,3,2.5,Suburban Heights,662700.0
+2284.0,1,2.0,Downtown,1020500.0
+1840.0,2,2.0,West End,570900.0
+2894.0,4,3.0,Oakridge,1431800.0
+780.0,3,1.5,Downtown,626200.0
+1721.0,3,2.0,Suburban Heights,622500.0
+1727.0,2,1.5,Downtown,830500.0
+1058.0,2,1.5,Downtown,663300.0
+1699.0,5,2.5,Suburban Heights,650200.0
+3716.0,3,3.0,Oakridge,1553800.0
+1634.0,4,2.0,West End,565300.0
+2871.0,4,3.0,Oakridge,1284700.0
+2783.0,3,1.5,Riverside,1043100.0
+2099.0,3,2.0,Suburban Heights,707700.0
+2650.0,3,2.5,Suburban Heights,875400.0
+2504.0,2,2.5,Suburban Heights,769200.0
+2217.0,3,3.0,Suburban Heights,752000.0
+1446.0,3,1.0,West End,493200.0
+2707.0,4,2.5,Oakridge,1249400.0
+1408.0,3,1.5,Downtown,830500.0
+2844.0,4,2.0,Suburban Heights,898200.0
+2143.0,3,2.5,Riverside,918300.0
+2517.0,2,2.0,Downtown,1158300.0
+2282.0,4,2.0,Suburban Heights,729200.0
+1629.0,1,1.0,West End,477800.0
+1982.0,3,2.0,Riverside,924100.0
+1948.0,2,1.5,West End,568900.0
+1816.0,5,2.5,Suburban Heights,690800.0
+1653.0,4,1.5,Suburban Heights,567000.0
+2876.0,5,3.5,Oakridge,1546100.0
+2213.0,3,1.5,West End,657000.0
+2998.0,4,3.5,Oakridge,1416200.0
+1744.0,4,1.5,Riverside,785400.0
+2407.0,4,2.0,Suburban Heights,732000.0
+1626.0,3,2.5,,629300.0
+2686.0,3,2.0,Riverside,1054700.0
+2305.0,4,2.0,Suburban Heights,776400.0
+2222.0,1,1.5,West End,592700.0
+2776.0,3,3.0,Suburban Heights,916100.0
+1614.0,3,1.5,Suburban Heights,584300.0
+1965.0,3,2.5,Oakridge,1100000.0
+1983.0,3,2.0,Suburban Heights,730300.0
+1100.0,4,2.0,Suburban Heights,502700.0
+1234.0,2,1.5,Downtown,719400.0
+1633.0,2,1.0,Downtown,821300.0
+2196.0,3,2.5,Suburban Heights,719400.0
+2831.0,4,1.5,Suburban Heights,813200.0
+2014.0,3,2.5,Suburban Heights,738200.0
+2019.0,2,1.0,Downtown,947900.0
+3251.0,3,3.5,Oakridge,1482300.0
+550.0,2,1.0,Downtown,490000.0
+2022.0,4,2.0,Riverside,904800.0
+1359.0,3,1.5,West End,518800.0
+3372.0,4,4.0,Oakridge,1497900.0
+2082.0,3,2.5,Suburban Heights,752600.0
+1748.0,2,1.0,Downtown,872900.0
+3332.0,6,3.0,Oakridge,1538900.0
+1631.0,2,1.0,Downtown,786600.0
+2863.0,4,3.5,Oakridge,1407700.0
+2241.0,3,2.0,Suburban Heights,709600.0
+1587.0,3,1.5,West End,579300.0
+1527.0,2,1.5,Downtown,829600.0
+2075.0,3,2.0,Suburban Heights,707200.0
+1903.0,3,2.0,Riverside,841700.0
+1568.0,3,1.5,West End,536800.0
+2551.0,4,1.5,Suburban Heights,777100.0
+2274.0,3,3.0,Oakridge,1115700.0
+2248.0,3,1.5,Suburban Heights,742800.0
+2615.0,5,3.0,Oakridge,1337300.0
+2269.0,2,1.0,West End,646100.0
+1814.0,5,3.0,Oakridge,955400.0
+2151.0,5,2.0,Suburban Heights,741300.0
+1715.0,2,2.0,Downtown,882000.0
+2457.0,5,2.5,Suburban Heights,903500.0
+1361.0,1,1.0,West End,427200.0
+2474.0,5,3.0,Suburban Heights,788600.0
+1508.0,3,1.5,Suburban Heights,527700.0
+2019.0,2,1.0,West End,618200.0
+1538.0,3,1.0,West End,517000.0
+2601.0,4,3.0,Oakridge,1251500.0
+2037.0,3,2.0,Suburban Heights,743100.0
+1537.0,3,2.0,Suburban Heights,591800.0
+1955.0,3,2.0,Suburban Heights,718600.0
+3614.0,4,3.0,Oakridge,1507000.0
+2305.0,6,3.0,Oakridge,1269500.0
+790.0,2,1.5,West End,379400.0
+1387.0,2,1.0,West End,409900.0
+2711.0,2,2.0,Riverside,928300.0
+2063.0,2,1.5,West End,554000.0
+2428.0,4,2.5,Riverside,1052300.0
+1773.0,3,2.5,Riverside,878200.0
+1672.0,3,2.5,Riverside,794800.0
+2463.0,4,2.0,Suburban Heights,817800.0
+2192.0,4,2.0,Suburban Heights,736700.0
+2421.0,3,3.0,Oakridge,1224200.0
+1973.0,5,2.0,Suburban Heights,770900.0
+3430.0,4,3.5,Oakridge,1625700.0
+,4,2.5,Oakridge,1279800.0
+3084.0,3,2.0,Suburban Heights,976700.0
+2215.0,4,2.5,Suburban Heights,796900.0
+1003.0,3,1.5,Downtown,715400.0
+2735.0,3,2.5,Riverside,1127300.0
+1485.0,2,1.5,West End,472200.0
+695.0,1,1.5,Downtown,511200.0
+1510.0,2,1.5,Downtown,787500.0
+4053.0,4,3.5,Oakridge,1584600.0
+2936.0,4,2.0,Riverside,1106500.0
+2436.0,2,2.5,Riverside,1003700.0
+1008.0,3,1.0,Downtown,663000.0
+1846.0,3,2.0,Riverside,834200.0
+1370.0,1,1.0,Downtown,722700.0
+2530.0,4,3.5,Oakridge,1413400.0
+2127.0,2,2.0,West End,558200.0
+550.0,3,1.5,Downtown,517900.0
+1443.0,2,2.0,Downtown,816000.0
+2207.0,3,1.5,Suburban Heights,752500.0
+2148.0,4,2.0,Suburban Heights,757400.0
+1623.0,1,1.0,West End,475700.0
+750.0,4,1.5,West End,411600.0
+2199.0,1,1.5,Downtown,982400.0
+1355.0,1,1.0,Downtown,785600.0
+2363.0,3,1.5,Riverside,998100.0
+2946.0,5,3.5,Oakridge,1387300.0
+1716.0,4,2.5,West End,583100.0
+2779.0,3,2.0,Suburban Heights,788500.0
+1692.0,2,1.5,Downtown,863900.0
+2167.0,4,1.5,Riverside,944600.0
+1180.0,1,1.0,Downtown,653800.0
+1685.0,3,2.5,Suburban Heights,604500.0
+2013.0,3,2.5,Suburban Heights,695600.0
+1775.0,3,2.0,Suburban Heights,603500.0
+1683.0,3,3.0,Suburban Heights,687800.0
+1833.0,4,2.5,Suburban Heights,709000.0
+1188.0,2,2.0,West End,490400.0
+1934.0,1,1.5,West End,601900.0
+1385.0,4,2.5,Suburban Heights,586900.0
+1200.0,2,1.0,Downtown,645000.0
+1990.0,3,2.0,Riverside,821700.0
+1043.0,2,1.0,West End,399400.0
+2059.0,4,2.5,Oakridge,1116000.0
+2921.0,4,2.0,Suburban Heights,861700.0
+2104.0,3,2.0,Suburban Heights,638300.0
+1098.0,2,1.0,Downtown,691600.0
+3178.0,3,3.0,Suburban Heights,972100.0
+3926.0,5,3.0,Oakridge,1732600.0
+1987.0,2,2.0,Riverside,856200.0
+1704.0,2,1.5,Riverside,807000.0
+1979.0,3,2.5,Riverside,884700.0
+2922.0,4,2.5,Suburban Heights,941700.0
+3026.0,5,3.5,Oakridge,1428400.0
+2894.0,4,2.0,Riverside,1129000.0
+3183.0,4,3.0,Riverside,1173600.0
+1976.0,3,2.0,Suburban Heights,689700.0
+1149.0,3,1.5,West End,419700.0
+1112.0,2,1.0,Downtown,662000.0
+1963.0,3,1.5,West End,562700.0
+1384.0,1,2.0,Downtown,727600.0
+1026.0,1,1.5,Downtown,645900.0
+1397.0,2,2.0,Suburban Heights,538200.0
+695.0,1,1.5,Downtown,510800.0
+1418.0,2,1.5,Downtown,793400.0
+987.0,1,2.0,Downtown,665300.0
+1900.0,3,2.0,Suburban Heights,663700.0
+2920.0,3,2.0,Riverside,1070100.0
+1578.0,1,1.5,Downtown,805300.0
+1997.0,4,2.0,Suburban Heights,721100.0
+1649.0,3,2.5,Riverside,798300.0
+1868.0,1,1.0,Downtown,860800.0
+1413.0,2,1.0,Downtown,766700.0
+2099.0,1,2.5,West End,614900.0
+3181.0,2,2.0,Riverside,1250900.0
+1913.0,3,2.0,Suburban Heights,696800.0
+1721.0,3,2.0,Riverside,851600.0
+1547.0,2,2.0,Downtown,832000.0
+3146.0,5,3.5,Oakridge,1456600.0
+2127.0,4,2.0,Riverside,942800.0
+2700.0,4,4.0,Oakridge,1420200.0
+2672.0,4,2.5,Riverside,1106800.0
+2156.0,3,1.5,Suburban Heights,724800.0
+2077.0,4,,Riverside,940400.0
+1927.0,2,2.0,Suburban Heights,607700.0
+2873.0,4,3.5,Oakridge,1451100.0
+752.0,2,1.0,Downtown,541000.0
+1288.0,3,2.0,Downtown,797600.0
+2409.0,3,1.5,Riverside,993700.0
+1434.0,3,1.0,Downtown,795700.0
+835.0,2,1.0,Downtown,587800.0
+1425.0,2,1.5,Downtown,776400.0
+1582.0,2,1.5,Downtown,800100.0
+1804.0,2,2.0,Riverside,782200.0
+2646.0,4,3.5,Oakridge,1265400.0
+1399.0,3,2.5,West End,479100.0
+1729.0,1,1.0,Downtown,825400.0
+1980.0,4,2.0,Suburban Heights,730800.0
+2417.0,3,2.0,Suburban Heights,804900.0
+2981.0,4,3.5,Oakridge,1418000.0
+1763.0,2,1.5,West End,534200.0
+1750.0,2,1.0,West End,523400.0
+1998.0,2,1.5,West End,543100.0
+2156.0,1,1.0,Downtown,954900.0
+2607.0,6,3.0,Oakridge,1366700.0
+2146.0,4,1.5,Suburban Heights,712400.0
+3103.0,4,3.5,Oakridge,1452000.0
+2432.0,2,1.5,Riverside,885900.0
+1914.0,4,2.5,Suburban Heights,733200.0
+1715.0,3,2.5,Suburban Heights,624100.0
+1997.0,2,3.0,Riverside,900200.0
+2506.0,3,2.0,Riverside,960300.0
+983.0,1,2.0,Downtown,610000.0
+1368.0,1,1.0,Downtown,723500.0
+1992.0,3,2.5,Suburban Heights,645600.0
+2014.0,3,2.0,Suburban Heights,704800.0
+2861.0,4,3.0,Oakridge,1303100.0
+2257.0,5,2.0,Suburban Heights,743400.0
+2605.0,4,2.5,Riverside,996200.0
+1727.0,3,2.5,Riverside,873500.0
+2221.0,3,1.5,Suburban Heights,746200.0
+2335.0,4,3.0,Oakridge,1143000.0
+3180.0,6,2.5,Oakridge,1540800.0
+1949.0,4,2.0,Suburban Heights,664000.0
+2839.0,3,3.0,Oakridge,1414100.0
+1840.0,3,2.5,Suburban Heights,667000.0
+2792.0,4,1.5,Suburban Heights,865400.0
+1540.0,2,1.0,Downtown,776000.0
+1627.0,1,,Downtown,821100.0
+1652.0,3,1.5,Downtown,836200.0
+1385.0,1,1.5,West End,435200.0
+2776.0,2,2.5,Suburban Heights,871800.0
+1369.0,1,1.0,Downtown,705300.0
+2343.0,1,2.0,West End,684400.0
+1775.0,3,2.0,Suburban Heights,613400.0
+2335.0,3,2.5,Suburban Heights,763000.0
+1682.0,3,1.0,West End,515600.0
+1297.0,1,1.0,Downtown,705100.0
+550.0,3,2.0,Downtown,523200.0
+2060.0,4,2.0,Suburban Heights,716300.0
+1430.0,1,1.5,Downtown,713700.0
+2115.0,3,2.0,Suburban Heights,623300.0
+842.0,3,1.5,Downtown,653700.0
+1974.0,2,1.0,Downtown,893100.0
+1866.0,2,2.0,Downtown,921700.0
+3186.0,2,1.5,Suburban Heights,944300.0
+890.0,1,1.0,Downtown,533400.0
+1650.0,2,1.0,Downtown,853900.0
+814.0,1,1.5,West End,355900.0
+3272.0,6,3.0,Oakridge,1380400.0
+2934.0,4,4.0,Oakridge,1421000.0
+1188.0,3,1.5,Downtown,709100.0
+2656.0,3,2.5,Oakridge,1241400.0
+2947.0,4,3.0,Oakridge,1458800.0
+2524.0,4,2.0,Suburban Heights,756100.0
+956.0,3,2.0,Downtown,638700.0
+808.0,2,1.0,West End,352200.0
+1293.0,2,2.0,West End,485500.0
+1277.0,3,1.0,Downtown,692100.0
+1309.0,3,2.0,Downtown,757700.0
+1522.0,2,1.0,Downtown,705000.0
+2486.0,4,2.0,Suburban Heights,799400.0
+1433.0,3,1.5,Downtown,773000.0
+2912.0,3,2.0,West End,751900.0
+1000.0,4,2.0,Riverside,621400.0
+1841.0,3,3.0,Riverside,805000.0
+2086.0,3,2.5,Suburban Heights,672200.0
+1746.0,1,1.5,West End,520000.0
+1443.0,2,1.5,Downtown,772600.0
+2117.0,4,2.0,Suburban Heights,770900.0
+3767.0,5,3.0,Oakridge,1473800.0
+2135.0,1,1.5,West End,616300.0
+1769.0,4,1.5,Suburban Heights,612700.0
+2040.0,3,2.5,Riverside,937400.0
+1860.0,1,1.5,Downtown,848300.0
+1994.0,2,1.0,West End,575500.0
+2935.0,4,2.0,Suburban Heights,884200.0
+2375.0,3,2.0,Suburban Heights,728100.0
+1704.0,2,1.0,West End,534200.0
+2989.0,5,3.5,Oakridge,1461400.0
+2521.0,4,4.5,Oakridge,1353400.0
+1689.0,3,2.0,Suburban Heights,605200.0
+1782.0,2,1.5,Downtown,771700.0
+2665.0,5,3.0,Oakridge,1383500.0
+1255.0,1,2.0,Downtown,710100.0
+782.0,3,1.5,Downtown,638400.0
+1528.0,1,2.0,,447800.0
+2668.0,3,2.0,Suburban Heights,810300.0
+3038.0,4,2.5,Oakridge,1330900.0
+1826.0,4,1.5,Suburban Heights,620200.0
+2350.0,3,2.0,Suburban Heights,745900.0
+2596.0,3,1.5,Suburban Heights,731100.0
+750.0,3,1.5,West End,380000.0
+1414.0,2,1.0,West End,471200.0
+3257.0,5,3.5,Oakridge,1467500.0
+2001.0,5,2.5,Oakridge,1143200.0
+3758.0,3,1.5,Suburban Heights,1002000.0
+1713.0,3,2.0,Suburban Heights,609400.0
+1503.0,3,2.5,Suburban Heights,593100.0
+2579.0,3,1.5,Suburban Heights,804900.0
+2267.0,3,2.5,Suburban Heights,753500.0
+2768.0,4,3.0,Oakridge,1348300.0
+3148.0,5,4.0,Oakridge,1477600.0
+2605.0,5,3.0,Oakridge,1325000.0
+1920.0,1,1.0,Downtown,920100.0
+1099.0,3,1.0,Downtown,675700.0
+2044.0,2,2.5,Riverside,861700.0
+3551.0,4,2.5,Oakridge,1401800.0
+1852.0,3,1.5,Downtown,899100.0
+1607.0,4,2.0,Suburban Heights,659800.0
+2165.0,3,2.0,Riverside,848800.0
+2892.0,6,3.5,Oakridge,1499600.0
+2240.0,2,2.5,Riverside,909300.0
+1406.0,2,1.5,West End,447300.0
+3124.0,4,2.0,Suburban Heights,906300.0
+2790.0,4,2.0,Suburban Heights,831800.0
+1947.0,2,2.0,Downtown,1022600.0
+1987.0,1,1.0,West End,555700.0
+2401.0,4,3.0,Oakridge,1129500.0
+1565.0,3,2.5,West End,495800.0
+2009.0,3,2.0,Suburban Heights,682500.0
+,1,2.0,Downtown,1016500.0
+1191.0,1,2.0,Downtown,670200.0
+2428.0,4,2.0,Suburban Heights,836100.0
+2130.0,4,2.5,Suburban Heights,692200.0
+1341.0,1,1.0,Downtown,691600.0
+1491.0,3,2.0,Riverside,747400.0
+1295.0,3,1.5,West End,451700.0
+1929.0,3,2.0,Suburban Heights,647200.0
+2663.0,3,2.5,Suburban Heights,871100.0
+1816.0,1,1.0,Downtown,811500.0
+1987.0,2,2.0,Riverside,804800.0
+2728.0,3,3.0,Oakridge,1176100.0
+1314.0,1,1.5,West End,447500.0
+3054.0,5,3.0,Oakridge,1404700.0
+1631.0,4,1.5,Suburban Heights,644400.0
+2535.0,4,3.5,Oakridge,1317400.0
+1120.0,3,1.0,Downtown,679100.0
+2150.0,3,2.0,Riverside,851000.0
+1918.0,3,2.0,Suburban Heights,697000.0
+2939.0,4,3.0,Suburban Heights,867500.0
+2238.0,3,1.5,West End,599600.0
+1062.0,1,1.5,West End,355700.0
+1505.0,4,2.0,West End,573000.0
+1642.0,2,1.5,Downtown,843100.0
+1724.0,3,2.5,Suburban Heights,613900.0
+2135.0,2,1.0,West End,607300.0
+2541.0,4,2.5,Oakridge,1266000.0
+550.0,1,1.0,Downtown,468800.0
+1386.0,3,1.5,Riverside,704500.0
+1184.0,3,2.5,Suburban Heights,530000.0
+2463.0,4,2.0,Suburban Heights,725000.0
+1710.0,1,2.0,West End,531000.0
+2909.0,3,1.5,Suburban Heights,790300.0
+2323.0,3,2.0,Suburban Heights,726800.0
+2755.0,5,3.0,Oakridge,1284000.0
+3476.0,2,2.0,Suburban Heights,962600.0
+1470.0,1,2.0,Downtown,777200.0
+1486.0,4,2.5,Riverside,801700.0
+1916.0,4,2.5,Riverside,822200.0
+2804.0,4,4.0,Oakridge,1301000.0
+2554.0,5,3.0,Oakridge,1242700.0
+2299.0,3,1.0,West End,667800.0
+1284.0,2,1.0,Downtown,743700.0
+1570.0,4,2.0,Suburban Heights,630600.0
+2436.0,4,2.0,Suburban Heights,814400.0
+1885.0,3,3.0,Suburban Heights,655600.0
+1560.0,2,1.0,Downtown,840300.0
+2277.0,4,2.0,Suburban Heights,757700.0
+3304.0,4,4.0,Oakridge,1485600.0
+3235.0,3,2.0,Suburban Heights,945700.0
+1886.0,2,1.5,Downtown,978500.0
+2337.0,3,1.5,Suburban Heights,654900.0
+2105.0,3,1.5,Suburban Heights,719200.0
+1610.0,2,2.0,Downtown,877800.0
+1633.0,1,1.5,Downtown,757700.0
+1175.0,2,1.0,Downtown,681500.0
+2760.0,5,4.0,Oakridge,1327400.0
+889.0,1,1.5,Downtown,580700.0
+1576.0,2,1.5,West End,501200.0
+2731.0,3,1.5,Suburban Heights,790100.0
+2096.0,4,2.0,Riverside,932300.0
+1284.0,2,2.5,West End,490300.0
+1377.0,1,2.0,Downtown,705600.0
+1892.0,3,1.5,Suburban Heights,665000.0
+1648.0,3,2.0,West End,530000.0
+3025.0,3,2.0,Suburban Heights,913500.0
+2092.0,5,1.5,Suburban Heights,757800.0
+2741.0,3,2.0,Suburban Heights,854100.0
+1609.0,1,1.5,Downtown,719600.0
+2498.0,2,2.0,Suburban Heights,699400.0
+1156.0,2,1.0,West End,418300.0
+1913.0,3,1.0,West End,598900.0
+977.0,1,1.0,Downtown,549900.0
+2108.0,3,2.5,Riverside,974600.0
+2577.0,4,3.0,Oakridge,1230000.0
+2141.0,2,1.5,West End,613700.0
+1617.0,3,1.0,Downtown,867600.0
+1986.0,1,2.0,West End,532400.0
+2430.0,3,2.0,Riverside,1020600.0
+707.0,2,1.0,Downtown,539000.0
+1172.0,1,1.5,Downtown,682700.0
+2472.0,4,2.0,Riverside,931800.0
+2273.0,1,1.0,Downtown,965100.0
+2109.0,3,2.0,Suburban Heights,753600.0
+1684.0,3,1.5,West End,556100.0
+2989.0,3,3.0,Suburban Heights,878100.0
+3358.0,4,2.5,Oakridge,1484500.0
+2204.0,3,2.0,Suburban Heights,726500.0
+1317.0,2,1.5,Downtown,731700.0
+1713.0,3,1.5,West End,553100.0
+2054.0,5,3.5,Oakridge,1283100.0
+756.0,3,2.0,Downtown,616000.0
+3642.0,4,2.5,Oakridge,1563200.0
+811.0,2,1.5,West End,361900.0
+592.0,2,1.0,Downtown,497600.0
+1098.0,2,2.5,West End,450300.0
+2732.0,2,1.5,Riverside,1062900.0
+1294.0,3,2.5,Riverside,678900.0
+1927.0,2,2.0,West End,582300.0
+2173.0,3,1.5,Riverside,909000.0
+1742.0,2,1.0,West End,518400.0
+727.0,3,1.0,Downtown,550700.0
+2170.0,3,2.0,Riverside,881600.0
+2382.0,5,2.0,Suburban Heights,840200.0
+2701.0,3,1.5,Suburban Heights,812600.0
+1900.0,2,1.0,West End,534300.0
+2219.0,3,1.0,West End,613900.0
+1575.0,3,1.5,Riverside,755100.0
+1883.0,4,3.0,Suburban Heights,729500.0
+2889.0,4,2.0,Suburban Heights,822900.0
+3018.0,6,3.5,Oakridge,1471200.0
+3748.0,4,3.5,Oakridge,1566100.0
+2306.0,4,3.0,Oakridge,1185100.0
+1320.0,1,1.0,Downtown,717000.0
+1169.0,1,1.0,Downtown,684500.0
+2474.0,3,1.5,Riverside,903800.0
+,4,2.0,Suburban Heights,680400.0
+2450.0,3,1.5,West End,641200.0
+2869.0,4,1.5,Suburban Heights,886900.0
+1812.0,2,2.0,Downtown,915100.0
+1681.0,1,1.0,Downtown,844500.0
+1139.0,3,2.0,Downtown,685200.0
+1990.0,1,1.5,West End,545800.0
+992.0,3,1.0,Downtown,684000.0
+2860.0,4,2.0,Suburban Heights,839700.0
+1555.0,1,1.5,West End,494900.0
+1942.0,3,1.0,West End,587400.0
+3806.0,3,3.0,Oakridge,1619700.0
+1791.0,3,1.5,Downtown,919000.0
+1240.0,1,1.0,Downtown,688800.0
+1270.0,3,1.0,Downtown,748100.0
+892.0,2,1.0,Downtown,591300.0
+2101.0,4,2.0,Suburban Heights,686000.0
+1968.0,4,1.0,West End,597400.0
+1633.0,3,2.0,Suburban Heights,591600.0
+1840.0,3,2.0,Suburban Heights,665100.0
+793.0,3,1.5,Downtown,596000.0
+3110.0,3,1.5,Riverside,1133300.0
+2473.0,3,3.0,Suburban Heights,865700.0
+1169.0,2,1.5,West End,440900.0
+2418.0,3,1.0,West End,694200.0
+2521.0,5,4.5,Oakridge,1283400.0
+1373.0,1,1.5,Downtown,753400.0
+2408.0,5,2.5,Oakridge,1171900.0
+2238.0,4,2.0,Suburban Heights,750400.0
+1582.0,2,1.0,West End,464100.0
+3145.0,5,3.0,Oakridge,1515600.0
+2389.0,4,2.0,Riverside,941400.0
+3088.0,3,2.5,Suburban Heights,931700.0
+740.0,2,1.0,Downtown,552700.0
+2842.0,4,3.5,Oakridge,1355600.0
+2052.0,4,2.5,Suburban Heights,741600.0
+2299.0,3,2.0,Suburban Heights,753600.0
+2936.0,2,2.0,Suburban Heights,851000.0
+2218.0,3,2.5,Oakridge,1087200.0
+2008.0,2,3.0,Riverside,862100.0
+1420.0,2,2.0,Downtown,801300.0
+1773.0,3,1.5,West End,555100.0
+1408.0,2,1.5,Downtown,819700.0
+819.0,3,1.5,Downtown,622800.0
+2430.0,3,2.5,Suburban Heights,819500.0
+2046.0,4,,Suburban Heights,721500.0
+2403.0,3,2.5,Suburban Heights,761600.0
+2110.0,2,2.5,Suburban Heights,664000.0
+1993.0,3,1.5,West End,590600.0
+2983.0,3,1.5,Suburban Heights,883100.0
+1763.0,2,1.5,Suburban Heights,585900.0
+1980.0,3,2.0,Suburban Heights,695400.0
+1492.0,1,2.0,Downtown,741900.0
+2514.0,3,2.0,Suburban Heights,736700.0
+2973.0,4,4.0,Oakridge,1383700.0
+2427.0,3,2.0,Suburban Heights,834700.0
+1588.0,2,1.0,Downtown,745200.0
+1954.0,3,1.5,West End,582400.0
+2091.0,2,1.5,Suburban Heights,689500.0
+1115.0,2,1.0,West End,438800.0
+2838.0,3,1.5,Suburban Heights,827800.0
+651.0,3,1.0,Downtown,537500.0
+1426.0,3,2.5,Riverside,771800.0
+1398.0,3,2.5,Suburban Heights,541500.0
+2231.0,2,2.0,Riverside,840600.0
+1821.0,4,2.0,Suburban Heights,603400.0
+3099.0,3,2.0,Suburban Heights,863100.0
+1516.0,2,1.5,West End,497100.0
+2194.0,4,2.5,Suburban Heights,765700.0
+2314.0,4,2.5,Oakridge,1184600.0
+2892.0,3,2.0,Suburban Heights,786900.0
+1965.0,2,2.5,Suburban Heights,608300.0
+1607.0,2,1.5,West End,503300.0
+3099.0,3,4.0,Oakridge,1456500.0
+2864.0,4,2.0,Suburban Heights,863600.0
+1462.0,3,2.0,Riverside,710800.0
+2449.0,5,2.0,Suburban Heights,796100.0
+2738.0,3,2.0,Riverside,1068500.0
+2290.0,4,2.0,Suburban Heights,703600.0
+1804.0,2,1.5,Downtown,927700.0
+1675.0,3,2.5,Riverside,789000.0
+1771.0,2,1.0,Downtown,888500.0
+1480.0,3,1.5,Downtown,865000.0
+2173.0,3,1.5,Suburban Heights,705600.0
+3048.0,3,2.0,,1124200.0
+1334.0,1,1.0,West End,446600.0
+3350.0,4,3.0,Oakridge,1481900.0
+906.0,1,1.5,Downtown,594300.0
+1969.0,3,2.5,West End,633500.0
+753.0,1,1.0,Downtown,508900.0
+887.0,2,1.0,Downtown,597500.0
+3346.0,5,2.5,Oakridge,1522900.0
+1933.0,4,2.0,Suburban Heights,683200.0
+1972.0,2,2.5,West End,564600.0
+2109.0,3,2.5,Riverside,883200.0
+2264.0,3,1.5,Riverside,842500.0
+1441.0,3,1.0,Downtown,792300.0
+2764.0,4,2.5,Oakridge,1370900.0
+2242.0,3,1.5,Suburban Heights,704000.0
+1049.0,2,1.0,Downtown,699900.0
+3175.0,3,3.0,Oakridge,1393500.0
+3491.0,4,3.0,Oakridge,1582800.0
+1366.0,1,1.0,Downtown,670300.0
+1637.0,3,2.5,Suburban Heights,583800.0
+2079.0,2,1.5,Riverside,825100.0
+1206.0,1,2.0,Downtown,640800.0
+1207.0,4,2.0,Suburban Heights,559400.0
+1804.0,3,1.5,Riverside,783000.0
+2953.0,3,2.0,Riverside,1212200.0
+1993.0,3,2.0,Riverside,888600.0
+2345.0,3,1.5,Suburban Heights,716200.0
+2279.0,3,2.0,Riverside,941700.0
+3413.0,5,3.5,Oakridge,1622100.0
+3792.0,4,3.5,Oakridge,1792000.0
+1393.0,1,1.0,Downtown,733900.0
+2047.0,3,2.0,Suburban Heights,659000.0
+2689.0,4,3.0,Oakridge,1273900.0
+3506.0,6,3.0,Oakridge,1606800.0
+1435.0,4,2.0,Riverside,753500.0
+2320.0,3,3.0,Oakridge,1193500.0
+1719.0,4,3.0,Oakridge,1050900.0
+550.0,1,1.5,Downtown,509200.0
+1297.0,4,2.0,Suburban Heights,536500.0
+2832.0,5,3.0,Oakridge,1328800.0
+3323.0,4,3.0,Oakridge,1425600.0
+2947.0,4,2.5,Oakridge,1344500.0
+2112.0,2,2.5,Riverside,867700.0
+1831.0,3,2.0,West End,576000.0
+2781.0,5,2.0,Suburban Heights,825400.0
+2027.0,3,2.5,Suburban Heights,685400.0
+1425.0,3,1.5,West End,486100.0
+1590.0,3,2.0,West End,534700.0
+2719.0,5,1.5,Suburban Heights,883600.0
+1154.0,2,1.0,West End,393600.0
+1566.0,1,1.5,West End,515500.0
+1688.0,3,1.5,Riverside,779000.0
+2308.0,3,2.5,Suburban Heights,731000.0
+1746.0,2,2.0,Downtown,824500.0
+1575.0,1,1.0,Downtown,803500.0
+1972.0,3,2.5,Suburban Heights,736200.0
+2215.0,3,2.0,Suburban Heights,728500.0
+1635.0,3,1.5,Suburban Heights,615300.0
+2016.0,3,2.0,Suburban Heights,703700.0
+2502.0,4,1.5,Suburban Heights,779400.0
+2385.0,3,2.5,Riverside,1003100.0
+1386.0,2,2.0,Downtown,779500.0
+2781.0,4,2.5,Oakridge,1289500.0
+1356.0,4,1.5,Riverside,739800.0
+2868.0,4,1.5,Riverside,1091700.0
+1060.0,2,1.5,West End,420800.0
+1224.0,1,2.0,West End,423600.0
+2015.0,3,1.0,West End,580000.0
+3622.0,4,2.5,Oakridge,1459700.0
+2205.0,3,2.0,Suburban Heights,706400.0
+2770.0,4,2.5,Oakridge,1274400.0
+1527.0,3,2.5,Suburban Heights,606300.0
+1317.0,2,1.5,West End,485200.0
+3742.0,4,3.0,Oakridge,1762400.0
+2394.0,3,3.0,Suburban Heights,811600.0
+3687.0,4,2.5,Oakridge,1478900.0
+1650.0,1,1.0,Downtown,818200.0
+1284.0,2,1.5,Downtown,759500.0
+2020.0,2,1.0,Downtown,970000.0
+1654.0,2,2.5,West End,519700.0
+1130.0,4,2.0,Suburban Heights,533700.0
+1000.0,2,2.0,Riverside,648800.0
+1851.0,3,1.5,Suburban Heights,640500.0
+1897.0,3,1.5,Downtown,1015300.0
+1371.0,3,1.0,Downtown,817200.0
+2250.0,2,2.5,Riverside,891400.0
+2899.0,4,3.0,Oakridge,1349300.0
+977.0,2,1.5,West End,405800.0
+832.0,1,1.0,Downtown,544600.0
+2419.0,3,2.0,Suburban Heights,752600.0
+2334.0,4,2.0,Riverside,908700.0
+2690.0,5,2.5,Oakridge,1373100.0
+3110.0,3,3.5,Oakridge,1487800.0
+2171.0,3,1.0,West End,638100.0
+3390.0,5,3.0,Oakridge,1607100.0
+3032.0,4,2.0,Suburban Heights,919500.0
+2443.0,3,3.0,Suburban Heights,811600.0
+3219.0,5,3.0,Oakridge,1475400.0
+,2,1.5,Riverside,701400.0
+2331.0,3,2.5,Riverside,990200.0
+2219.0,5,3.0,Oakridge,1104800.0
+2477.0,2,1.5,Riverside,885500.0
+1994.0,1,1.0,Downtown,923600.0
+1164.0,3,1.0,Downtown,639500.0
+1682.0,4,2.5,Suburban Heights,694200.0
+2146.0,2,2.5,West End,638400.0
+2012.0,3,2.0,Downtown,954800.0
+1114.0,1,1.5,Downtown,620100.0
+2671.0,4,2.0,Suburban Heights,892300.0
+2354.0,3,2.0,Riverside,1034100.0
+1339.0,3,1.5,Downtown,757800.0
+2592.0,4,3.0,Oakridge,1168100.0
+2402.0,2,1.5,Riverside,927400.0
+2090.0,4,3.0,Oakridge,1109700.0
+1318.0,1,1.0,Downtown,717300.0
+2158.0,2,1.5,Downtown,1093100.0
+1911.0,3,2.0,Suburban Heights,627600.0
+2556.0,4,2.0,Suburban Heights,844900.0
+2235.0,2,2.5,West End,704400.0
+1437.0,3,2.0,Suburban Heights,614000.0
+2295.0,3,2.0,Suburban Heights,722900.0
+807.0,4,2.0,West End,387600.0
+2457.0,5,2.0,Suburban Heights,836000.0
+2469.0,3,1.5,Suburban Heights,778700.0
+1926.0,2,1.0,West End,525500.0
+3314.0,4,3.0,Oakridge,1458400.0
+1720.0,4,1.5,Riverside,768900.0
+1919.0,3,1.5,Riverside,765600.0
+1958.0,1,1.0,Downtown,803700.0
+2164.0,5,2.0,Suburban Heights,728300.0
+2138.0,1,1.0,Downtown,946200.0
+1869.0,3,1.5,Downtown,888000.0
+2631.0,3,2.0,Suburban Heights,730200.0
+3523.0,3,3.5,Oakridge,1512100.0
+2300.0,4,3.0,Riverside,1076200.0
+2102.0,3,1.0,West End,614100.0
+1479.0,3,3.0,Riverside,766400.0
+2199.0,5,3.5,Oakridge,1218900.0
+3024.0,4,3.0,Oakridge,1425800.0
+3016.0,4,2.5,Oakridge,1397300.0
+1928.0,1,,Downtown,873300.0
+1156.0,2,1.5,West End,418500.0
+2913.0,3,2.0,Suburban Heights,796500.0
+1939.0,5,3.0,Oakridge,1128100.0
+1485.0,2,2.5,Riverside,767300.0
+4537.0,5,2.5,Oakridge,1621600.0
+592.0,1,1.5,Downtown,478800.0
+1645.0,3,2.0,Downtown,875100.0
+,2,2.5,Suburban Heights,733300.0
+2202.0,2,2.0,Riverside,930300.0
+868.0,2,2.0,Downtown,628700.0
+1960.0,1,1.0,West End,601600.0
+2293.0,2,1.5,West End,681800.0
+1310.0,2,2.0,Riverside,653300.0
+3237.0,5,2.5,Oakridge,1432500.0
+1394.0,2,1.5,Downtown,887400.0
+1839.0,3,2.0,West End,570500.0
+2336.0,4,4.0,Oakridge,1218100.0
+3192.0,2,2.5,Suburban Heights,932600.0
+2591.0,3,1.5,Riverside,1034500.0
+1051.0,1,2.0,Downtown,695600.0
+1182.0,3,1.5,Riverside,572200.0
+1871.0,3,1.5,West End,562700.0
+1509.0,3,2.5,Riverside,736900.0
+1831.0,3,2.0,Suburban Heights,703800.0
+1473.0,3,1.0,West End,478000.0
+1348.0,3,2.0,Suburban Heights,559400.0
+2692.0,4,2.5,Riverside,1004200.0
+1955.0,2,2.0,Riverside,823400.0
+2900.0,2,2.5,Riverside,1075700.0
+2403.0,5,2.5,Oakridge,1157100.0
+1429.0,1,1.5,Downtown,783000.0
+3186.0,4,2.5,Oakridge,1366300.0
+1540.0,3,1.5,Suburban Heights,576400.0
+1789.0,4,2.5,Suburban Heights,657200.0
+2435.0,3,2.0,Suburban Heights,747600.0
+2880.0,5,2.5,Oakridge,1372200.0
+1652.0,3,2.5,Riverside,758000.0
+1570.0,3,1.5,West End,496000.0
+1789.0,4,3.0,Oakridge,966100.0
+2303.0,3,1.5,Riverside,901500.0
+1728.0,3,2.0,Suburban Heights,631700.0
+2110.0,4,2.5,Suburban Heights,755100.0
+1440.0,3,1.0,Downtown,768700.0
+2805.0,3,1.5,Riverside,1096800.0
+1518.0,2,1.0,West End,462300.0
+1894.0,3,2.5,Riverside,812000.0
+1587.0,3,2.0,West End,590300.0
+1755.0,2,2.0,West End,537000.0
+3504.0,5,3.5,Oakridge,1655900.0
+2985.0,4,2.0,Suburban Heights,919000.0
+1888.0,3,2.0,Suburban Heights,644100.0
+766.0,2,1.0,West End,316800.0
+1216.0,1,1.0,Downtown,734400.0
+1671.0,3,2.5,Suburban Heights,623000.0
+2462.0,1,1.0,West End,606200.0
+3588.0,4,3.5,Oakridge,1571300.0
+1736.0,3,2.5,Riverside,763000.0
+4156.0,4,3.0,Oakridge,1725300.0
+1423.0,2,2.0,West End,490800.0
+1236.0,2,2.0,West End,427700.0
+2410.0,5,3.0,Oakridge,1279100.0
+2166.0,2,2.0,Riverside,894400.0
+2904.0,5,3.5,Oakridge,1402600.0
+2286.0,3,1.5,Suburban Heights,662600.0
+2588.0,4,1.5,Suburban Heights,796300.0
+2012.0,4,1.5,Riverside,923000.0
+1096.0,2,1.0,Downtown,628300.0
+2144.0,3,2.5,Oakridge,1020400.0
+1704.0,3,2.5,Riverside,858300.0
+,5,2.0,Suburban Heights,570100.0
+2171.0,4,2.0,Suburban Heights,734800.0
+1262.0,3,2.0,Downtown,757800.0
+3562.0,5,3.0,Oakridge,1457600.0
+1573.0,1,1.0,West End,484300.0
+550.0,2,1.5,Downtown,497500.0
+2279.0,4,3.5,Oakridge,1170900.0
+1740.0,3,1.0,West End,512000.0
+1507.0,1,2.0,Downtown,764300.0
+2416.0,4,2.0,Riverside,1005000.0
+2860.0,5,3.5,Oakridge,1392700.0
+1581.0,1,1.5,West End,487200.0
+1659.0,4,2.0,Riverside,832700.0
+1734.0,4,1.5,West End,583300.0
+550.0,3,1.0,Downtown,473800.0
+1943.0,5,3.0,Suburban Heights,766500.0
+2296.0,3,2.0,Riverside,910000.0
+2410.0,4,2.5,Oakridge,1251900.0
+1738.0,4,2.5,Oakridge,998000.0
+1487.0,2,1.5,Downtown,790700.0
+1353.0,3,1.0,West End,453300.0
+2104.0,3,2.0,Riverside,950400.0
+2408.0,2,2.0,Suburban Heights,705300.0
+1860.0,3,2.5,Riverside,859100.0
+1947.0,3,2.0,Suburban Heights,761100.0
+1869.0,4,1.5,Suburban Heights,687100.0
+2868.0,4,2.5,Suburban Heights,916900.0
+,4,1.5,Suburban Heights,738600.0
+1529.0,3,1.5,Downtown,911300.0
+1763.0,2,1.5,West End,542900.0
+2160.0,2,2.0,Riverside,884700.0
+2484.0,5,3.0,Oakridge,1257800.0
+3539.0,3,2.5,Suburban Heights,957500.0
+1409.0,1,1.0,Downtown,707100.0
+1642.0,2,1.5,West End,502200.0
+,3,1.5,West End,580900.0
+944.0,2,1.5,West End,370800.0
+3148.0,5,4.5,Oakridge,1661200.0
+899.0,2,1.0,Downtown,611700.0
+1558.0,2,1.0,Downtown,795400.0
+1687.0,3,1.5,Downtown,857000.0
+1346.0,1,1.5,Downtown,699600.0
+913.0,1,1.5,Downtown,558400.0
+1209.0,2,1.0,West End,408600.0
+1173.0,2,2.0,Downtown,712200.0
+705.0,1,1.5,Downtown,553900.0
+2392.0,4,2.0,Riverside,945600.0
+1757.0,3,2.0,Suburban Heights,694100.0
+2788.0,3,2.0,Riverside,1031100.0
+2499.0,2,3.0,Suburban Heights,799600.0
+1768.0,1,2.0,West End,496000.0
+3119.0,3,2.0,Suburban Heights,869800.0
+1375.0,2,2.0,Suburban Heights,542100.0
+2724.0,3,1.5,Riverside,959900.0
+2006.0,3,3.0,Suburban Heights,702700.0
+2533.0,3,3.5,Oakridge,1225700.0
+2465.0,3,2.5,Suburban Heights,799800.0
+824.0,2,1.0,Downtown,521900.0
+2160.0,2,2.5,Riverside,880500.0
+4011.0,6,3.0,Oakridge,1575400.0
+1010.0,3,1.0,Downtown,653000.0
+3460.0,5,3.0,Oakridge,1546500.0
+2709.0,2,1.5,Riverside,1062400.0
+2724.0,3,3.5,Oakridge,1340000.0
+2251.0,3,2.0,Suburban Heights,711900.0
+1484.0,3,1.5,West End,498800.0
+1777.0,1,2.0,Downtown,891500.0
+1352.0,2,2.0,Riverside,649100.0
+1689.0,3,2.5,Oakridge,967700.0
+1640.0,2,1.0,Downtown,801100.0
+1886.0,3,2.0,Suburban Heights,643200.0
+2093.0,2,1.5,West End,573900.0
+2622.0,5,2.5,Oakridge,1451400.0
+1967.0,4,2.5,Suburban Heights,689800.0
+2815.0,4,2.5,Oakridge,1325600.0
+2109.0,3,2.0,Suburban Heights,663500.0
+2071.0,3,1.5,Suburban Heights,701300.0
+2076.0,3,2.0,Suburban Heights,689300.0
+1962.0,2,2.0,Suburban Heights,671500.0
+,2,1.5,Downtown,930600.0
+1660.0,4,1.5,Suburban Heights,639700.0
+2251.0,3,2.0,Suburban Heights,732700.0
+2455.0,5,1.5,Suburban Heights,817700.0
+1337.0,2,2.0,Downtown,822900.0
+1978.0,3,2.0,Suburban Heights,676500.0
+2528.0,4,2.0,Suburban Heights,863100.0
+1399.0,2,1.0,Downtown,790300.0
+,5,2.5,Oakridge,1445600.0
+2532.0,4,3.0,Suburban Heights,883900.0
+3170.0,2,2.0,Riverside,1047200.0
+3085.0,5,3.0,Oakridge,1447300.0
+2359.0,3,2.0,Riverside,832100.0
+2295.0,3,1.5,Suburban Heights,749400.0
+3027.0,3,2.0,Riverside,1134800.0
+2198.0,2,2.5,Suburban Heights,677000.0
+2464.0,2,2.5,Suburban Heights,745000.0
+2453.0,4,2.0,Suburban Heights,738700.0
+1071.0,3,,West End,451600.0
+3008.0,3,1.5,Suburban Heights,874300.0
+2569.0,3,2.5,Suburban Heights,722200.0
+1968.0,2,2.5,Suburban Heights,705000.0
+2078.0,2,2.5,Riverside,850300.0
+1104.0,2,2.0,Downtown,723000.0
+2527.0,3,2.0,Suburban Heights,724700.0
+2198.0,3,2.5,Suburban Heights,716300.0
+,2,2.0,West End,596000.0
+2116.0,4,2.0,Suburban Heights,764100.0
+1822.0,3,2.0,Suburban Heights,587800.0
+1515.0,2,1.5,West End,514700.0
+2510.0,2,3.0,Suburban Heights,801600.0
+1153.0,2,1.5,Downtown,744900.0
+1111.0,2,1.0,Downtown,659600.0
+1594.0,1,1.0,Downtown,782800.0
+1034.0,3,1.0,Downtown,686000.0
+1582.0,3,1.5,Suburban Heights,608700.0
+1124.0,3,2.0,Riverside,653300.0
+2839.0,4,2.0,Riverside,1129100.0
+1108.0,2,1.0,Downtown,696200.0
+1568.0,3,2.0,Suburban Heights,600200.0
+801.0,1,1.0,Downtown,500500.0
+2922.0,1,1.5,West End,758600.0
+2166.0,3,1.0,Downtown,1033100.0
+1259.0,4,2.5,Suburban Heights,552800.0
+2898.0,4,2.5,Oakridge,1433200.0
+2562.0,3,3.0,Suburban Heights,882200.0
+1798.0,3,2.0,Suburban Heights,657500.0
+2668.0,3,1.5,Riverside,1056100.0
+3455.0,4,2.5,Oakridge,1326400.0
+1836.0,3,1.5,West End,597700.0
+1963.0,3,1.5,Suburban Heights,667900.0
+1469.0,2,2.0,Riverside,650200.0
+2033.0,2,1.5,Riverside,803700.0
+2499.0,2,2.0,West End,685800.0
+3502.0,3,3.0,Oakridge,1550200.0
+1805.0,4,2.5,Oakridge,1026300.0
+3248.0,5,3.5,Oakridge,1424800.0
+2894.0,5,2.5,Oakridge,1254400.0
+2374.0,3,2.0,Suburban Heights,785400.0
+1752.0,2,1.5,West End,518200.0
+974.0,2,1.5,West End,404300.0
+2420.0,4,1.5,Suburban Heights,762500.0
+1663.0,3,2.5,Suburban Heights,606400.0
+1690.0,2,1.5,West End,491500.0
+1594.0,2,2.0,West End,508800.0
+1730.0,3,1.0,Downtown,866600.0
+1499.0,3,2.0,Suburban Heights,586300.0
+2407.0,4,1.5,Riverside,894700.0
+3224.0,3,3.5,Oakridge,1528100.0
+2106.0,3,1.5,Suburban Heights,699500.0
+1508.0,3,1.5,West End,519800.0
+1494.0,2,1.5,West End,471100.0
+1746.0,2,2.0,West End,546300.0
+2383.0,4,1.5,Riverside,878200.0
+3666.0,5,4.0,Oakridge,1588200.0
+3039.0,4,3.0,Oakridge,1452900.0
+1304.0,3,2.0,Suburban Heights,524100.0
+2954.0,4,1.5,Suburban Heights,850900.0
+2089.0,3,2.0,Suburban Heights,681400.0
+2917.0,3,1.5,Suburban Heights,847400.0
+2342.0,3,1.5,Suburban Heights,754700.0
+3179.0,3,2.5,Riverside,1240700.0
+2571.0,5,3.0,Oakridge,1362700.0
+3117.0,4,3.0,Oakridge,1329900.0
+1324.0,3,1.0,Downtown,745300.0
+1176.0,3,,Downtown,720300.0
+1845.0,3,1.5,West End,575800.0
+1947.0,3,2.0,Suburban Heights,731800.0
+2336.0,5,3.0,Oakridge,1276200.0
+1905.0,3,2.0,Riverside,844100.0
+1431.0,5,2.5,Suburban Heights,642200.0
+1456.0,1,1.5,Downtown,790400.0
+2781.0,3,2.5,Oakridge,1232000.0
+754.0,2,1.0,Downtown,543900.0
+1134.0,3,2.0,Suburban Heights,502600.0
+2801.0,3,3.0,Oakridge,1364200.0
+550.0,1,2.0,Downtown,545400.0
+998.0,2,1.0,Downtown,616600.0
+2527.0,4,2.0,Suburban Heights,798000.0
+1585.0,2,1.5,Downtown,868500.0
+2793.0,3,2.0,Riverside,951000.0
+1283.0,2,1.0,Downtown,694000.0
+2190.0,3,2.5,Suburban Heights,773300.0
+1715.0,2,1.5,Suburban Heights,614800.0
+2597.0,4,2.0,Suburban Heights,871200.0
+1541.0,2,1.5,Downtown,841300.0
+1755.0,3,2.0,Riverside,806300.0
+2156.0,2,2.0,West End,643100.0
+687.0,2,1.0,Downtown,526500.0
+2010.0,1,1.0,Downtown,955300.0
+2040.0,2,1.0,West End,594400.0
+1793.0,5,2.5,Suburban Heights,728100.0
+825.0,1,2.0,Downtown,590000.0
+1346.0,3,2.0,Downtown,776400.0
+2054.0,3,2.0,Suburban Heights,708600.0
+2276.0,3,2.5,Riverside,1033000.0
+1826.0,4,2.0,Suburban Heights,648900.0
+1212.0,1,1.5,West End,448100.0
+2452.0,5,2.0,Suburban Heights,754400.0
+3532.0,6,2.5,Oakridge,1615900.0
+2149.0,4,2.0,Suburban Heights,732700.0
+3502.0,5,3.5,Oakridge,1491900.0
+2414.0,4,3.5,Oakridge,1274700.0
+990.0,3,1.0,Downtown,606500.0
+2361.0,4,4.0,Oakridge,1195600.0
+2184.0,2,2.5,Riverside,901700.0
+1511.0,2,1.5,Downtown,715100.0
+3065.0,4,2.0,Suburban Heights,917200.0
+1424.0,3,2.5,Suburban Heights,587200.0
+,3,2.0,Suburban Heights,663800.0
+1134.0,2,2.0,Riverside,624400.0
+2214.0,4,2.0,Riverside,942700.0
+2684.0,4,2.0,Riverside,1025500.0
+944.0,2,2.0,Downtown,592200.0
+2347.0,5,2.0,Suburban Heights,745500.0
+2009.0,3,2.0,Suburban Heights,650700.0
+2810.0,4,3.0,Oakridge,1293700.0
+1721.0,2,1.5,Downtown,889500.0
+2294.0,5,3.5,Oakridge,1221800.0
+1799.0,4,1.5,Suburban Heights,611500.0
+1904.0,3,2.0,Suburban Heights,704500.0
+1588.0,1,1.0,Downtown,747700.0
+1085.0,4,2.0,Riverside,666500.0
+1704.0,1,1.5,West End,526700.0
+1438.0,3,2.0,Downtown,802900.0
+1562.0,2,1.0,West End,499000.0
+1033.0,3,1.5,Downtown,701300.0
+1747.0,2,1.0,West End,529100.0
+1598.0,3,2.0,West End,518400.0
+1326.0,2,1.0,Downtown,697700.0
+1841.0,3,2.0,Riverside,811000.0
+1620.0,2,1.5,West End,492800.0
+2137.0,1,1.0,West End,562500.0
+1838.0,1,1.5,West End,529500.0
+2735.0,3,1.5,Suburban Heights,793500.0
+1749.0,2,1.0,Downtown,864200.0
+,3,2.0,Riverside,852000.0
+1817.0,4,2.0,Suburban Heights,650600.0
+2173.0,5,2.0,Suburban Heights,795100.0
+1923.0,4,1.5,Suburban Heights,650600.0
+2077.0,3,2.5,Suburban Heights,705800.0
+797.0,2,2.0,Downtown,604900.0
+2268.0,3,2.0,Riverside,849700.0
+,1,1.5,Downtown,796000.0
+1582.0,3,1.5,Riverside,760200.0
+2115.0,2,2.0,Riverside,873800.0
+2892.0,3,1.5,Suburban Heights,880200.0
+2333.0,3,2.5,Suburban Heights,802300.0
+3218.0,5,3.5,Oakridge,1487400.0
+1597.0,1,1.0,West End,427000.0
+2117.0,3,2.0,Riverside,916900.0
+2465.0,5,4.0,Oakridge,1369800.0
+1609.0,2,2.0,Downtown,931600.0
+1711.0,1,1.5,Downtown,866600.0
+2172.0,3,1.5,Suburban Heights,693100.0
+1889.0,2,2.0,West End,586200.0
+1826.0,4,1.5,Riverside,872500.0
+1224.0,2,2.0,Downtown,707300.0
+750.0,2,2.0,West End,350800.0
+2547.0,4,2.5,Oakridge,1252000.0
+2228.0,1,1.5,West End,591400.0
+3237.0,4,3.5,Oakridge,1459000.0
+2288.0,5,2.5,Suburban Heights,755400.0
+1287.0,3,1.0,West End,483600.0
+2086.0,4,3.0,Oakridge,1174700.0
+1936.0,3,2.5,Suburban Heights,698400.0
+1577.0,3,1.5,West End,547300.0
+898.0,3,1.0,Downtown,619400.0
+1651.0,1,1.5,Downtown,813000.0
+2616.0,4,2.0,Suburban Heights,780100.0
+3683.0,4,3.0,Oakridge,1569200.0
+1724.0,2,2.0,Downtown,925300.0
+2270.0,2,2.5,Suburban Heights,740100.0
+2055.0,3,2.0,Riverside,856200.0
+3855.0,6,2.5,Oakridge,1616900.0
+2315.0,5,3.5,Oakridge,1256200.0
+1665.0,3,1.5,Riverside,747000.0
+1883.0,4,2.5,Suburban Heights,692300.0
+2665.0,2,2.0,Riverside,959800.0
+1773.0,4,2.0,Suburban Heights,709700.0
+1670.0,1,1.5,West End,501200.0
+2400.0,4,3.0,Suburban Heights,787800.0
+2334.0,2,2.0,Downtown,1039200.0
+2060.0,3,1.0,West End,581800.0
+3177.0,3,1.5,Suburban Heights,870300.0
+612.0,2,1.5,Downtown,536700.0
+1760.0,3,1.5,Downtown,881900.0
+2469.0,4,2.5,Suburban Heights,823100.0
+1381.0,1,1.5,Downtown,704000.0
+2738.0,4,3.5,Oakridge,1314100.0
+1939.0,1,1.0,Downtown,912800.0
+1932.0,4,2.0,Suburban Heights,727900.0
+2134.0,4,3.0,Suburban Heights,747000.0
+1100.0,3,2.0,Suburban Heights,492000.0
+2234.0,3,2.5,Oakridge,1074000.0
+1005.0,2,2.0,Downtown,697200.0
+2722.0,4,1.5,Suburban Heights,805800.0
+1807.0,5,3.5,Oakridge,1074600.0
+1720.0,3,2.5,Suburban Heights,691000.0
+574.0,3,2.0,Downtown,553500.0
+994.0,1,2.0,Downtown,612400.0
+3330.0,4,4.0,Oakridge,1466500.0
+2335.0,3,1.5,Suburban Heights,716400.0
+3455.0,4,4.5,Oakridge,1672300.0
+2352.0,3,2.5,Riverside,982800.0
+4462.0,3,3.5,Oakridge,1812800.0
+2150.0,4,1.5,Suburban Heights,736200.0
+2777.0,3,1.5,Suburban Heights,807500.0
+755.0,3,1.5,Downtown,614600.0
+2338.0,4,2.0,Suburban Heights,742700.0
+2319.0,6,3.0,Oakridge,1323100.0
+2892.0,3,2.5,Suburban Heights,871800.0
+829.0,2,1.0,Downtown,557600.0
+1921.0,3,2.0,Riverside,773500.0
+1876.0,1,1.5,West End,531900.0
+1650.0,1,1.5,Downtown,866200.0
+2834.0,3,2.5,Suburban Heights,877800.0
+2375.0,3,1.5,Riverside,850700.0
+2942.0,4,2.5,Oakridge,1417500.0
+2184.0,4,1.5,Riverside,872100.0
+2429.0,3,1.5,Suburban Heights,702900.0
+1695.0,2,1.5,West End,514500.0
+2426.0,2,1.0,West End,686200.0
+949.0,1,1.0,Downtown,565800.0
+2322.0,4,2.0,Suburban Heights,784700.0
+2092.0,3,1.5,Suburban Heights,708600.0
+881.0,3,1.0,Downtown,627100.0
+3065.0,4,3.0,Oakridge,1349700.0
+2063.0,3,1.5,West End,566000.0
+1094.0,2,1.0,Downtown,679000.0
+,4,2.0,Suburban Heights,569900.0
+1457.0,2,1.5,Riverside,667300.0
+2676.0,4,3.5,Oakridge,1292200.0
+2838.0,3,2.5,Suburban Heights,863800.0
+1911.0,3,1.5,West End,621200.0
+2858.0,4,1.5,Suburban Heights,818000.0
+1203.0,2,1.0,Downtown,705300.0
+1929.0,3,1.5,Downtown,930400.0
+1785.0,2,1.5,West End,554900.0
+3555.0,5,4.0,Oakridge,1589000.0
+2151.0,4,2.0,Suburban Heights,779500.0
+1542.0,2,1.0,Downtown,736000.0
+2870.0,3,1.5,Suburban Heights,863200.0
+1090.0,4,1.5,West End,457000.0
+1910.0,3,3.0,Suburban Heights,721500.0
+990.0,2,1.5,West End,394500.0
+2185.0,5,3.5,Oakridge,1269300.0
+2438.0,3,2.0,Suburban Heights,875400.0
+1657.0,1,1.0,West End,527300.0
+2624.0,3,2.0,Suburban Heights,849000.0
+2391.0,5,2.5,Oakridge,1306000.0
+1793.0,2,1.5,West End,501000.0
+1600.0,3,3.5,Oakridge,976400.0
+2615.0,4,2.5,Suburban Heights,910700.0
+1876.0,3,2.0,West End,551800.0
+1780.0,2,2.0,Downtown,910600.0
+2426.0,4,3.5,Oakridge,1311400.0
+1041.0,1,1.5,Downtown,650800.0
+2750.0,4,3.0,Oakridge,1346100.0
+1783.0,2,1.0,Downtown,954000.0
+2203.0,4,2.0,Suburban Heights,766700.0
+695.0,2,2.0,Downtown,547100.0
+2825.0,4,2.0,Suburban Heights,924000.0
+2883.0,5,3.0,Oakridge,1394600.0
+3350.0,6,4.0,Oakridge,1519500.0
+2289.0,6,2.5,Oakridge,1201200.0
+1000.0,3,2.0,Riverside,620100.0
+2290.0,4,2.0,Suburban Heights,772300.0
+3252.0,5,4.0,Oakridge,1562100.0
+1232.0,2,1.5,West End,463700.0
+2408.0,3,2.0,Suburban Heights,746700.0
+1435.0,1,1.5,Downtown,718300.0
+750.0,4,1.0,West End,376800.0
+4292.0,5,3.0,Oakridge,1793800.0
+691.0,3,1.0,Downtown,545500.0
+2109.0,4,2.5,Suburban Heights,728000.0
+1366.0,3,1.5,Downtown,731800.0
+3290.0,4,3.0,Oakridge,1466900.0
+1413.0,4,2.0,Riverside,770100.0
+1840.0,2,1.5,Downtown,934000.0
+2164.0,3,2.0,Riverside,923700.0
+1431.0,3,1.0,West End,498200.0
+2374.0,4,2.0,Suburban Heights,829300.0
+2081.0,3,3.0,Riverside,893300.0
+1366.0,4,2.0,Riverside,695800.0
+1875.0,3,2.5,West End,624000.0
+1600.0,4,3.5,Oakridge,1003000.0
+1390.0,2,1.0,Downtown,752400.0
+2232.0,3,2.5,Suburban Heights,728500.0
+1736.0,4,2.0,Suburban Heights,653300.0
+1100.0,1,1.5,Downtown,635700.0
+1568.0,3,2.0,Suburban Heights,577300.0
+1420.0,2,1.5,Downtown,771800.0
+2621.0,1,2.0,West End,655700.0
+2264.0,4,2.5,Oakridge,1176600.0
+2249.0,2,1.5,Downtown,1066500.0
+1085.0,2,1.0,Downtown,691600.0
+2548.0,4,4.0,Oakridge,1249100.0
+2644.0,4,3.5,Oakridge,1280400.0
+1706.0,1,1.5,Downtown,825900.0
+2759.0,5,2.5,Oakridge,1289400.0
+842.0,3,1.0,Downtown,605000.0
+3670.0,4,3.0,Oakridge,1572300.0
+,3,3.0,Oakridge,1295100.0
+3291.0,4,3.0,Oakridge,1485000.0
+2983.0,4,3.5,Oakridge,1535000.0
+850.0,1,1.0,Downtown,568700.0
+550.0,2,1.0,Downtown,476300.0
+1727.0,3,2.0,Downtown,896600.0
+2970.0,4,2.0,Riverside,1096900.0
+2350.0,2,1.5,West End,634300.0
+1544.0,3,1.0,West End,488600.0
+2895.0,4,1.5,Suburban Heights,869900.0
+3309.0,4,2.0,Suburban Heights,933400.0
+2744.0,5,2.5,Oakridge,1316200.0
+2588.0,3,2.0,Riverside,1035200.0
+1647.0,3,1.5,Riverside,755500.0
+1000.0,4,1.5,Riverside,681600.0
+1906.0,4,1.5,West End,594600.0
+2810.0,4,2.5,Suburban Heights,904900.0
+2251.0,2,2.0,Riverside,967900.0
+2448.0,3,2.5,Riverside,987100.0
+2999.0,4,2.5,Oakridge,1321400.0
+990.0,2,1.5,West End,391400.0
+1121.0,1,1.0,Downtown,582800.0
+2673.0,3,1.0,West End,662200.0
+2648.0,3,2.0,Riverside,928900.0
+1383.0,2,2.0,Downtown,824000.0
+2766.0,3,1.5,Suburban Heights,819100.0
+1372.0,2,2.0,Downtown,686900.0
+1998.0,2,2.0,Riverside,895100.0
+2569.0,3,2.5,Riverside,984400.0
+3171.0,2,3.0,Suburban Heights,958900.0
+2325.0,3,1.5,West End,691000.0
+1374.0,2,1.0,Downtown,765500.0
+2819.0,4,3.5,Oakridge,1298000.0
+3119.0,3,2.0,Suburban Heights,911600.0
+909.0,2,1.0,Downtown,554800.0
+2432.0,2,2.0,Suburban Heights,799200.0
+4122.0,4,3.0,Oakridge,1710500.0
+2521.0,4,2.5,Oakridge,1247900.0
+1759.0,4,1.5,Suburban Heights,618700.0
+1791.0,2,2.5,West End,541700.0
+2554.0,4,2.5,Oakridge,1246700.0
+1571.0,2,1.0,West End,515400.0
+2213.0,2,2.5,Suburban Heights,743200.0
+2626.0,5,3.0,Oakridge,1398800.0
+2939.0,3,1.5,Suburban Heights,881100.0
+3507.0,4,2.5,Suburban Heights,1012700.0
+2155.0,4,3.0,Oakridge,1098500.0
+2356.0,4,2.5,Suburban Heights,768200.0
+1283.0,3,1.0,Downtown,777600.0
+3063.0,4,3.0,Oakridge,1418200.0
+2762.0,3,2.0,Suburban Heights,835500.0
+2582.0,3,2.0,Suburban Heights,756900.0
+2066.0,4,1.5,Riverside,853200.0
+3145.0,3,3.5,Oakridge,1554900.0
+2130.0,4,1.5,West End,629500.0
+2948.0,2,1.5,Riverside,1161700.0
+1732.0,2,1.5,West End,541900.0
+2511.0,2,2.0,Riverside,970700.0
+1994.0,1,1.5,Downtown,987100.0
+1971.0,3,1.5,Suburban Heights,660500.0
+642.0,1,1.5,Downtown,507900.0
+2737.0,2,2.5,Riverside,1071200.0
+2126.0,3,2.0,Suburban Heights,725100.0
+3393.0,5,3.5,Oakridge,1605000.0
+2217.0,2,1.0,West End,584300.0
+964.0,1,2.0,Downtown,638100.0
+1493.0,3,2.0,Suburban Heights,559500.0
+2339.0,3,2.0,Riverside,945500.0
+1527.0,2,1.0,Downtown,810200.0
+1819.0,3,2.5,Suburban Heights,648300.0
+1375.0,3,2.5,Riverside,682800.0
+1223.0,3,2.0,Downtown,743800.0
+2122.0,3,2.0,Suburban Heights,688800.0
+2445.0,4,3.0,Oakridge,1156600.0
+1968.0,2,2.5,Suburban Heights,652500.0
+1529.0,2,2.0,Downtown,834100.0
+1109.0,3,1.5,West End,454900.0
+1592.0,1,1.0,West End,501600.0
+660.0,1,1.0,Downtown,497000.0
+2934.0,3,3.5,Oakridge,1326700.0
+2363.0,3,2.0,Suburban Heights,727500.0
+2130.0,4,2.0,Riverside,910200.0
+2042.0,2,2.0,Suburban Heights,659200.0
+1227.0,1,1.5,Downtown,672500.0
+1003.0,3,1.0,Downtown,633100.0
+1132.0,2,1.0,West End,401400.0
+2176.0,3,2.0,Suburban Heights,719400.0
+1460.0,3,1.5,West End,490200.0
+1695.0,4,2.5,Suburban Heights,667600.0
+1007.0,1,1.0,West End,387600.0
+1485.0,1,2.0,Downtown,779500.0
+879.0,2,1.5,Downtown,652000.0
+1234.0,2,1.5,West End,465400.0
+1071.0,2,1.5,West End,417500.0
+3173.0,3,2.5,Oakridge,1293700.0
+2395.0,3,4.5,Oakridge,1233700.0
+2018.0,3,2.0,Suburban Heights,654800.0
+1289.0,4,2.0,Suburban Heights,530400.0
+1378.0,3,1.0,Downtown,755000.0
+750.0,2,1.0,West End,344000.0
+2415.0,6,3.0,Oakridge,1317000.0
+2722.0,3,1.5,Riverside,937500.0
+1207.0,3,2.0,Downtown,734200.0
+1469.0,2,1.5,Downtown,787900.0
+2614.0,4,1.5,Suburban Heights,726500.0
+3372.0,5,3.5,Oakridge,1497000.0
+1918.0,3,2.5,Suburban Heights,731900.0
+1707.0,2,1.0,Downtown,841500.0
+1474.0,1,2.0,West End,473600.0
+1485.0,3,2.0,Riverside,786000.0
+917.0,3,1.5,West End,380300.0
+1071.0,2,1.0,Downtown,640500.0
+2424.0,4,3.5,Oakridge,1293700.0
+3711.0,5,4.5,Oakridge,1585200.0
+2432.0,4,1.5,Suburban Heights,735900.0
+3469.0,4,3.0,Oakridge,1477800.0
+1429.0,1,1.0,Downtown,653500.0
+1959.0,5,2.5,Oakridge,1018700.0
+2154.0,4,2.5,Oakridge,1143400.0
+3321.0,4,3.0,Oakridge,1485400.0
+1054.0,2,1.0,Downtown,667900.0
+2924.0,4,4.5,Oakridge,1365600.0
+2799.0,3,2.0,Suburban Heights,804700.0
+2883.0,3,3.0,Oakridge,1349300.0
+3092.0,5,2.5,Oakridge,1460300.0
+2094.0,3,2.0,Suburban Heights,670400.0
+2694.0,3,2.0,Riverside,1061400.0
+2594.0,4,4.5,Oakridge,1299300.0
+2463.0,4,2.0,Suburban Heights,741500.0
+1545.0,2,1.5,West End,485800.0
+1605.0,4,3.0,Suburban Heights,616200.0
+2137.0,2,1.5,West End,586800.0
+2603.0,3,2.0,Riverside,967900.0
+1577.0,2,1.5,Downtown,775800.0
+1729.0,3,2.0,Suburban Heights,656700.0
+1985.0,3,3.0,Suburban Heights,687700.0
+1256.0,2,1.5,West End,454400.0
+1955.0,4,2.5,Suburban Heights,676300.0
+1835.0,2,1.5,Downtown,896400.0
+2431.0,2,2.0,Suburban Heights,708500.0
+1826.0,2,1.0,Downtown,903400.0
+1792.0,4,3.0,Riverside,909300.0
+1217.0,3,2.0,Suburban Heights,567000.0
+2405.0,2,2.5,Riverside,891200.0
+1769.0,2,2.0,West End,565700.0
+1943.0,4,2.5,Suburban Heights,717600.0
+1994.0,3,2.0,Suburban Heights,719100.0
+2379.0,3,1.5,Riverside,970500.0
+2360.0,3,1.5,Riverside,990400.0
+1085.0,3,2.0,West End,428800.0
+550.0,2,2.0,Downtown,496000.0
+1803.0,3,2.0,Suburban Heights,636500.0
+1068.0,2,1.5,Downtown,636900.0
+1099.0,3,1.5,West End,404600.0
+1308.0,4,2.5,Suburban Heights,553900.0
+1580.0,3,2.5,Suburban Heights,588700.0
+1142.0,3,1.0,Downtown,690100.0
+3206.0,4,2.5,Oakridge,1445600.0
+2167.0,4,1.5,Riverside,867800.0
+1517.0,2,1.5,Downtown,757800.0
+851.0,1,1.5,Downtown,582900.0
+2034.0,1,1.0,West End,543600.0
+2547.0,3,2.5,Riverside,1004000.0
+2066.0,2,1.5,Downtown,1005100.0
+2841.0,4,2.5,Oakridge,1323300.0
+2479.0,2,2.0,West End,698400.0
+2269.0,3,2.0,Riverside,934500.0
+2150.0,3,2.0,Suburban Heights,729800.0
+3151.0,5,3.5,Oakridge,1454700.0
+3374.0,4,3.5,Oakridge,1588400.0
+1916.0,1,1.0,Downtown,897400.0
+2309.0,3,2.5,Riverside,977000.0
+948.0,2,1.5,Downtown,595200.0
+976.0,3,1.5,Downtown,689900.0
+2826.0,3,2.5,,1092100.0
+1893.0,1,1.5,West End,559600.0
+2902.0,4,2.0,Riverside,1128200.0
+1875.0,3,1.5,Suburban Heights,630600.0
+2209.0,3,2.0,Suburban Heights,750500.0
+2080.0,4,2.0,Suburban Heights,738000.0
+3013.0,3,4.0,Oakridge,1451600.0
+2179.0,3,2.0,Suburban Heights,799300.0
+2058.0,3,1.5,Suburban Heights,666800.0
+2204.0,3,2.0,Suburban Heights,736000.0
+908.0,2,1.0,West End,382100.0
+869.0,2,2.5,West End,471600.0
+1888.0,2,1.0,Downtown,874400.0
+3497.0,4,2.5,Oakridge,1422700.0
+1789.0,1,1.5,Downtown,869400.0
+2225.0,3,2.5,Oakridge,1051900.0
+2597.0,5,3.0,Oakridge,1346200.0
+768.0,2,2.0,Downtown,559900.0
+2335.0,2,2.0,Riverside,928500.0
+1984.0,3,2.0,Suburban Heights,681400.0
+1609.0,4,1.0,West End,559200.0
+880.0,1,1.0,Downtown,532400.0
+550.0,3,1.5,Downtown,489500.0
+2288.0,4,2.5,Suburban Heights,769800.0
+550.0,3,2.0,Downtown,551300.0
+4062.0,4,3.5,Oakridge,1626300.0
+1869.0,3,1.0,West End,526400.0
+1190.0,2,1.5,Downtown,690400.0
+1068.0,2,1.0,Downtown,647900.0
+2301.0,3,2.5,Suburban Heights,719600.0
+1835.0,3,2.0,Suburban Heights,610300.0
+1991.0,3,1.5,Suburban Heights,698300.0
+2715.0,4,4.0,Oakridge,1460200.0
+2874.0,4,2.5,Riverside,1106900.0
+1328.0,1,2.0,Downtown,711700.0
+2668.0,3,2.5,Suburban Heights,779100.0
+2231.0,3,2.5,Suburban Heights,722300.0
+1779.0,2,2.0,West End,586100.0
+3287.0,4,2.5,Oakridge,1402600.0
+1801.0,3,2.0,Suburban Heights,649700.0
+1238.0,1,1.5,Downtown,659400.0
+1659.0,1,1.0,Downtown,780500.0
+1052.0,2,2.0,Downtown,674000.0
+1298.0,3,1.5,Riverside,692800.0
+2576.0,4,3.5,Oakridge,1179800.0
+2253.0,3,1.5,Riverside,880700.0
+906.0,1,1.0,Downtown,561900.0
+1609.0,2,2.5,West End,516500.0
+1969.0,2,2.0,Riverside,877400.0
+2463.0,3,1.5,Downtown,1223300.0
+1462.0,2,1.0,Downtown,777800.0
+1508.0,2,2.0,Downtown,765300.0
+919.0,2,1.0,West End,373200.0
+2983.0,3,3.0,Oakridge,1410100.0
+2155.0,3,2.5,Suburban Heights,720500.0
+2749.0,4,2.5,Suburban Heights,842800.0
+1556.0,3,2.0,Riverside,750800.0
+2517.0,4,2.0,Suburban Heights,796700.0
+2728.0,3,2.5,Suburban Heights,806000.0
+1138.0,3,1.5,West End,443000.0
+1924.0,2,1.5,Downtown,965400.0
+2224.0,3,1.5,Riverside,829900.0
+2008.0,2,1.5,Downtown,939700.0
+1348.0,2,2.0,Suburban Heights,501200.0
+2000.0,4,1.0,West End,595600.0
+2417.0,4,2.0,Suburban Heights,762300.0
+2052.0,4,,Suburban Heights,720900.0
+1985.0,4,3.0,Oakridge,1232900.0
+2006.0,3,2.0,Suburban Heights,689200.0
+2859.0,3,4.0,Oakridge,1289700.0
+,3,2.0,Suburban Heights,713800.0
+2872.0,3,2.0,Suburban Heights,900000.0
+2598.0,3,3.0,Oakridge,1273900.0
+1600.0,3,3.5,Oakridge,973400.0
+2835.0,5,2.5,Oakridge,1270600.0
+2728.0,5,2.5,Oakridge,1388000.0
+981.0,3,1.0,Downtown,631500.0
+1151.0,3,1.5,West End,429500.0
+2800.0,4,2.5,Suburban Heights,883100.0
+1041.0,2,2.0,Downtown,676800.0
+2260.0,3,2.5,Suburban Heights,760000.0
+2188.0,2,2.0,Riverside,873100.0
+3519.0,4,,Oakridge,1494200.0
+1558.0,2,1.5,Downtown,895500.0
+1743.0,2,1.0,Downtown,807700.0
+1205.0,2,1.0,Downtown,639700.0
+2733.0,2,2.0,Riverside,1061400.0
+1752.0,2,1.5,West End,584900.0
+1192.0,2,2.0,Downtown,759400.0
+1634.0,4,2.0,Riverside,802600.0
+1847.0,3,2.0,Downtown,960300.0
+3363.0,3,1.5,Suburban Heights,958000.0
+1915.0,2,2.0,Riverside,806100.0
+1945.0,4,2.5,Oakridge,1057700.0
+1460.0,1,1.5,Downtown,761600.0
+1808.0,4,2.0,Suburban Heights,639600.0
+1770.0,2,1.5,West End,596300.0
+2816.0,5,2.5,Oakridge,1289400.0
+1659.0,2,1.0,Downtown,815500.0
+907.0,3,1.5,Downtown,662700.0
+2298.0,4,2.5,Suburban Heights,794500.0
+3141.0,2,2.0,Suburban Heights,882100.0
+2949.0,3,2.5,Riverside,1135000.0
+1651.0,4,2.5,Riverside,813300.0
+1905.0,4,2.0,West End,596200.0
+3674.0,3,2.5,Riverside,1200400.0
+3683.0,4,3.5,Oakridge,1625500.0
+2525.0,2,1.5,Suburban Heights,753700.0
+3039.0,3,4.0,Oakridge,1480500.0
+2934.0,4,3.5,Oakridge,1438700.0
+846.0,2,1.0,West End,384900.0
+1567.0,3,1.5,Suburban Heights,576800.0
+1787.0,3,1.0,West End,540300.0
+2127.0,4,2.0,Suburban Heights,715100.0
+1989.0,3,2.0,Suburban Heights,705500.0
+1733.0,5,2.0,Suburban Heights,675800.0
+792.0,2,2.0,Downtown,573100.0
+2028.0,4,3.5,Oakridge,1196900.0
+2214.0,4,2.5,Suburban Heights,669000.0
+838.0,1,1.0,Downtown,504100.0
+1626.0,2,1.5,West End,511200.0
+1685.0,3,1.5,Downtown,920900.0
+1192.0,2,1.0,Downtown,648900.0
+1810.0,3,2.5,Riverside,850600.0
+1654.0,3,1.5,Downtown,868700.0
+2211.0,2,1.5,West End,601300.0
+2415.0,2,1.5,Riverside,875700.0
+1324.0,2,1.5,Downtown,779500.0
+2275.0,2,2.0,Suburban Heights,797500.0
+3023.0,3,2.5,Suburban Heights,775600.0
+2135.0,4,2.0,Riverside,901300.0
+1953.0,4,1.5,Riverside,906800.0
+2069.0,3,2.0,Riverside,817500.0
+1922.0,4,2.0,Suburban Heights,667600.0
+1607.0,3,3.0,Oakridge,1004200.0
+3338.0,5,2.5,Suburban Heights,960800.0
+2381.0,2,1.0,West End,624600.0
+1574.0,3,1.5,Suburban Heights,604100.0
+2006.0,2,2.5,Suburban Heights,681500.0
+2236.0,4,2.0,Suburban Heights,763200.0
+2865.0,3,2.0,Riverside,1115700.0
+1301.0,3,2.0,West End,453700.0
+1426.0,2,1.0,Downtown,720600.0
+1354.0,1,1.0,Downtown,725200.0
+2840.0,4,2.5,Suburban Heights,862600.0
+2342.0,4,2.5,Suburban Heights,772500.0
+2561.0,3,2.0,Suburban Heights,799200.0
+1532.0,3,2.0,Downtown,858400.0
+3072.0,4,1.5,Suburban Heights,903100.0
+2091.0,3,2.0,Suburban Heights,683800.0
+2127.0,3,1.5,Suburban Heights,711000.0
+2094.0,5,2.0,Suburban Heights,748400.0
+1554.0,2,3.0,Riverside,796700.0
+2171.0,2,1.5,Suburban Heights,667000.0
+1794.0,4,2.0,Riverside,820200.0
+1272.0,3,1.5,Suburban Heights,508600.0
+1636.0,4,2.0,Suburban Heights,636800.0
+1908.0,4,2.5,Suburban Heights,680600.0
+1354.0,1,1.5,Downtown,704900.0
+2845.0,5,3.0,Oakridge,1376300.0
+1725.0,4,2.5,Suburban Heights,648000.0
+1102.0,2,1.0,West End,371100.0
+1463.0,3,1.5,Suburban Heights,601300.0
+1627.0,2,1.5,Downtown,861900.0
+1562.0,4,2.0,Suburban Heights,595700.0
+3383.0,4,3.5,Oakridge,1554800.0
+1862.0,4,1.5,Riverside,839000.0
+2124.0,3,2.5,Riverside,896300.0
+2844.0,3,2.0,Suburban Heights,814800.0
+1734.0,4,1.5,Suburban Heights,609700.0
+2971.0,4,2.5,Oakridge,1334100.0
+2176.0,4,2.0,Suburban Heights,741200.0
+2130.0,2,1.5,West End,599100.0
+1000.0,3,2.0,Riverside,595900.0
+1824.0,3,2.0,Suburban Heights,679500.0
+2343.0,4,2.5,Oakridge,1229300.0
+1415.0,2,1.0,,737600.0
+1964.0,2,1.5,Downtown,941100.0
+1904.0,1,1.5,Downtown,881400.0
+2441.0,4,3.0,Oakridge,1279000.0
+1808.0,2,2.0,West End,541800.0
+2374.0,2,2.0,Suburban Heights,750600.0
+2915.0,4,3.0,Oakridge,1313400.0
+1501.0,1,1.0,Downtown,795000.0
+2959.0,4,3.0,Oakridge,1264700.0
+2800.0,3,1.5,Riverside,1010500.0
+2346.0,6,3.0,Oakridge,1254300.0
+2285.0,3,1.5,Riverside,827300.0
+2307.0,3,3.0,Riverside,952100.0
+2182.0,1,1.0,Downtown,1030900.0
+2194.0,3,2.0,Suburban Heights,696600.0
+2058.0,2,2.0,West End,604100.0
+3296.0,4,2.0,Suburban Heights,962500.0
+2112.0,3,1.5,Downtown,1005300.0
+1713.0,3,2.0,West End,586800.0
+1348.0,2,2.0,West End,471900.0
+2107.0,3,2.5,Suburban Heights,705200.0
+2913.0,3,2.5,Suburban Heights,896000.0
+979.0,2,1.5,Downtown,643000.0
+2596.0,3,2.5,Riverside,1029500.0
+2474.0,4,2.0,Suburban Heights,805200.0
