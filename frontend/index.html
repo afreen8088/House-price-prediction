@@ -3,535 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOMESTEAD — Editorial Property Valuation & MLOps</title>
-  <meta name="description" content="Precision machine-learning property valuation powered by XGBoost, DVC, and reproducible MLOps engineering.">
-  
-  <!-- Typography: Playfair Display for editorial headings, DM Sans for body -->
+  <title>HOMESTEAD — House Price Prediction</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,500..800;1,500..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Top Navigation Header -->
-  <header class="site-header">
-    <div class="header-inner container">
-      <a href="#home" class="brand-wordmark" id="nav-brand">
-        <span class="wordmark-icon">◆</span>
-        <span class="wordmark-text">HOMESTEAD</span>
-      </a>
+  <main class="page-container">
+    <header class="app-header">
+      <div class="brand-title">HOMESTEAD</div>
+    </header>
 
-      <nav class="site-nav">
-        <button class="nav-link active" data-view="home">Home</button>
-        <button class="nav-link" data-view="predict">Predict</button>
-        <button class="nav-link" data-view="insights">Model Insights</button>
-        <button class="nav-link" data-view="docs">Documentation</button>
-      </nav>
-
-      <div class="header-action">
-        <button class="btn btn-outline" id="nav-estimate-btn">Estimate Value</button>
+    <div class="card">
+      <div class="card-intro">
+        <h1 class="main-heading">House Price Prediction</h1>
+        <p class="description">Estimate your property's value in Karnataka.</p>
       </div>
-    </div>
-  </header>
 
-  <!-- Main Content Area with View Sections -->
-  <main class="main-container">
-
-    <!-- ================= PAGE A: LANDING PAGE ================= -->
-    <section id="view-home" class="page-view active">
-      <!-- Hero Section -->
-      <section class="hero-section container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <span class="eyebrow-tag">MLOps Valuation Engine</span>
-            <h1 class="hero-title">Find the Value Behind Every Home.</h1>
-            <p class="hero-description">
-              Harnessing gradient boosted hedonic pricing models, verifiable feature engineering,
-              and continuous operational tracking to provide refined, data-backed real estate valuations.
-            </p>
-            <div class="hero-actions">
-              <button class="btn btn-primary" id="hero-cta-btn">Estimate Property Value</button>
-              <button class="btn btn-secondary" id="hero-insights-btn">Explore Model Metrics</button>
-            </div>
-            
-            <div class="hero-meta-stats">
-              <div class="meta-stat-item">
-                <span class="meta-stat-number tabular-nums">0.977</span>
-                <span class="meta-stat-label">Model R² Metric</span>
-              </div>
-              <div class="meta-stat-divider"></div>
-              <div class="meta-stat-item">
-                <span class="meta-stat-number">XGBoost</span>
-                <span class="meta-stat-label">Production Estimator</span>
-              </div>
-              <div class="meta-stat-divider"></div>
-              <div class="meta-stat-item">
-                <span class="meta-stat-number">DVC</span>
-                <span class="meta-stat-label">Data Versioning</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-visual">
-            <div class="editorial-image-frame">
-              <img 
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" 
-                alt="Contemporary architectural residence with refined finishes" 
-                class="editorial-image"
-                loading="eager"
-              >
-              <div class="image-caption-badge">
-                <span class="badge-dot"></span>
-                <span>Editorial Property Archive #42</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Highlights Section -->
-      <section class="highlights-section container">
-        <div class="section-header text-center">
-          <span class="eyebrow-tag">Architecture & Engineering</span>
-          <h2 class="section-title">Engineered for Precision & Reproducibility</h2>
-          <p class="section-subtitle">
-            An end-to-end machine learning lifecycle connecting verifiable data pipelines to sub-millisecond inference.
-          </p>
+      <form id="prediction-form" novalidate>
+        <!-- Location Dropdown -->
+        <div class="form-group">
+          <label for="location" class="form-label">Location</label>
+          <select id="location" name="location" class="form-select" required>
+            <option value="" disabled selected>Select a city in Karnataka</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Mysuru">Mysuru</option>
+            <option value="Mangaluru">Mangaluru</option>
+            <option value="Hubballi-Dharwad">Hubballi-Dharwad</option>
+            <option value="Belagavi">Belagavi</option>
+            <option value="Kalaburagi">Kalaburagi</option>
+            <option value="Davanagere">Davanagere</option>
+            <option value="Shivamogga">Shivamogga</option>
+            <option value="Tumakuru">Tumakuru</option>
+            <option value="Udupi">Udupi</option>
+            <option value="Hassan">Hassan</option>
+            <option value="Ballari">Ballari</option>
+          </select>
+          <div class="field-error" id="error-location"></div>
         </div>
 
-        <div class="cards-grid">
-          <div class="feature-card">
-            <div class="feature-card-header">
-              <span class="feature-index">01</span>
-              <h3 class="feature-title">ML-Powered Valuation</h3>
-            </div>
-            <p class="feature-body">
-              XGBoost ensemble regression trained on hedonic property dynamics. Leverages square footage,
-              room compositions, and neighborhood coefficients to synthesize fair market pricing.
-            </p>
+        <!-- Property Area -->
+        <div class="form-group">
+          <label for="sqft" class="form-label">Property area in square feet</label>
+          <div class="input-wrapper">
+            <input
+              type="number"
+              id="sqft"
+              name="sqft"
+              class="form-input"
+              placeholder="e.g. 1500"
+              min="101"
+              max="24999"
+              step="any"
+              required
+            >
+            <span class="input-unit">sq ft</span>
           </div>
-
-          <div class="feature-card">
-            <div class="feature-card-header">
-              <span class="feature-index">02</span>
-              <h3 class="feature-title">Data-Driven Feature Pipelines</h3>
-            </div>
-            <p class="feature-body">
-              Leakage-free preprocessing with median numerical imputation, categorical one-hot encoding,
-              and scikit-learn pipeline isolation ensuring strict parity between training and inference.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-card-header">
-              <span class="feature-index">03</span>
-              <h3 class="feature-title">Reproducible Model Operations</h3>
-            </div>
-            <p class="feature-body">
-              Integrated DVC pipeline versioning tracks raw datasets and intermediate stages, while MLflow
-              logs hyperparameter states, evaluation metrics, and serialised pipeline artifacts.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- How It Works Section -->
-      <section class="process-section container">
-        <div class="process-card">
-          <div class="process-header">
-            <h2 class="section-title">The Valuation Process</h2>
-            <p class="section-subtitle">How HOMESTEAD derives property estimates in milliseconds.</p>
-          </div>
-
-          <div class="process-steps-grid">
-            <div class="step-card">
-              <div class="step-number">Step 1</div>
-              <h4 class="step-title">Property Ingestion</h4>
-              <p class="step-desc">Input verified living area, room specifications, and geographic district.</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">Step 2</div>
-              <h4 class="step-title">Pipeline Transform</h4>
-              <p class="step-desc">Features pass through persisted transformers with median imputation and scaling.</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">Step 3</div>
-              <h4 class="step-title">Ensemble Inference</h4>
-              <p class="step-desc">The trained XGBoost regressor computes the non-linear market valuation.</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">Step 4</div>
-              <h4 class="step-title">Operational Tracking</h4>
-              <p class="step-desc">Requests and outputs are logged and benchmarked against MLflow test runs.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <!-- ================= PAGE B: PROPERTY PREDICTION PAGE ================= -->
-    <section id="view-predict" class="page-view">
-      <div class="container form-page-container">
-        <div class="form-page-header">
-          <span class="eyebrow-tag">Property Valuation</span>
-          <h1 class="page-heading">Estimate Residence Value</h1>
-          <p class="page-lead">
-            Enter the verified architectural details below. Our trained inference model will calculate
-            an instantaneous estimate based on historical market conditions.
-          </p>
+          <div class="field-error" id="error-sqft"></div>
         </div>
 
-        <div class="form-layout-grid">
-          <!-- Prediction Form Card -->
-          <div class="form-card">
-            <form id="valuation-form" novalidate>
-              <div class="form-group">
-                <label for="input-sqft" class="form-label">
-                  <span>Square Footage</span>
-                  <span class="label-hint">Living area (sq ft)</span>
-                </label>
-                <div class="input-wrapper">
-                  <input 
-                    type="number" 
-                    id="input-sqft" 
-                    name="sqft" 
-                    class="form-input tabular-nums" 
-                    placeholder="e.g. 2400" 
-                    min="150" 
-                    max="20000" 
-                    step="10" 
-                    required
-                  >
-                  <span class="input-affix">sq ft</span>
-                </div>
-                <div class="input-error-msg" id="error-sqft"></div>
-              </div>
-
-              <div class="form-row-2">
-                <div class="form-group">
-                  <label for="input-bedrooms" class="form-label">
-                    <span>Bedrooms</span>
-                    <span class="label-hint">Total rooms</span>
-                  </label>
-                  <input 
-                    type="number" 
-                    id="input-bedrooms" 
-                    name="bedrooms" 
-                    class="form-input tabular-nums" 
-                    placeholder="e.g. 3" 
-                    min="1" 
-                    max="15" 
-                    step="1" 
-                    required
-                  >
-                  <div class="input-error-msg" id="error-bedrooms"></div>
-                </div>
-
-                <div class="form-group">
-                  <label for="input-bathrooms" class="form-label">
-                    <span>Bathrooms</span>
-                    <span class="label-hint">Full & half baths</span>
-                  </label>
-                  <input 
-                    type="number" 
-                    id="input-bathrooms" 
-                    name="bathrooms" 
-                    class="form-input tabular-nums" 
-                    placeholder="e.g. 2.5" 
-                    min="0.5" 
-                    max="12.0" 
-                    step="0.5" 
-                    required
-                  >
-                  <div class="input-error-msg" id="error-bathrooms"></div>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="input-neighborhood" class="form-label">
-                  <span>Neighborhood / District</span>
-                  <span class="label-hint">Select market location</span>
-                </label>
-                <select id="input-neighborhood" name="neighborhood" class="form-select" required>
-                  <option value="" disabled selected>Select a neighborhood...</option>
-                  <option value="Downtown">Downtown — Urban Core & High Density</option>
-                  <option value="Oakridge">Oakridge — High-Sqft Luxury Estates</option>
-                  <option value="Suburban Heights">Suburban Heights — Established Family Properties</option>
-                  <option value="Riverside">Riverside — Waterfront Scenic Enclave</option>
-                  <option value="West End">West End — Historic & Emerging Residential</option>
-                </select>
-                <div class="input-error-msg" id="error-neighborhood"></div>
-              </div>
-
-              <!-- Inline Form API Alert (if any) -->
-              <div class="api-alert" id="form-api-alert" style="display: none;"></div>
-
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary btn-block" id="btn-submit-prediction">
-                  <span class="btn-text">Generate Valuation</span>
-                  <span class="btn-spinner" style="display: none;"></span>
-                </button>
-              </div>
-            </form>
+        <!-- Bedrooms & Bathrooms Row -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bedrooms" class="form-label">Number of bedrooms</label>
+            <input
+              type="number"
+              id="bedrooms"
+              name="bedrooms"
+              class="form-input"
+              placeholder="e.g. 3"
+              min="1"
+              max="20"
+              step="1"
+              required
+            >
+            <div class="field-error" id="error-bedrooms"></div>
           </div>
 
-          <!-- Form Context Side Panel -->
-          <div class="form-side-panel">
-            <div class="side-panel-card">
-              <h3 class="side-card-title">Valuation Parameters</h3>
-              <p class="side-card-p">
-                Our model maps non-linear hedonic parameters to historical transactions. Each variable contributes to the predictive baseline:
-              </p>
-              <ul class="side-specs-list">
-                <li>
-                  <strong>Square Footage:</strong> Captures spatial volume, finished ceilings, and primary living envelope.
-                </li>
-                <li>
-                  <strong>Bedroom Count:</strong> Reflects utility for single occupants, families, and dual-purpose rooms.
-                </li>
-                <li>
-                  <strong>Bathroom Count:</strong> Models plumbing fixtures, en-suite accommodations, and luxury density.
-                </li>
-                <li>
-                  <strong>Location Index:</strong> Calibrated per-district land valuation and urban accessibility.
-                </li>
-              </ul>
-
-              <div class="api-badge-card">
-                <div class="api-badge-header">
-                  <span class="status-indicator-dot online"></span>
-                  <span class="api-status-label" id="backend-status-text">Backend Connected</span>
-                </div>
-                <p class="api-endpoint-text">POST /predict</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PAGE C: PREDICTION RESULT ================= -->
-    <section id="view-result" class="page-view">
-      <div class="container result-page-container">
-        <div class="result-card">
-          <div class="result-header">
-            <span class="eyebrow-tag">Property Valuation Report</span>
-            <span class="result-timestamp" id="res-timestamp">Just now</span>
-          </div>
-
-          <div class="result-hero-box">
-            <span class="result-price-label">Estimated Fair Market Valuation</span>
-            <div class="result-price tabular-nums" id="res-price">$0</div>
-            <div class="result-summary" id="res-summary">
-              Valuation estimate based on property inputs.
-            </div>
-          </div>
-
-          <div class="result-details-grid">
-            <div class="detail-box">
-              <span class="detail-label">Interior Area</span>
-              <span class="detail-val tabular-nums" id="res-sqft">—</span>
-            </div>
-            <div class="detail-box">
-              <span class="detail-label">Bedrooms</span>
-              <span class="detail-val tabular-nums" id="res-bedrooms">—</span>
-            </div>
-            <div class="detail-box">
-              <span class="detail-label">Bathrooms</span>
-              <span class="detail-val tabular-nums" id="res-bathrooms">—</span>
-            </div>
-            <div class="detail-box">
-              <span class="detail-label">Neighborhood</span>
-              <span class="detail-val" id="res-neighborhood">—</span>
-            </div>
-          </div>
-
-          <div class="result-actions">
-            <button class="btn btn-primary" id="btn-try-another">Try Another Prediction</button>
-            <button class="btn btn-secondary" id="btn-result-to-insights">View Model Insights</button>
-          </div>
-
-          <div class="result-disclaimer">
-            <p id="res-disclaimer">
-              Estimates provided by HOMESTEAD are statistical models and do not constitute formal appraisals or appraisal guarantees.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PAGE D: MODEL INSIGHTS ================= -->
-    <section id="view-insights" class="page-view">
-      <div class="container insights-page-container">
-        <div class="insights-header">
-          <span class="eyebrow-tag">MLOps Observability</span>
-          <h1 class="page-heading">Model Performance & Lineage</h1>
-          <p class="page-lead">
-            Operational metrics, hyperparameter tracking, and dataset lineage reported directly
-            from the deployed FastAPI backend and training artifacts.
-          </p>
-        </div>
-
-        <div class="metrics-grid">
-          <div class="metric-card">
-            <span class="metric-label">Model Architecture</span>
-            <span class="metric-value" id="insight-model-name">Loading...</span>
-            <span class="metric-sub" id="insight-model-version">Version 1.0.0</span>
-          </div>
-
-          <div class="metric-card">
-            <span class="metric-label">Test R² Score</span>
-            <span class="metric-value tabular-nums highlight-accent" id="insight-r2">Loading...</span>
-            <span class="metric-sub">Coefficient of determination</span>
-          </div>
-
-          <div class="metric-card">
-            <span class="metric-label">Root Mean Squared Error (RMSE)</span>
-            <span class="metric-value tabular-nums" id="insight-rmse">Loading...</span>
-            <span class="metric-sub">Evaluation test partition</span>
-          </div>
-
-          <div class="metric-card">
-            <span class="metric-label">Mean Absolute Error (MAE)</span>
-            <span class="metric-value tabular-nums" id="insight-mae">Loading...</span>
-            <span class="metric-sub">Average valuation deviation</span>
+          <div class="form-group">
+            <label for="bathrooms" class="form-label">Number of bathrooms</label>
+            <input
+              type="number"
+              id="bathrooms"
+              name="bathrooms"
+              class="form-input"
+              placeholder="e.g. 2"
+              min="0.5"
+              max="15"
+              step="0.5"
+              required
+            >
+            <div class="field-error" id="error-bathrooms"></div>
           </div>
         </div>
 
-        <div class="insights-detail-grid">
-          <div class="detail-card">
-            <h3 class="detail-card-title">Training Lineage & Verification</h3>
-            <table class="insights-table">
-              <tbody>
-                <tr>
-                  <td>Training Timestamp</td>
-                  <td id="insight-timestamp" class="tabular-nums">Loading...</td>
-                </tr>
-                <tr>
-                  <td>Data Ingestion Version</td>
-                  <td id="insight-dataset">Loading...</td>
-                </tr>
-                <tr>
-                  <td>Training Samples</td>
-                  <td id="insight-train-samples" class="tabular-nums">Loading...</td>
-                </tr>
-                <tr>
-                  <td>Evaluation Samples</td>
-                  <td id="insight-test-samples" class="tabular-nums">Loading...</td>
-                </tr>
-                <tr>
-                  <td>Artifact Status</td>
-                  <td id="insight-status"><span class="badge badge-success">Loaded</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <!-- Predict Button -->
+        <button type="submit" class="btn-predict" id="btn-predict">
+          <span class="btn-text">Predict Price</span>
+          <span class="btn-spinner" style="display: none;"></span>
+        </button>
 
-          <div class="detail-card">
-            <h3 class="detail-card-title">Hyperparameter Configuration</h3>
-            <div class="params-pre-box">
-              <pre id="insight-hyperparams">Loading hyperparameters...</pre>
-            </div>
+        <div class="form-alert" id="form-alert" style="display: none;"></div>
+      </form>
+
+      <!-- Result Section -->
+      <section class="result-section" id="result-section" style="display: none;">
+        <div class="result-divider"></div>
+        <div class="result-header">
+          <span class="result-eyebrow">Estimated Property Price</span>
+          <div class="result-price" id="result-price">₹0</div>
+        </div>
+
+        <div class="result-details-grid">
+          <div class="result-detail-box">
+            <span class="detail-label">Property Location</span>
+            <span class="detail-val" id="result-location">—</span>
+          </div>
+          <div class="detail-item-box">
+            <span class="detail-label">Area</span>
+            <span class="detail-val" id="result-area">—</span>
+          </div>
+          <div class="detail-item-box">
+            <span class="detail-label">Bedrooms & Bathrooms</span>
+            <span class="detail-val" id="result-rooms">—</span>
+          </div>
+          <div class="detail-item-box">
+            <span class="detail-label">Estimated Rate</span>
+            <span class="detail-val" id="result-rate">—</span>
           </div>
         </div>
 
-        <div class="insights-footer-action">
-          <button class="btn btn-primary" id="insights-predict-btn">Run New Prediction</button>
-          <button class="btn btn-secondary" id="insights-refresh-btn">Refresh Metadata</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PAGE E: DOCUMENTATION & RUN GUIDE ================= -->
-    <section id="view-docs" class="page-view">
-      <div class="container docs-page-container">
-        <div class="docs-header">
-          <span class="eyebrow-tag">Architecture Guide</span>
-          <h1 class="page-heading">System Design & Operations</h1>
-          <p class="page-lead">
-            Comprehensive developer reference for running pipelines, managing DVC data,
-            and triggering automated tests.
-          </p>
-        </div>
-
-        <div class="docs-cards-list">
-          <div class="docs-item-card">
-            <h3>1. Reproducing the DVC Pipeline</h3>
-            <p>DVC tracks dependencies between raw data, preprocessing, and model training:</p>
-            <pre class="code-block"><code># Execute full pipeline
-dvc repro
-
-# Inspect metrics recorded by training stage
-dvc metrics show</code></pre>
-          </div>
-
-          <div class="docs-item-card">
-            <h3>2. Starting the FastAPI Backend</h3>
-            <p>Run Uvicorn directly from the workspace root:</p>
-            <pre class="code-block"><code>uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload</code></pre>
-          </div>
-
-          <div class="docs-item-card">
-            <h3>3. MLflow Local Dashboard</h3>
-            <p>Inspect all hyperparameter experiments and model artifact runs:</p>
-            <pre class="code-block"><code>mlflow ui --port 5000</code></pre>
-          </div>
-
-          <div class="docs-item-card">
-            <h3>4. Automated Test Suite</h3>
-            <p>Execute unit and integration tests with pytest:</p>
-            <pre class="code-block"><code>pytest tests/ -v</code></pre>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col-brand">
-        <a href="#home" class="brand-wordmark">
-          <span class="wordmark-icon">◆</span>
-          <span class="wordmark-text">HOMESTEAD</span>
-        </a>
-        <p class="footer-tagline">
-          Editorial real-estate valuation powered by disciplined MLOps engineering.
+        <p class="result-disclaimer">
+          Demonstration estimate based on statistical modeling, not a verified market valuation.
         </p>
-      </div>
-
-      <div class="footer-col-links">
-        <h5 class="footer-heading">Navigation</h5>
-        <ul>
-          <li><button class="footer-nav-btn" data-view="home">Home</button></li>
-          <li><button class="footer-nav-btn" data-view="predict">Property Valuation</button></li>
-          <li><button class="footer-nav-btn" data-view="insights">Model Insights</button></li>
-          <li><button class="footer-nav-btn" data-view="docs">Documentation</button></li>
-        </ul>
-      </div>
-
-      <div class="footer-col-tech">
-        <h5 class="footer-heading">Stack Credits</h5>
-        <div class="tech-pills">
-          <span class="tech-pill">FastAPI</span>
-          <span class="tech-pill">XGBoost</span>
-          <span class="tech-pill">Scikit-Learn</span>
-          <span class="tech-pill">DVC</span>
-          <span class="tech-pill">MLflow</span>
-          <span class="tech-pill">Docker</span>
-          <span class="tech-pill">GitHub Actions</span>
-        </div>
-      </div>
+      </section>
     </div>
-    <div class="footer-bottom container">
-      <p class="copyright">
-        &copy; 2026 HOMESTEAD Property Valuation MLOps. Designed with architectural clarity.
-      </p>
-    </div>
-  </footer>
+  </main>
 
   <script src="app.js"></script>
 </body>

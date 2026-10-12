@@ -1,7 +1,7 @@
 """
-API endpoint and integration tests for FastAPI backend.
-Tests health/readiness, successful predictions, input validation rejections,
-missing model handling, and metadata retrieval.
+API endpoint and integration tests for FastAPI backend in Karnataka, India.
+Tests health/readiness, successful predictions in INR (₹), city differential pricing,
+input validation rejections, missing model handling, and metadata retrieval.
 """
 
 import os
@@ -26,12 +26,12 @@ def test_api_status_endpoint(client):
     assert data["status"] == "online"
     assert "service" in data
     assert "version" in data
+    assert data["currency"] == "INR"
 
 
 def test_health_check_endpoint(client):
     """Verify GET /health returns readiness."""
     response = client.get("/health")
-    # If model is loaded, status should be 200
     if app.state.model is not None:
         assert response.status_code == 200
         data = response.json()
@@ -41,31 +41,83 @@ def test_health_check_endpoint(client):
         assert response.status_code == 503
 
 
-def test_successful_prediction(client):
-    """Verify POST /predict with realistic valid property details."""
+def test_locations_endpoint(client):
+    """Verify GET /locations returns supported Karnataka cities."""
+    response = client.get("/locations")
+    assert response.status_code == 200
+    data = response.json()
+    assert "locations" in data
+    assert "Bengaluru" in data["locations"]
+    assert "Mysuru" in data["locations"]
+    assert len(data["locations"]) == 12
+
+
+def test_successful_prediction_inr(client):
+    """Verify POST /predict with realistic valid Karnataka property details in INR."""
     if app.state.model is None:
         pytest.skip("Model not loaded in test environment")
 
     payload = {
-        "sqft": 2400.0,
+        "sqft": 1500.0,
         "bedrooms": 3,
-        "bathrooms": 2.5,
-        "neighborhood": "Suburban Heights"
+        "bathrooms": 2.0,
+        "location": "Bengaluru"
     }
     response = client.post("/predict", json=payload)
     assert response.status_code == 200
     data = response.json()
 
     assert "predicted_price" in data
-    assert data["predicted_price"] > 50000.0
+    assert data["predicted_price"] > 1000000.0  # Above 10 Lakhs in INR
     assert "formatted_price" in data
-    assert data["formatted_price"].startswith("$")
-    assert data["currency"] == "USD"
-    assert data["property_details"]["sqft"] == 2400.0
+    assert data["formatted_price"].startswith("₹")
+    assert data["currency"] == "INR"
+    assert data["property_details"]["sqft"] == 1500.0
     assert data["property_details"]["bedrooms"] == 3
-    assert data["property_details"]["bathrooms"] == 2.5
-    assert data["property_details"]["neighborhood"] == "Suburban Heights"
+    assert data["property_details"]["bathrooms"] == 2.0
+    assert data["property_details"]["location"] == "Bengaluru"
+    assert "price_per_sqft" in data
+    assert data["price_per_sqft"] > 0
+    assert "formatted_price_per_sqft" in data
+    assert data["formatted_price_per_sqft"].startswith("₹")
+    assert "/sq ft" in data["formatted_price_per_sqft"]
     assert "disclaimer" in data
+
+
+def test_prediction_neighborhood_alias_backward_compatibility(client):
+    """Verify POST /predict accepts legacy 'neighborhood' payload and maps it to location."""
+    if app.state.model is None:
+        pytest.skip("Model not loaded in test environment")
+
+    payload = {
+        "sqft": 1500.0,
+        "bedrooms": 3,
+        "bathrooms": 2.0,
+        "neighborhood": "Mysuru"
+    }
+    response = client.post("/predict", json=payload)
+    assert response.status_code == 200
+    data = response.json()
+    assert data["property_details"]["location"] == "Mysuru"
+    assert data["currency"] == "INR"
+    assert data["formatted_price"].startswith("₹")
+
+
+def test_city_differential_prediction(client):
+    """
+    Verify that the selected city directly influences the estimated house price.
+    A property with the same area and rooms in Bengaluru must receive a different estimate than Kalaburagi.
+    """
+    if app.state.model is None:
+        pytest.skip("Model not loaded in test environment")
+
+    base = {"sqft": 1500.0, "bedrooms": 3, "bathrooms": 2.0}
+    res_bengaluru = client.post("/predict", json={**base, "location": "Bengaluru"}).json()
+    res_kalaburagi = client.post("/predict", json={**base, "location": "Kalaburagi"}).json()
+
+    assert res_bengaluru["predicted_price"] != res_kalaburagi["predicted_price"]
+    # Due to market differences, metropolitan Bengaluru price should be higher than regional Kalaburagi
+    assert res_bengaluru["predicted_price"] > res_kalaburagi["predicted_price"]
 
 
 def test_invalid_prediction_payloads(client):
@@ -75,7 +127,7 @@ def test_invalid_prediction_payloads(client):
         "sqft": 50.0,  # Below minimum 100
         "bedrooms": 3,
         "bathrooms": 2.0,
-        "neighborhood": "Downtown"
+        "location": "Bengaluru"
     })
     assert res1.status_code == 422
 
@@ -84,7 +136,7 @@ def test_invalid_prediction_payloads(client):
         "sqft": 1500.0,
         "bedrooms": 0,  # Below minimum 1
         "bathrooms": 2.0,
-        "neighborhood": "Downtown"
+        "location": "Bengaluru"
     })
     assert res2.status_code == 422
 
@@ -93,22 +145,22 @@ def test_invalid_prediction_payloads(client):
         "sqft": 1500.0,
         "bedrooms": 3,
         "bathrooms": 0.0,  # Below minimum 0.5
-        "neighborhood": "Downtown"
+        "location": "Bengaluru"
     })
     assert res3.status_code == 422
 
-    # 4. Empty neighborhood
+    # 4. Empty location and neighborhood
     res4 = client.post("/predict", json={
         "sqft": 1500.0,
         "bedrooms": 3,
         "bathrooms": 2.0,
-        "neighborhood": "   "  # Pure whitespace
+        "location": "   "  # Pure whitespace
     })
     assert res4.status_code == 422
 
 
 def test_model_info_endpoint(client):
-    """Verify GET /model-info returns metadata and does not fabricate missing metrics."""
+    """Verify GET /model-info returns metadata in INR and does not fabricate missing metrics."""
     response = client.get("/model-info")
     assert response.status_code == 200
     data = response.json()
@@ -116,28 +168,27 @@ def test_model_info_endpoint(client):
     assert "model_version" in data
     assert "rmse" in data
     assert "r2_score" in data
-    assert "training_status" in data
+    assert data["currency"] == "INR"
+    assert "supported_locations" in data
+    assert "Bengaluru" in data["supported_locations"]
 
 
 def test_missing_model_behavior():
     """Verify proper 503 error handling when model artifact is absent."""
     with TestClient(app) as test_client:
-        # Temporarily simulate unloaded model
         original_model = app.state.model
         app.state.model = None
 
         try:
-            # Health should fail
             health_res = test_client.get("/health")
             assert health_res.status_code == 503
             assert health_res.json()["ready"] is False
 
-            # Predict should fail
             predict_res = test_client.post("/predict", json={
-                "sqft": 2000.0,
+                "sqft": 1500.0,
                 "bedrooms": 3,
                 "bathrooms": 2.0,
-                "neighborhood": "Downtown"
+                "location": "Bengaluru"
             })
             assert predict_res.status_code == 503
             assert "Model is not available" in predict_res.json()["detail"]

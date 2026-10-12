@@ -1,6 +1,6 @@
 """
 Unit tests for data preprocessing and feature transformations.
-Validates schema validation, median imputation, categorical handling,
+Validates schema validation, median imputation, categorical handling for Karnataka locations,
 and scikit-learn pipeline operations.
 """
 
@@ -24,13 +24,13 @@ from src.preprocess import (
 
 @pytest.fixture
 def sample_raw_dataframe():
-    """Create a controlled sample DataFrame with some missing values."""
+    """Create a controlled sample DataFrame with some missing values in Karnataka locations."""
     data = {
         "sqft": [1500.0, np.nan, 2200.0, 3100.0, 1800.0],
         "bedrooms": [3, 2, 4, 5, 3],
         "bathrooms": [2.0, 1.5, np.nan, 3.5, 2.0],
-        "neighborhood": ["Downtown", "Oakridge", np.nan, "Riverside", "Downtown"],
-        "price": [450000.0, 520000.0, 610000.0, 890000.0, 480000.0],
+        "location": ["Bengaluru", "Mysuru", np.nan, "Mangaluru", "Bengaluru"],
+        "price": [12000000.0, 8500000.0, 15000000.0, 22000000.0, 13000000.0],
     }
     return pd.DataFrame(data)
 
@@ -63,13 +63,13 @@ def test_preprocessor_handles_unseen_category():
         "sqft": [1200.0, 2000.0],
         "bedrooms": [2, 3],
         "bathrooms": [1.5, 2.0],
-        "neighborhood": ["Downtown", "Oakridge"],
+        "location": ["Bengaluru", "Mysuru"],
     })
     test_data = pd.DataFrame({
         "sqft": [1800.0],
         "bedrooms": [3],
         "bathrooms": [2.0],
-        "neighborhood": ["UnseenDistrict"],  # Category not in training data
+        "location": ["UnseenDistrict"],  # Category not in training data
     })
 
     preprocessor = build_preprocessor()
@@ -84,7 +84,7 @@ def test_preprocessor_handles_unseen_category():
 def test_load_data_validation():
     """Verify load_data validates missing columns and non-existent files."""
     with tempfile.NamedTemporaryFile(suffix=".csv", mode="w", delete=False) as f:
-        # Missing 'neighborhood' and 'price'
+        # Missing 'location' and 'price'
         f.write("sqft,bedrooms,bathrooms\n1500,3,2\n")
         temp_path = f.name
 
@@ -97,6 +97,21 @@ def test_load_data_validation():
 
     with pytest.raises(FileNotFoundError):
         load_data("non_existent_file_path_xyz.csv")
+
+
+def test_load_data_neighborhood_alias():
+    """Verify load_data transparently maps 'neighborhood' column to 'location' if present."""
+    with tempfile.NamedTemporaryFile(suffix=".csv", mode="w", delete=False) as f:
+        f.write("sqft,bedrooms,bathrooms,neighborhood,price\n1500,3,2,Bengaluru,12000000\n")
+        temp_path = f.name
+
+    try:
+        df = load_data(temp_path)
+        assert "location" in df.columns
+        assert df["location"].iloc[0] == "Bengaluru"
+    finally:
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
 
 
 def test_preprocess_and_save_pipeline(sample_raw_dataframe):

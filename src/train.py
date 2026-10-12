@@ -1,12 +1,18 @@
 """
-Model training and evaluation module for House Price Prediction.
-Trains an XGBoost Regressor, computes RMSE, MAE, and R2 evaluation metrics,
+Model training and evaluation module for House Price Prediction in Karnataka.
+Trains an XGBoost Regressor, computes RMSE, MAE, and R2 evaluation metrics in INR (₹),
 tracks experiments via MLflow, bundles preprocessing and model into a unified
 inference pipeline, and persists `model.joblib` and `metrics.json`.
 """
 
 import os
 import sys
+
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
 
 # Ensure repository root is in sys.path
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -127,9 +133,9 @@ def train_and_evaluate(
     mae = float(mean_absolute_error(y_test, y_pred))
     r2 = float(r2_score(y_test, y_pred))
 
-    print(f"\n--- Model Evaluation ---")
-    print(f"  RMSE:     ${rmse:,.2f}")
-    print(f"  MAE:      ${mae:,.2f}")
+    print(f"\n--- Model Evaluation (INR) ---")
+    print(f"  RMSE:     ₹{rmse:,.2f}")
+    print(f"  MAE:      ₹{mae:,.2f}")
     print(f"  R2 Score: {r2:.4f}")
 
     # 6. Build unified Inference Pipeline
@@ -140,12 +146,12 @@ def train_and_evaluate(
         ]
     )
 
-    # Verify unified pipeline on a sample raw input
+    # Verify unified pipeline on a sample Karnataka raw input
     test_sample = pd.DataFrame([
-        {"sqft": 2100, "bedrooms": 3, "bathrooms": 2.0, "neighborhood": "Suburban Heights"}
+        {"sqft": 1500, "bedrooms": 3, "bathrooms": 2.0, "location": "Bengaluru"}
     ])
     sample_pred = inference_pipeline.predict(test_sample)[0]
-    print(f"Inference pipeline sanity check prediction: ${sample_pred:,.2f}")
+    print(f"Inference pipeline sanity check prediction (Bengaluru): ₹{sample_pred:,.2f}")
 
     # 7. Save Deployable Artifacts
     joblib.dump(inference_pipeline, model_output_path)
@@ -155,6 +161,7 @@ def train_and_evaluate(
         "rmse": round(rmse, 2),
         "mae": round(mae, 2),
         "r2_score": round(r2, 4),
+        "currency": "INR",
         "train_samples": len(y_train),
         "test_samples": len(y_test),
         "model_type": "XGBRegressor",
@@ -179,6 +186,8 @@ def train_and_evaluate(
         })
         mlflow.set_tag("model_type", "XGBoost")
         mlflow.set_tag("pipeline", "Scikit-learn + XGBoost")
+        mlflow.set_tag("currency", "INR")
+        mlflow.set_tag("region", "Karnataka, India")
 
         # Log pipeline artifact to MLflow
         try:

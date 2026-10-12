@@ -1,150 +1,63 @@
 /**
- * HOMESTEAD — Editorial Property Valuation Frontend Application
- * Interacts with FastAPI /predict, /model-info, and /health endpoints.
+ * HOMESTEAD — Minimal House Price Prediction Application
+ * Handles input validation, API calls to FastAPI /predict, and INR result display.
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Determine API Base URL dynamically
-  const API_BASE = window.location.origin && window.location.origin !== "null" && !window.location.origin.startsWith("file")
+  const API_BASE = window.location.origin && !window.location.origin.startsWith("file")
     ? window.location.origin
     : "http://localhost:8000";
 
-  // State
-  let currentView = "home";
-
-  // Elements
-  const navLinks = document.querySelectorAll(".nav-link, .footer-nav-btn");
-  const pageViews = document.querySelectorAll(".page-view");
-  const navBrand = document.getElementById("nav-brand");
-  const navEstimateBtn = document.getElementById("nav-estimate-btn");
-  const heroCtaBtn = document.getElementById("hero-cta-btn");
-  const heroInsightsBtn = document.getElementById("hero-insights-btn");
-  const insightsPredictBtn = document.getElementById("insights-predict-btn");
-  const insightsRefreshBtn = document.getElementById("insights-refresh-btn");
-  const btnTryAnother = document.getElementById("btn-try-another");
-  const btnResultToInsights = document.getElementById("btn-result-to-insights");
-
   // Form Elements
-  const form = document.getElementById("valuation-form");
-  const inputSqft = document.getElementById("input-sqft");
-  const inputBedrooms = document.getElementById("input-bedrooms");
-  const inputBathrooms = document.getElementById("input-bathrooms");
-  const inputNeighborhood = document.getElementById("input-neighborhood");
-  const submitBtn = document.getElementById("btn-submit-prediction");
-  const btnText = submitBtn.querySelector(".btn-text");
-  const btnSpinner = submitBtn.querySelector(".btn-spinner");
-  const formAlert = document.getElementById("form-api-alert");
+  const form = document.getElementById("prediction-form");
+  const selectLocation = document.getElementById("location");
+  const inputSqft = document.getElementById("sqft");
+  const inputBedrooms = document.getElementById("bedrooms");
+  const inputBathrooms = document.getElementById("bathrooms");
+  const btnPredict = document.getElementById("btn-predict");
+  const btnText = btnPredict.querySelector(".btn-text");
+  const btnSpinner = btnPredict.querySelector(".btn-spinner");
+  const formAlert = document.getElementById("form-alert");
 
   // Error Containers
+  const errorLocation = document.getElementById("error-location");
   const errorSqft = document.getElementById("error-sqft");
   const errorBedrooms = document.getElementById("error-bedrooms");
   const errorBathrooms = document.getElementById("error-bathrooms");
-  const errorNeighborhood = document.getElementById("error-neighborhood");
 
-  // Backend Status Indicator
-  const backendStatusText = document.getElementById("backend-status-text");
-  const statusDot = document.querySelector(".status-indicator-dot");
+  // Result Elements
+  const resultSection = document.getElementById("result-section");
+  const resultPrice = document.getElementById("result-price");
+  const resultLocation = document.getElementById("result-location");
+  const resultArea = document.getElementById("result-area");
+  const resultRooms = document.getElementById("result-rooms");
+  const resultRate = document.getElementById("result-rate");
 
-  // --- View Router ---
-  function switchView(viewName) {
-    currentView = viewName;
-
-    // Update active view section
-    pageViews.forEach(view => {
-      view.classList.toggle("active", view.id === `view-${viewName}`);
-    });
-
-    // Update nav links active class
-    document.querySelectorAll(".nav-link").forEach(link => {
-      link.classList.toggle("active", link.dataset.view === viewName);
-    });
-
-    window.scrollTo({ top: 0, behavior: "smooth" });
-
-    // Fetch view-specific dynamic data
-    if (viewName === "insights") {
-      fetchModelInsights();
+  // Indian Rupee Formatter helper (Indian numbering system: Lakhs, Crores)
+  function formatINR(amount) {
+    if (isNaN(amount) || amount === null || amount === undefined) return "—";
+    const num = Math.round(Number(amount));
+    if (num < 0) return "-" + formatINR(-num);
+    const s = String(num);
+    if (s.length <= 3) return "₹" + s;
+    const last3 = s.slice(-3);
+    let remaining = s.slice(0, -3);
+    const groups = [];
+    while (remaining.length > 2) {
+      groups.unshift(remaining.slice(-2));
+      remaining = remaining.slice(0, -2);
     }
-  }
-
-  // Bind Navigation Clicks
-  navLinks.forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const view = link.dataset.view;
-      if (view) switchView(view);
-    });
-  });
-
-  if (navBrand) {
-    navBrand.addEventListener("click", (e) => {
-      e.preventDefault();
-      switchView("home");
-    });
-  }
-
-  if (navEstimateBtn) {
-    navEstimateBtn.addEventListener("click", () => switchView("predict"));
-  }
-
-  if (heroCtaBtn) {
-    heroCtaBtn.addEventListener("click", () => switchView("predict"));
-  }
-
-  if (heroInsightsBtn) {
-    heroInsightsBtn.addEventListener("click", () => switchView("insights"));
-  }
-
-  if (insightsPredictBtn) {
-    insightsPredictBtn.addEventListener("click", () => switchView("predict"));
-  }
-
-  if (insightsRefreshBtn) {
-    insightsRefreshBtn.addEventListener("click", () => fetchModelInsights());
-  }
-
-  if (btnTryAnother) {
-    btnTryAnother.addEventListener("click", () => {
-      form.reset();
-      clearErrors();
-      switchView("predict");
-    });
-  }
-
-  if (btnResultToInsights) {
-    btnResultToInsights.addEventListener("click", () => switchView("insights"));
-  }
-
-  // --- Health Probe ---
-  async function checkApiHealth() {
-    try {
-      const res = await fetch(`${API_BASE}/health`);
-      if (res.ok) {
-        if (backendStatusText) backendStatusText.textContent = "Backend & Model Ready";
-        if (statusDot) {
-          statusDot.className = "status-indicator-dot online";
-        }
-      } else {
-        const data = await res.json().catch(() => ({}));
-        if (backendStatusText) backendStatusText.textContent = "Model Offline (Need Training)";
-        if (statusDot) {
-          statusDot.className = "status-indicator-dot offline";
-        }
-      }
-    } catch (err) {
-      if (backendStatusText) backendStatusText.textContent = "API Unreachable";
-      if (statusDot) {
-        statusDot.className = "status-indicator-dot offline";
-      }
+    if (remaining.length > 0) {
+      groups.unshift(remaining);
     }
+    return "₹" + groups.join(",") + "," + last3;
   }
 
-  // --- Input Validation ---
   function clearErrors() {
-    [errorSqft, errorBedrooms, errorBathrooms, errorNeighborhood].forEach(el => {
+    [errorLocation, errorSqft, errorBedrooms, errorBathrooms].forEach(el => {
       if (el) el.textContent = "";
     });
-    [inputSqft, inputBedrooms, inputBathrooms, inputNeighborhood].forEach(el => {
+    [selectLocation, inputSqft, inputBedrooms, inputBathrooms].forEach(el => {
       if (el) el.classList.remove("is-invalid");
     });
     if (formAlert) {
@@ -157,38 +70,42 @@ document.addEventListener("DOMContentLoaded", () => {
     clearErrors();
     let isValid = true;
 
+    // Location
+    const loc = selectLocation.value;
+    if (!loc || loc.trim() === "") {
+      errorLocation.textContent = "Please select a location in Karnataka.";
+      selectLocation.classList.add("is-invalid");
+      isValid = false;
+    }
+
+    // Area (sqft)
     const sqft = parseFloat(inputSqft.value);
-    if (isNaN(sqft) || sqft < 150 || sqft > 20000) {
-      errorSqft.textContent = "Enter a valid interior area between 150 and 20,000 sq ft.";
+    if (isNaN(sqft) || sqft <= 100 || sqft >= 25000) {
+      errorSqft.textContent = "Please enter a valid area between 101 and 25,000 sq ft.";
       inputSqft.classList.add("is-invalid");
       isValid = false;
     }
 
+    // Bedrooms
     const bedrooms = parseInt(inputBedrooms.value, 10);
-    if (isNaN(bedrooms) || bedrooms < 1 || bedrooms > 15) {
-      errorBedrooms.textContent = "Enter a realistic bedroom count between 1 and 15.";
+    if (isNaN(bedrooms) || bedrooms < 1 || bedrooms > 20) {
+      errorBedrooms.textContent = "Please enter 1 to 20 bedrooms.";
       inputBedrooms.classList.add("is-invalid");
       isValid = false;
     }
 
+    // Bathrooms
     const bathrooms = parseFloat(inputBathrooms.value);
-    if (isNaN(bathrooms) || bathrooms < 0.5 || bathrooms > 12) {
-      errorBathrooms.textContent = "Enter a valid bathroom count (minimum 0.5, e.g. 1.5, 2.0).";
+    if (isNaN(bathrooms) || bathrooms < 0.5 || bathrooms > 15) {
+      errorBathrooms.textContent = "Please enter 0.5 to 15 bathrooms.";
       inputBathrooms.classList.add("is-invalid");
-      isValid = false;
-    }
-
-    const neighborhood = inputNeighborhood.value;
-    if (!neighborhood || neighborhood.trim() === "") {
-      errorNeighborhood.textContent = "Please select a neighborhood district.";
-      inputNeighborhood.classList.add("is-invalid");
       isValid = false;
     }
 
     return isValid;
   }
 
-  // --- Form Submission to /predict ---
+  // Handle Form Submission
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
@@ -197,15 +114,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const payload = {
+      location: selectLocation.value.trim(),
       sqft: parseFloat(inputSqft.value),
       bedrooms: parseInt(inputBedrooms.value, 10),
-      bathrooms: parseFloat(inputBathrooms.value),
-      neighborhood: inputNeighborhood.value.trim()
+      bathrooms: parseFloat(inputBathrooms.value)
     };
 
     // UI Loading State
-    submitBtn.disabled = true;
-    btnText.textContent = "Computing Valuation...";
+    btnPredict.disabled = true;
+    btnText.textContent = "Estimating Price...";
     btnSpinner.style.display = "inline-block";
     formAlert.style.display = "none";
 
@@ -219,99 +136,44 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (!response.ok) {
-        const errorData = await response.json().catch(() => ({ detail: "Unknown server error" }));
-        const errorMessage = errorData.detail || `Server responded with status ${response.status}`;
-        throw new Error(errorMessage);
+        const errorData = await response.json().catch(() => ({}));
+        const message = errorData.detail || `Server responded with status ${response.status}`;
+        throw new Error(message);
       }
 
-      const result = await response.json();
-      displayPredictionResult(result);
-      switchView("result");
+      const data = await response.json();
+      displayResult(data, payload);
 
-    } catch (error) {
-      formAlert.className = "api-alert error";
+    } catch (err) {
       formAlert.style.display = "block";
-      formAlert.textContent = `Valuation Request Failed: ${error.message}`;
+      formAlert.textContent = `Unable to generate estimate: ${err.message}`;
     } finally {
-      submitBtn.disabled = false;
-      btnText.textContent = "Generate Valuation";
+      btnPredict.disabled = false;
+      btnText.textContent = "Predict Price";
       btnSpinner.style.display = "none";
     }
   });
 
-  // --- Render Result View (Page C) ---
-  function displayPredictionResult(data) {
-    document.getElementById("res-price").textContent = data.formatted_price;
-    document.getElementById("res-summary").textContent = data.summary;
+  function displayResult(data, req) {
+    const details = data.property_details || req;
 
-    const details = data.property_details;
-    document.getElementById("res-sqft").textContent = `${Number(details.sqft).toLocaleString()} sq ft`;
-    document.getElementById("res-bedrooms").textContent = details.bedrooms;
-    document.getElementById("res-bathrooms").textContent = details.bathrooms;
-    document.getElementById("res-neighborhood").textContent = details.neighborhood;
+    // Display formatted price in ₹
+    resultPrice.textContent = data.formatted_price || formatINR(data.predicted_price);
+    resultLocation.textContent = details.location || req.location;
+    resultArea.textContent = `${Number(details.sqft || req.sqft).toLocaleString("en-IN")} sq ft`;
+    resultRooms.textContent = `${details.bedrooms || req.bedrooms} Beds • ${details.bathrooms || req.bathrooms} Baths`;
 
-    const dateStr = new Date(data.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    document.getElementById("res-timestamp").textContent = `Derived ${dateStr}`;
-
-    if (data.disclaimer) {
-      document.getElementById("res-disclaimer").textContent = data.disclaimer;
+    // Display price per sq ft
+    if (data.formatted_price_per_sqft) {
+      resultRate.textContent = data.formatted_price_per_sqft;
+    } else if (data.predicted_price && req.sqft) {
+      const rate = Math.round(data.predicted_price / req.sqft);
+      resultRate.textContent = `${formatINR(rate)}/sq ft`;
+    } else {
+      resultRate.textContent = "—";
     }
+
+    resultSection.style.display = "block";
+    resultSection.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
-
-  // --- Render Model Insights (Page D) ---
-  async function fetchModelInsights() {
-    try {
-      const res = await fetch(`${API_BASE}/model-info`);
-      if (!res.ok) throw new Error("Unable to retrieve model metadata");
-
-      const info = await res.json();
-
-      document.getElementById("insight-model-name").textContent = info.model_name || "Not available";
-      document.getElementById("insight-model-version").textContent = `Version ${info.model_version || "1.0.0"}`;
-
-      document.getElementById("insight-r2").textContent = 
-        typeof info.r2_score === "number" ? info.r2_score.toFixed(4) : (info.r2_score || "Not available");
-
-      document.getElementById("insight-rmse").textContent = 
-        typeof info.rmse === "number" ? `$${info.rmse.toLocaleString()}` : (info.rmse || "Not available");
-
-      document.getElementById("insight-mae").textContent = 
-        typeof info.mae === "number" ? `$${info.mae.toLocaleString()}` : (info.mae || "Not available");
-
-      document.getElementById("insight-timestamp").textContent = 
-        info.training_timestamp !== "Not available" 
-          ? new Date(info.training_timestamp).toLocaleString() 
-          : "Not available";
-
-      document.getElementById("insight-dataset").textContent = info.dataset_version || "Not available";
-      document.getElementById("insight-train-samples").textContent = 
-        info.train_samples !== "Not available" ? Number(info.train_samples).toLocaleString() : "Not available";
-      document.getElementById("insight-test-samples").textContent = 
-        info.test_samples !== "Not available" ? Number(info.test_samples).toLocaleString() : "Not available";
-
-      const statusEl = document.getElementById("insight-status");
-      if (info.model_available) {
-        statusEl.innerHTML = `<span class="badge badge-success">Active & Verified</span>`;
-      } else {
-        statusEl.innerHTML = `<span class="badge" style="background: #fde8e8; color: #9c1c1c;">Not Loaded</span>`;
-      }
-
-      const paramsBox = document.getElementById("insight-hyperparams");
-      if (info.experiment_parameters && typeof info.experiment_parameters === "object") {
-        paramsBox.textContent = JSON.stringify(info.experiment_parameters, null, 2);
-      } else {
-        paramsBox.textContent = String(info.experiment_parameters || "Not available");
-      }
-
-    } catch (err) {
-      console.warn("Could not load model info:", err);
-      document.getElementById("insight-model-name").textContent = "Not available";
-      document.getElementById("insight-r2").textContent = "Not available";
-      document.getElementById("insight-rmse").textContent = "Not available";
-      document.getElementById("insight-mae").textContent = "Not available";
-    }
-  }
-
-  // Initial Probe
-  checkApiHealth();
 });

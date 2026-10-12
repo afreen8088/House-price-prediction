@@ -1,7 +1,7 @@
 """
-FastAPI Backend for House Price Prediction MLOps.
-Provides real-time model inference, health/readiness probes,
-model metadata inspection, and static web interface serving.
+FastAPI Backend for HOMESTEAD House Price Prediction in Karnataka, India.
+Provides real-time model inference in Indian Rupees (INR - ₹),
+health/readiness probes, model metadata inspection, and static web interface serving.
 """
 
 import os
@@ -10,7 +10,7 @@ import json
 import logging
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 
 # Ensure repository root is in sys.path
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -23,7 +23,7 @@ from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, model_validator
 
 # Configure logging
 logging.basicConfig(
@@ -35,6 +35,43 @@ logger = logging.getLogger("house_price_api")
 MODEL_PATH = os.getenv("MODEL_PATH", "model.joblib")
 METRICS_PATH = os.getenv("METRICS_PATH", "metrics.json")
 ALLOWED_CORS = os.getenv("CORS_ORIGINS", "*").split(",")
+
+KARNATAKA_CITIES = [
+    "Bengaluru",
+    "Mysuru",
+    "Mangaluru",
+    "Hubballi-Dharwad",
+    "Belagavi",
+    "Kalaburagi",
+    "Davanagere",
+    "Shivamogga",
+    "Tumakuru",
+    "Udupi",
+    "Hassan",
+    "Ballari",
+]
+
+
+def format_inr(amount: float) -> str:
+    """
+    Format numeric value into Indian Rupee representation (e.g. ₹85,00,000).
+    Uses the Indian numbering system (Lakhs, Crores).
+    """
+    amount_int = int(round(amount))
+    if amount_int < 0:
+        return f"-{format_inr(-amount_int)}"
+    s = str(amount_int)
+    if len(s) <= 3:
+        return f"₹{s}"
+    last3 = s[-3:]
+    remaining = s[:-3]
+    groups = []
+    while len(remaining) > 2:
+        groups.insert(0, remaining[-2:])
+        remaining = remaining[:-2]
+    if remaining:
+        groups.insert(0, remaining)
+    return f"₹{','.join(groups)},{last3}"
 
 
 def load_model(path: str = MODEL_PATH):
@@ -56,7 +93,7 @@ def load_metrics(path: str = METRICS_PATH) -> Optional[Dict[str, Any]]:
     if not os.path.exists(path):
         return None
     try:
-        with open(path, "r") as f:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception as e:
         logger.error(f"Failed reading metrics artifact from {path}: {e}")
@@ -70,13 +107,14 @@ async def lifespan(app: FastAPI):
     app.state.model = load_model(MODEL_PATH)
     app.state.metrics = load_metrics(METRICS_PATH)
     app.state.model_path = MODEL_PATH
+    app.state.metrics_path = METRICS_PATH
     yield
     logger.info("Shutting down House Price Prediction API...")
 
 
 app = FastAPI(
     title="HOMESTEAD House Price Valuation API",
-    description="Production MLOps API providing machine-learning property valuations and metadata.",
+    description="Production MLOps API providing machine-learning property valuations in Karnataka, India.",
     version="1.0.0",
     lifespan=lifespan,
 )
@@ -112,28 +150,31 @@ class PropertyPredictionRequest(BaseModel):
         le=15.0,
         description="Number of bathrooms. Must be between 0.5 and 15."
     )
-    neighborhood: str = Field(
-        ...,
-        min_length=2,
-        max_length=80,
-        description="Property neighborhood or district name."
+    location: Optional[str] = Field(
+        default=None,
+        description="Property location or city in Karnataka."
+    )
+    neighborhood: Optional[str] = Field(
+        default=None,
+        description="Legacy alias for location to maintain backwards compatibility."
     )
 
-    @field_validator("neighborhood")
-    @classmethod
-    def validate_neighborhood(cls, v: str) -> str:
-        cleaned = v.strip()
-        if not cleaned:
-            raise ValueError("Neighborhood name cannot be empty or purely whitespace.")
-        return cleaned
+    @model_validator(mode="after")
+    def validate_location(self):
+        loc = self.location or self.neighborhood
+        if not loc or not loc.strip():
+            raise ValueError("Location name cannot be empty or purely whitespace.")
+        self.location = loc.strip()
+        self.neighborhood = self.location
+        return self
 
     model_config = {
         "json_schema_extra": {
             "example": {
-                "sqft": 2450.0,
-                "bedrooms": 4,
-                "bathrooms": 2.5,
-                "neighborhood": "Oakridge"
+                "sqft": 1500.0,
+                "bedrooms": 3,
+                "bathrooms": 2.0,
+                "location": "Bengaluru"
             }
         }
     }
@@ -147,6 +188,8 @@ class PropertyPredictionResponse(BaseModel):
     summary: str
     model_version: str
     timestamp: str
+    price_per_sqft: Optional[float] = None
+    formatted_price_per_sqft: Optional[str] = None
     disclaimer: str
 
 
@@ -158,8 +201,9 @@ def api_status():
     model_loaded = getattr(app.state, "model", None) is not None
     return {
         "status": "online",
-        "service": "HOMESTEAD Property Valuation MLOps API",
+        "service": "HOMESTEAD Property Valuation MLOps API (Karnataka, India)",
         "version": "1.0.0",
+        "currency": "INR",
         "model_loaded": model_loaded,
         "docs_url": "/docs",
         "ui_url": "/ui/",
@@ -174,13 +218,14 @@ def health_check():
     Fails with HTTP 503 if model artifact is not loaded.
     """
     model = getattr(app.state, "model", None)
+    model_path = getattr(app.state, "model_path", MODEL_PATH)
     if model is None:
         return JSONResponse(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             content={
                 "status": "unhealthy",
                 "ready": False,
-                "detail": f"Model artifact is not loaded. Checked path: {app.state.model_path}. "
+                "detail": f"Model artifact is not loaded. Checked path: {model_path}. "
                           f"Execute training pipeline ('python src/train.py') to generate model.",
                 "timestamp": datetime.now(timezone.utc).isoformat(),
             }
@@ -189,15 +234,25 @@ def health_check():
     return {
         "status": "healthy",
         "ready": True,
-        "model_path": app.state.model_path,
+        "model_path": model_path,
         "timestamp": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+@app.get("/locations", summary="Supported Karnataka Locations")
+def get_locations():
+    """Returns list of supported Karnataka cities for property valuation."""
+    return {
+        "state": "Karnataka",
+        "country": "India",
+        "locations": KARNATAKA_CITIES,
     }
 
 
 @app.post("/predict", response_model=PropertyPredictionResponse, summary="Predict House Price")
 def predict_house_price(payload: PropertyPredictionRequest):
     """
-    Accepts validated property details and returns an XGBoost model prediction.
+    Accepts validated property details and returns an XGBoost model prediction in INR (₹).
     Uses the trained scikit-learn + XGBoost inference pipeline directly.
     """
     model = getattr(app.state, "model", None)
@@ -212,13 +267,13 @@ def predict_house_price(payload: PropertyPredictionRequest):
         "sqft": payload.sqft,
         "bedrooms": payload.bedrooms,
         "bathrooms": payload.bathrooms,
-        "neighborhood": payload.neighborhood
+        "location": payload.location
     }])
 
     try:
         raw_prediction = float(model.predict(input_data)[0])
-        # Ensure floor on non-negative real estate valuation
-        predicted_price = max(raw_prediction, 50000.0)
+        # Ensure floor on realistic minimum real estate valuation in INR (₹5 Lakhs)
+        predicted_price = max(raw_prediction, 500000.0)
     except Exception as e:
         logger.error(f"Inference error during model prediction: {e}")
         raise HTTPException(
@@ -226,10 +281,13 @@ def predict_house_price(payload: PropertyPredictionRequest):
             detail=f"Inference pipeline execution error: {str(e)}"
         )
 
-    formatted_price = f"${predicted_price:,.2f}"
+    price_per_sqft = round(predicted_price / payload.sqft, 2)
+    formatted_price = format_inr(predicted_price)
+    formatted_price_per_sqft = f"{format_inr(price_per_sqft)}/sq ft"
+
     summary = (
-        f"Valuation estimate for a {payload.sqft:,.0f} sqft, "
-        f"{payload.bedrooms} bed, {payload.bathrooms} bath residence in {payload.neighborhood}."
+        f"Valuation estimate for a {payload.sqft:,.0f} sq ft, "
+        f"{payload.bedrooms} bed, {payload.bathrooms:g} bath residence in {payload.location}."
     )
 
     metrics = getattr(app.state, "metrics", None)
@@ -238,34 +296,41 @@ def predict_house_price(payload: PropertyPredictionRequest):
     return PropertyPredictionResponse(
         predicted_price=round(predicted_price, 2),
         formatted_price=formatted_price,
-        currency="USD",
+        currency="INR",
         property_details={
             "sqft": payload.sqft,
             "bedrooms": payload.bedrooms,
             "bathrooms": payload.bathrooms,
-            "neighborhood": payload.neighborhood,
+            "location": payload.location,
+            "neighborhood": payload.location,
+            "price_per_sqft": price_per_sqft,
+            "formatted_price_per_sqft": formatted_price_per_sqft,
         },
         summary=summary,
         model_version=model_version,
         timestamp=datetime.now(timezone.utc).isoformat(),
-        disclaimer="Estimates provided by HOMESTEAD are statistical models and do not constitute formal appraisals or appraisal guarantees."
+        price_per_sqft=price_per_sqft,
+        formatted_price_per_sqft=formatted_price_per_sqft,
+        disclaimer="Demonstration estimate based on statistical modeling, not a verified market valuation."
     )
 
 
 @app.get("/model-info", summary="Model Metadata and Evaluation Metrics")
 def model_info():
     """
-    Returns actual available model metadata and metrics recorded during training.
+    Returns actual available model metadata and metrics recorded during training in INR.
     If information is unavailable, displays 'Not available' per requirements.
     """
     model_loaded = getattr(app.state, "model", None) is not None
-    metrics = load_metrics(app.state.metrics_path if hasattr(app.state, "metrics_path") else METRICS_PATH)
+    metrics_path = getattr(app.state, "metrics_path", METRICS_PATH)
+    metrics = load_metrics(metrics_path)
 
     if not metrics and not model_loaded:
         return {
             "model_name": "Not available",
             "model_version": "Not available",
             "training_timestamp": "Not available",
+            "currency": "INR",
             "rmse": "Not available",
             "mae": "Not available",
             "r2_score": "Not available",
@@ -278,15 +343,20 @@ def model_info():
     return {
         "model_name": metrics.get("model_type", "XGBRegressor") if metrics else "XGBRegressor",
         "model_version": "1.0.0",
+        "currency": "INR",
+        "region": "Karnataka, India",
         "training_timestamp": metrics.get("timestamp", "Not available") if metrics else "Not available",
         "rmse": metrics.get("rmse", "Not available") if metrics else "Not available",
+        "formatted_rmse": format_inr(metrics["rmse"]) if metrics and isinstance(metrics.get("rmse"), (int, float)) else "Not available",
         "mae": metrics.get("mae", "Not available") if metrics else "Not available",
+        "formatted_mae": format_inr(metrics["mae"]) if metrics and isinstance(metrics.get("mae"), (int, float)) else "Not available",
         "r2_score": metrics.get("r2_score", "Not available") if metrics else "Not available",
         "train_samples": metrics.get("train_samples", "Not available") if metrics else "Not available",
         "test_samples": metrics.get("test_samples", "Not available") if metrics else "Not available",
-        "dataset_version": "DVC tracked data/raw/housing_data.csv",
+        "dataset_version": "DVC tracked data/raw/housing_data.csv (Karnataka, INR)",
         "experiment_parameters": metrics.get("hyperparameters", "Not available") if metrics else "Not available",
-        "features_expected": metrics.get("features", ["sqft", "bedrooms", "bathrooms", "neighborhood"]) if metrics else ["sqft", "bedrooms", "bathrooms", "neighborhood"],
+        "features_expected": metrics.get("features", ["sqft", "bedrooms", "bathrooms", "location"]) if metrics else ["sqft", "bedrooms", "bathrooms", "location"],
+        "supported_locations": KARNATAKA_CITIES,
         "training_status": metrics.get("status", "Active") if metrics else "Model loaded",
         "model_available": model_loaded,
     }

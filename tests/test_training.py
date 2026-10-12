@@ -1,6 +1,6 @@
 """
-Integration and regression tests for model training pipeline.
-Runs training on explicitly synthetic test fixtures, verifies metrics evaluation,
+Integration and regression tests for model training pipeline in Karnataka, India.
+Runs training on explicitly synthetic test fixtures in INR, verifies metrics evaluation,
 and validates single pipeline inference.
 """
 
@@ -19,22 +19,22 @@ from src.train import train_and_evaluate
 
 @pytest.fixture
 def synthetic_training_fixture():
-    """Create a temporary synthetic dataset fixture for fast reproducible training tests."""
+    """Create a temporary synthetic dataset fixture for fast reproducible training tests in INR."""
     rng = np.random.default_rng(123)
     n = 60
     sqfts = rng.uniform(800, 3500, size=n)
     beds = rng.integers(1, 5, size=n)
     baths = rng.choice([1.0, 1.5, 2.0, 2.5, 3.0], size=n)
-    neighborhoods = rng.choice(["Downtown", "Oakridge", "Riverside"], size=n)
+    locations = rng.choice(["Bengaluru", "Mysuru", "Kalaburagi"], size=n)
 
-    # Simple predictable hedonic valuation formula for synthetic test
-    prices = 100000 + (sqfts * 200) + (beds * 15000) + (baths * 20000) + rng.normal(0, 5000, size=n)
+    # Hedonic valuation formula in INR for synthetic test
+    prices = 1500000 + (sqfts * 5000) + (beds * 300000) + (baths * 200000) + rng.normal(0, 50000, size=n)
 
     df = pd.DataFrame({
         "sqft": sqfts,
         "bedrooms": beds,
         "bathrooms": baths,
-        "neighborhood": neighborhoods,
+        "location": locations,
         "price": prices
     })
     return df
@@ -43,7 +43,7 @@ def synthetic_training_fixture():
 def test_end_to_end_training_pipeline_on_synthetic_fixture(synthetic_training_fixture):
     """
     Test end-to-end training on a small, explicitly labeled synthetic fixture in a temporary directory.
-    Verifies that preprocessing + XGBRegressor trains, computes metrics, and produces a valid model.joblib.
+    Verifies that preprocessing + XGBRegressor trains, computes metrics in INR, and produces a valid model.joblib.
     """
     with tempfile.TemporaryDirectory() as tmp_dir:
         raw_csv = os.path.join(tmp_dir, "synthetic_housing.csv")
@@ -109,10 +109,10 @@ train:
         # Verify inference pipeline accepts raw DataFrame directly
         loaded_pipeline = joblib.load(model_out)
         sample_input = pd.DataFrame([{
-            "sqft": 2000.0,
+            "sqft": 1500.0,
             "bedrooms": 3,
             "bathrooms": 2.0,
-            "neighborhood": "Downtown"
+            "location": "Bengaluru"
         }])
         pred = loaded_pipeline.predict(sample_input)
         assert len(pred) == 1

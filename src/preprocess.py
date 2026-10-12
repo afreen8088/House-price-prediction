@@ -1,5 +1,5 @@
 """
-Data preprocessing and feature engineering pipeline for House Price Prediction.
+Data preprocessing and feature engineering pipeline for House Price Prediction in Karnataka.
 Handles schema validation, train/test splitting, median imputation for numerical features,
 categorical imputation, scaling, one-hot encoding, and Parquet persistence.
 """
@@ -18,19 +18,23 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 NUMERICAL_FEATURES = ["sqft", "bedrooms", "bathrooms"]
-CATEGORICAL_FEATURES = ["neighborhood"]
+CATEGORICAL_FEATURES = ["location"]
 ALL_FEATURES = NUMERICAL_FEATURES + CATEGORICAL_FEATURES
 TARGET_COLUMN = "price"
 
 
 def load_data(file_path: str) -> pd.DataFrame:
-    """Load raw dataset with validation."""
+    """Load raw dataset with schema validation and backwards-compatibility mapping."""
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Raw data file not found: {file_path}")
     
     df = pd.read_csv(file_path)
     if df.empty:
         raise ValueError(f"Raw dataset at {file_path} is empty.")
+    
+    # Backwards-compatibility alias: if 'neighborhood' is present instead of 'location'
+    if "neighborhood" in df.columns and "location" not in df.columns:
+        df["location"] = df["neighborhood"]
     
     # Validate required columns
     required_cols = ALL_FEATURES + [TARGET_COLUMN]
@@ -45,7 +49,7 @@ def build_preprocessor() -> ColumnTransformer:
     """
     Build the scikit-learn ColumnTransformer for preprocessing.
     - Numerical: Median imputer + StandardScaler
-    - Categorical: Most frequent imputer + OneHotEncoder
+    - Categorical: Most frequent imputer + OneHotEncoder (handle_unknown='ignore')
     """
     numeric_transformer = Pipeline(
         steps=[
@@ -155,7 +159,7 @@ def preprocess_and_save(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Preprocess house price data.")
+    parser = argparse.ArgumentParser(description="Preprocess Karnataka house price data.")
     parser.add_argument("--config", type=str, default="params.yaml", help="Path to params.yaml")
     args = parser.parse_args()
 

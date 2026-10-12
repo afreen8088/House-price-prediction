@@ -20,9 +20,10 @@ mlartifacts/
 mlflow.db
 *.db
 
-# DVC Internal
+# DVC Internal & Artifacts
 .dvc/cache/
 .dvc/tmp/
+/model.joblib
 
 # OS & Editor
 .DS_Store
